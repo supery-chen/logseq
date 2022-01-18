@@ -29,4 +29,16 @@
   }
   ```
 - 从定义可以看出来，其接收一个`Subscriber`
--
+- ### Subscriber(观察者)
+- ```java
+  public interface Subscriber<T> {
+      public void onSubscribe(Subscription s); ➊
+      public void onNext(T t); ➋
+      public void onError(Throwable t); 
+      public void onComplete(); ➍
+  }
+  ```
+- ➊ 订阅的时候被触发
+- ➋
+- ➌
+- ➍
