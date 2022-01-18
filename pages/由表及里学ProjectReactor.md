@@ -29,6 +29,7 @@
   }
   ```
 - 从定义可以看出来，其接收一个`Subscriber`
+-
 - ### Subscriber(观察者)
 - ```java
   public interface Subscriber<T> {
@@ -44,3 +45,6 @@
 - ➍ 接收完最后一个元素后被触发
 - 根据源码中的注释可以看出，`Publisher`是主要行为对象
 -
+- ### Subscription(桥接者)
+- ```java
+  ```
