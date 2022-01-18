@@ -1,7 +1,7 @@
-- ## 响应式编程
+- # 响应式编程
 - 本质上是一个`观察者模式`
 - ![image.png](../assets/image_1642490318088_0.png)
-- ## 官方示例
+- # 官方示例
 - ```java
   userService.getFavorites(userId) ➊
              .flatMap(favoriteService::getDetails)  ➋
@@ -20,8 +20,8 @@
 - 前4步的行为看起来类似Java8中的Stream编程，但这里的实现与Stream是不同的，后续会展开分析
 - 后两步在我们之前的编码中没有遇到过类似的，这里的行为，我们可以在后续的[Reference#schedulers](http://projectreactor.io/docs/core/release/reference/#schedulers)中得知，`publishOn`将影响后续的行为操作所在的线程，对应的还有`subscribeOn`，这个函数仅影响`事件源`所在的线程
 -
-- ## SPI模型定义
-- ### Publisher(发布者、被观察者)
+- # SPI模型定义
+- ## Publisher(发布者、被观察者)
 - ```java
   package org.reactivestreams;
   public interface Publisher<T> {
@@ -30,7 +30,7 @@
   ```
 - 从定义可以看出来，其接收一个`Subscriber`
 -
-- ### Subscriber(观察者)
+- ## Subscriber(观察者)
 - ```java
   public interface Subscriber<T> {
       public void onSubscribe(Subscription s); ➊
@@ -45,7 +45,7 @@
 - ➍ 接收完最后一个元素后被触发
 - 根据源码中的注释可以看出，`Publisher`是主要行为对象
 -
-- ### Subscription(桥接者)
+- ## Subscription(桥接者)
 - ```java
   package org.reactivestreams;
   public interface Subscription {
