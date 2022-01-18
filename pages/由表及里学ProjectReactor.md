@@ -10,5 +10,9 @@
              .publishOn(UiUtils.uiThreadScheduler())  ➎
              .subscribe(uiList::show, UiUtils::errorPopup);  ➏
   ```
-- ➊
-- ➋
+- ➊ 根据用户ID查询喜欢的信息(打开一个Publisher)
+- ➋ 使用flatMap操作获取喜欢信息详情
+- ➌
+- ➍
+- ➎
+- ➏
