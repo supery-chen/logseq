@@ -67,6 +67,8 @@ public:: false
       .map(s-> s.concat("@qq.com"))
       .subscribe(System.out::println);
   ```
+- ## 声明阶段
+- `Flux.just("tom", "jack", "allen")`
 -
 -
 -
