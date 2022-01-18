@@ -28,5 +28,5 @@
       public void subscribe(Subscriber<? super T> s);
   }
   ```
--
+- 从定义可以看出来，其接收一个`Subscriber`
 -
