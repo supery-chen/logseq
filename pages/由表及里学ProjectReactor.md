@@ -47,4 +47,12 @@
 -
 - ### Subscription(桥接者)
 - ```java
+  package org.reactivestreams;
+  public interface Subscription {
+      public void request(long n); ➊
+      public void cancel(); ➋
+  }
   ```
+- ➊ 获取N个元素往下传递
+- ➋ 取消执行
+-
