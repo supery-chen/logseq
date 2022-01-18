@@ -1,3 +1,5 @@
+public:: false
+
 - # 响应式编程
 - 本质上是一个`观察者模式`
 - ![image.png](../assets/image_1642490318088_0.png)
