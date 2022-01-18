@@ -71,12 +71,7 @@ public:: false
 - `Flux.just("tom", "jack", "allen")`
 - ```java
   	public static <T> Flux<T> fromArray(T[] array) {
-  		if (array.length == 0) {
-  			return empty();
-  		}
-  		if (array.length == 1) {
-  			return just(array[0]);
-  		}
+        	//检查略
   		return onAssembly(new FluxArray<>(array));
   	}
   ```
