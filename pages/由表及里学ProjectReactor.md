@@ -22,4 +22,10 @@
 -
 - ## SPI模型定义
 - ### Publisher(发布者、被观察者)
+- ```java
+  package org.reactivestreams;
+  public interface Publisher<T> {
+      public void subscribe(Subscriber<? super T> s);
+  }
+  ```
 -
