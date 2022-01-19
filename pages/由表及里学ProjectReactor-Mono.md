@@ -88,7 +88,7 @@
   	catch (Throwable e) {...}
   }
   ```
-- `Operators.onLastAssembly(this)`返回的实际就是我们最后包装出来的`MonoFilterFuseable`，而`actual`则是我们使用的`LambdaMonoSubscriber`，代码继续往下走到➊处，此时调用的是`MonoFilterFuseable`类的方法，代码如下，可以看到，这里还是在包装对象，包装为了`FluxFilterFuseable.FilterFuseableSubscriber`对象
+- `Operators.onLastAssembly(this)`返回的实际就是我们最后包装出来的`MonoFilterFuseable`，而`actual`则是我们使用的`LambdaMonoSubscriber`，代码继续往下走到➊处，此时调用的是`MonoFilterFuseable`类的方法，可以看到，这里还是在包装对象，包装为了`FluxFilterFuseable.FilterFuseableSubscriber`对象
 - ```java
   @Override
   @SuppressWarnings("unchecked")
@@ -102,5 +102,14 @@
 - 继续往下走到➋处，`nextOptimizableSource`返回的是`MonoFilterFuseable`中的`source`，也就是调用`.filter(s -> s.length() > 5)`方法的`MonoMapFuseable`
 - 所以下一次循环，调用的就是`MonoMapFuseable`类的`subscribeOrReturn`方法，代码如下，可以看到，这里也是包装对象，包装为了`FluxMapFuseable.MapFuseableSubscriber`对象
 - ```java
+  @Override
+  @SuppressWarnings("unchecked")
+  public CoreSubscriber<? super T> subscribeOrReturn(CoreSubscriber<? super R> actual) {
+  	if (actual instanceof ConditionalSubscriber) {
+  		ConditionalSubscriber<? super R> cs = (ConditionalSubscriber<? super R>) actual;
+  		return new FluxMapFuseable.MapFuseableConditionalSubscriber<>(cs, mapper);
+  	}
+  	return new FluxMapFuseable.MapFuseableSubscriber<>(actual, mapper);
+  }
   ```
 -
