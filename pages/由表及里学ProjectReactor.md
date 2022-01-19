@@ -116,7 +116,7 @@ public:: false
   	CoreSubscriber subscriber = Operators.toCoreSubscriber(actual);
   	//异常捕获忽略
   	if (publisher instanceof OptimizableOperator) {
-  		OptimizableOperator operator = (OptimizableOperator) publisher;
+  		OptimizableOperator operator = (OptimizableOperator) publisher;➊
   		while (true) {
   			subscriber = operator.subscribeOrReturn(subscriber);
   			if (subscriber == null) {
@@ -131,11 +131,11 @@ public:: false
   			operator = newSource;
   		}
   	}
-  	publisher.subscribe(subscriber);
+  	publisher.subscribe(subscriber);➋
   	//异常捕获忽略
   }
   ```
--
+- ➊ 这里我们看到，
 -
 -
 -
