@@ -70,17 +70,17 @@
   		if (publisher instanceof OptimizableOperator) {
   			OptimizableOperator operator = (OptimizableOperator) publisher;
   			while (true) {
-  				subscriber = operator.subscribeOrReturn(subscriber);➊
+  				subscriber = operator.subscribeOrReturn(subscriber); ➊
   				if (subscriber == null) {
   					// null means "I will subscribe myself", returning...
   					return;
   				}
-  				OptimizableOperator newSource = operator.nextOptimizableSource();
+  				OptimizableOperator newSource = operator.nextOptimizableSource(); ➋
   				if (newSource == null) {
-  					publisher = operator.source();
+  					publisher = operator.source(); ➌
   					break;
   				}
-  				operator = newSource;
+  				operator = newSource; ➍
   			}
   		}
   		publisher.subscribe(subscriber);
@@ -88,3 +88,4 @@
   	catch (Throwable e) {...}
   }
   ```
+-
