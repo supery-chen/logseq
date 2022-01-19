@@ -147,7 +147,7 @@ public:: false
   	return new MapFuseableSubscriber<>(actual, mapper);
   }
   ```
-- 我们自己的`Subscriber`在这里被包裹成一个`MapFuseableSubscriber`对象，虽然这个方法叫做`subscribeOrReturn`，但从代码中来看，此方法仅做了包装并`return`，具体订阅是在➋ 处
+- 我们自己的`Subscriber`在这里被包裹成一个`MapFuseableSubscriber`对象，虽然这个方法叫做`subscribeOrReturn`，但从代码中来看，此方法仅做了包装并`return`，具体订阅是在➋ 处，这里的`publisher`就是我们上面看的`FluxArray`
 -
 -
 -
