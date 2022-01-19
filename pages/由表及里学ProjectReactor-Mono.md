@@ -80,10 +80,10 @@
   					publisher = operator.source(); ➌
   					break;
   				}
-  				operator = newSource; ➍
+  				operator = newSource; 
   			}
   		}
-  		publisher.subscribe(subscriber);
+  		publisher.subscribe(subscriber); ➍
   	}
   	catch (Throwable e) {...}
   }
@@ -112,5 +112,5 @@
   	return new FluxMapFuseable.MapFuseableSubscriber<>(actual, mapper);
   }
   ```
-- 继续往下走到➋处，`nextOptimizableSource`返回`null`，将publisher跳出循环
+- 继续往下走到➋处，`nextOptimizableSource`返回`null`，走到➌处并跳出循环，最终执行➍处
 -
