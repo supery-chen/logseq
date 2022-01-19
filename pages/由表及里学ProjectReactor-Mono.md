@@ -12,6 +12,16 @@
   	return onAssembly(new MonoJust<>(data));
   }
   ```
-- 我们可以看到，这里只是将data包裹成了一个MonoJust对象
+- 我们可以看到，这里只是将data包裹成了一个`MonoJust`对象，我们来看看它的声明
+- ```java
+  final class MonoJust<T> extends Mono<T> 
+  	implements Fuseable.ScalarCallable<T>, Fuseable, SourceProducer<T>  {
+  	final T value;
+  	MonoJust(T value) {
+  		this.value = Objects.requireNonNull(value, "value");
+  	}
+    	//忽略
+  }
+  ```
 -
 -
