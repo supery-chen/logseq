@@ -164,6 +164,6 @@ public:: false
   	}
   }
   ```
-- 熟悉的味道，➊➋将Subscriber和Publisher包裹成一个Subscription对象，并将其作为onSubscribe函数调用的对象，这样的话
+- 熟悉的味道，➊➋将Subscriber和Publisher包裹成一个Subscription对象，并将其作为onSubscribe函数调用的对象，这样的话，我们就可以完全理解，为什么`Nothing Happens Until You subscribe()`，因为实际上我们在调用subscribe()之前的所有方法都只是在申明对象。只有在subscribe
 -
 -
