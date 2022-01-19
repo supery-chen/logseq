@@ -86,8 +86,16 @@ public:: false
   }
   ```
 - 在具体的实例中，`FluxArray`也仅仅是将`array`储存起来，然后就返回回来了，那我们紧接着去看看`.map(s->s.concat("@qq.com"))`又做了什么
-- ```ha```
--
+- ```java
+  public final <V> Flux<V> map(Function<? super T, ? extends V> mapper) {
+  	if (this instanceof Fuseable) {
+  		return onAssembly(new FluxMapFuseable<>(this, mapper));➊
+  	}
+  	return onAssembly(new FluxMap<>(this, mapper));➋
+  }
+  ```
+- ➊
+- er
 -
 -
 -
