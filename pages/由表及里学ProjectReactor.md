@@ -261,3 +261,5 @@ public:: false
 - 在➋处将处理之后的结构传递给下一个`Subscriber`
 - 这里的`actual`也就是我们自己所写的`Subscriber`
 -
+- ## 小结一下
+- 、
