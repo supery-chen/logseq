@@ -111,35 +111,29 @@ public:: false
   ```
 - 通过代码调试，我们看到代码走入了`reactor.core.publisher.Flux#subscribe(org.reactivestreams.Subscriber<? super T>)`
 - ```java
-  	public final void subscribe(Subscriber<? super T> actual) {
-  		CorePublisher publisher = Operators.onLastAssembly(this);
-  		CoreSubscriber subscriber = Operators.toCoreSubscriber(actual);
-  
-  		try {
-  			if (publisher instanceof OptimizableOperator) {
-  				OptimizableOperator operator = (OptimizableOperator) publisher;
-  				while (true) {
-  					subscriber = operator.subscribeOrReturn(subscriber);
-  					if (subscriber == null) {
-  						// null means "I will subscribe myself", returning...
-  						return;
-  					}
-  					OptimizableOperator newSource = operator.nextOptimizableSource();
-  					if (newSource == null) {
-  						publisher = operator.source();
-  						break;
-  					}
-  					operator = newSource;
-  				}
+  public final void subscribe(Subscriber<? super T> actual) {
+  	CorePublisher publisher = Operators.onLastAssembly(this);
+  	CoreSubscriber subscriber = Operators.toCoreSubscriber(actual);
+  	//异常捕获忽略
+  	if (publisher instanceof OptimizableOperator) {
+  		OptimizableOperator operator = (OptimizableOperator) publisher;
+  		while (true) {
+  			subscriber = operator.subscribeOrReturn(subscriber);
+  			if (subscriber == null) {
+  				// null means "I will subscribe myself", returning...
+  				return;
   			}
-  
-  			publisher.subscribe(subscriber);
-  		}
-  		catch (Throwable e) {
-  			Operators.reportThrowInSubscribe(subscriber, e);
-  			return;
+  			OptimizableOperator newSource = operator.nextOptimizableSource();
+  			if (newSource == null) {
+  				publisher = operator.source();
+  				break;
+  			}
+  			operator = newSource;
   		}
   	}
+  	publisher.subscribe(subscriber);
+  	//异常捕获忽略
+  }
   ```
 -
 -
