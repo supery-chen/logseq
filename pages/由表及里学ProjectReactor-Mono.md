@@ -24,5 +24,12 @@
   }
   ```
 - 在具体的实例中，`MonoJust`也仅仅是将`data`储存起来，然后返回回来了，那我们紧接着去看看`.map(s -> s.concat("@qq.com"))`又做了什么
--
--
+- ```java
+  public final <R> Mono<R> map(Function<? super T, ? extends R> mapper) {
+  	if (this instanceof Fuseable) {
+  		return onAssembly(new MonoMapFuseable<>(this, mapper)); ➊
+  	}
+  	return onAssembly(new MonoMap<>(this, mapper)); ➋
+  }
+  ```
+- 在➊➋处，我们发现都是简单的
