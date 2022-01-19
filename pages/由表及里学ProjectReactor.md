@@ -178,6 +178,7 @@ public:: false
   }
   ```
 - 很简单，我们又获得了我们所定义的`Subscriber`，并调用它的`onSubscribe`函数，因为我们采用Lambda的方式生成的`Subscriber`所以也就是`LambdaSubscriber`对象，具体实现如下
+- ## request阶段
 - ```java
   	@Override
   	public final void onSubscribe(Subscription s) {
@@ -185,7 +186,7 @@ public:: false
   			this.subscription = s;
   			if (subscriptionConsumer != null) {
   				try {
-  					subscriptionConsumer.accept(s);
+  					subscriptionConsumer.accept(s);➊
   				}
   				catch (Throwable t) {
   					Exceptions.throwIfFatal(t);
@@ -194,10 +195,10 @@ public:: false
   				}
   			}
   			else {
-  				s.request(Long.MAX_VALUE);
+  				s.request(Long.MAX_VALUE);➋
   			}
   		}
   	}
   ```
--
+- 无论是➊还是➋
 -
