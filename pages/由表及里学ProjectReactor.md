@@ -271,5 +271,5 @@ public:: false
 - 最后生成的对象是这样的
 - ![image.png](../assets/image_1642579057268_0.png)
 -
--
+- 3. `onSubscribe`阶段：在最外层的`Publisher`的时候调用上一层`Subscriber`的`onSubscribe`函数，在此处将Publisher
 -
