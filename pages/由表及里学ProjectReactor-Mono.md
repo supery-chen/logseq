@@ -88,7 +88,7 @@
   	catch (Throwable e) {...}
   }
   ```
-- `Operators.onLastAssembly(this)`返回的实际就是我们最后包装出来的`MonoFilterFuseable`，而`actual`则是我们使用的`LambdaMonoSubscriber`，代码继续往下走到➊处，此时调用的是`MonoFilterFuseable`类的方法，如下
+- `Operators.onLastAssembly(this)`返回的实际就是我们最后包装出来的`MonoFilterFuseable`，而`actual`则是我们使用的`LambdaMonoSubscriber`，代码继续往下走到➊处，此时调用的是`MonoFilterFuseable`类的方法，代码如下，可以看到，这里还是在包装对象，包装为了`FluxFilterFuseable.FilterFuseableSubscriber`对象
 - ```java
   @Override
   @SuppressWarnings("unchecked")
@@ -99,4 +99,5 @@
   	return new FluxFilterFuseable.FilterFuseableSubscriber<>(actual, predicate);
   }
   ```
-- 可以看到，这里还是在包装对象，
+- 继续往下走到➋处，nextOptimizableSource返回的是MonoFilterFuseable
+-
