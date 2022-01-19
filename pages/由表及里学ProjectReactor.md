@@ -272,5 +272,6 @@ public:: false
 - ![image.png](../assets/image_1642579057268_0.png)
 -
 - 3. `onSubscribe`阶段：在最外层的`Publisher`的时候调用上一层`Subscriber`的`onSubscribe`函数，在此处将`Publisher`和`Subscriber`包裹成一个`Subscription`对象作为`onSubscribe`的入参
+- ![image.png](../assets/image_1642579460111_0.png)
 -
 -
