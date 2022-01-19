@@ -59,4 +59,4 @@
 - 这里也和上面类似，不再细说。终于到了我们最为激动人心的`subscribe()`函数了
 -
 - ## subscribe阶段
-- 在subscribe方法调用之前，我们
+- 在subscribe方法调用之前，我们分别包装了`MonoJust`->`MonoMap`->`MonoFilter`对象，
