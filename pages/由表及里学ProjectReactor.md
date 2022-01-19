@@ -273,6 +273,6 @@ public:: false
 -
 - 3. `onSubscribe`阶段：在最外层的`Publisher`的时候调用上一层`Subscriber`的`onSubscribe`函数，在此处将`Publisher`和`Subscriber`包裹成一个`Subscription`对象作为`onSubscribe`的入参
 - ![image.png](../assets/image_1642579460111_0.png)
-- 最终在原始Subscriber对象调用request，触发Subscription的Source获得数据作为onNext的参数，但是注意Subscription包裹的是我们封装的Subscriber所有的数据是从MapSubscriber进行一次转换再给我们的原始Subscriber的
+- 最终在原始`Subscriber`对象调用`request`，触发`Subscription`的`Source`获得数据作为`onNext`的参数，但是注意`Subscription`包裹的是我们封装的`Subscriber`，所有的数据是从`MapSubscriber`进行一次转换再给我们的原始`Subscriber`的
 -
 -
