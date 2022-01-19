@@ -266,6 +266,6 @@ public:: false
   ![image.png](../assets/image_1642578394869_0.png)
 - 最后生成的对象是这样的
 - ![image.png](../assets/image_1642578662404_0.png)
--
+- 2. subscribe阶段：当我们最终进行subscribe操作的时候，就会从最外层的Publisher一层一层的处理，从这层将Subscriber变化成需要的Subscriber直到最外层的Publisher
 -
 -
