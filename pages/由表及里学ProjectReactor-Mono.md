@@ -34,7 +34,7 @@
   ```
 - 在➊➋处，我们发现都是简单的将这个`Function`包装成一个新的`MonoMapFuseable/MonoMap`对象返回，但是我们可以看到在`MonoMapFuseable`的构造函数中需要两个值
 - ```java
-  MonoMap(Mono<? extends T> source, Function<? super T, ? extends R> mapper) {
+  MonoMapFuseable(Mono<? extends T> source, Function<? super T, ? extends R> mapper) {
   	super(source);
   	this.mapper = Objects.requireNonNull(mapper, "mapper");
   }
@@ -49,9 +49,9 @@
   	return onAssembly(new MonoFilter<>(this, tester)); ➋
   }
   ```
-- 在➊➋处，起始和上面类似，这里也就是简单的将Predicate包装成一个新的`MonoFilterFuseable/MonoFilter`对象返回，我们可以看到在`MonoFilter`的构造函数中也需要两个值
+- 在➊➋处，起始和上面类似，这里也就是简单的将Predicate包装成一个新的`MonoFilterFuseable/MonoFilter`对象返回，我们可以看到在`MonoFilterFuseable`的构造函数中也需要两个值
 - ```java
-  MonoFilter(Mono<? extends T> source, Predicate<? super T> predicate) {
+  MonoFilterFuseable(Mono<? extends T> source, Predicate<? super T> predicate) {
   	super(source);
   	this.predicate = Objects.requireNonNull(predicate, "predicate");
   }
@@ -59,7 +59,7 @@
 - 这里也和上面类似，不再细说。终于到了我们最为激动人心的`subscribe()`函数了
 -
 - ## subscribe阶段
-- 在`subscribe`方法调用之前，我们分别包装了`MonoJust`->`MonoMap`->`MonoFilter`对象
+- 在`subscribe`方法调用之前，我们分别包装了`MonoJust`->`MonoMapFuseable`->`MonoFilterFuseable`对象
 - ```java
   @Override
   @SuppressWarnings("unchecked")
