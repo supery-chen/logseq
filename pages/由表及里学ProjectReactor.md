@@ -200,5 +200,5 @@ public:: false
   		}
   	}
   ```
-- 无论是➊还是➋
+- 无论是➊还是➋最为核心的都是调用了`Subscription.request`函数，
 -
