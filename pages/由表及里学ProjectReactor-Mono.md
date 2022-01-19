@@ -112,5 +112,5 @@
   	return new FluxMapFuseable.MapFuseableSubscriber<>(actual, mapper);
   }
   ```
-- 继续往下走到➋处，`nextOptimizableSource`返回的则是`MonoMapFuseable`中的`source`，也就是调用`.map(s -> s.concat("@qq.com"))`方法的`MonoJust`
+- 继续往下走到➋处，`nextOptimizableSource`返回`null`，将publisher跳出循环
 -
