@@ -224,6 +224,7 @@ public:: false
   }
   ```
 - ➊处进行了一个简单的优化，我们直接去阅读`fastPath()`函数
+- ## 调用阶段
 - ```java
   void fastPath() {
   	final T[] a = array;
