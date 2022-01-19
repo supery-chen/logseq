@@ -263,5 +263,6 @@ public:: false
 -
 - ## 小结一下
 - 1. 声明阶段：当我们每进行一次`Operator`操作(`map`、`filter`、`flatmap`)，就会将原有的`FluxPublisher`包裹成一个新的`FluxPublisher`
+- ![image.png](../assets/image_1642578323009_0.png)
 -
 -
