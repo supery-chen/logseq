@@ -157,10 +157,10 @@ public:: false
   		return;
   	}
   	if (s instanceof ConditionalSubscriber) {
-  		s.onSubscribe(new ArrayConditionalSubscription<>((ConditionalSubscriber<? super T>) s, array));
+  		s.onSubscribe(new ArrayConditionalSubscription<>((ConditionalSubscriber<? super T>) s, array));➊
   	}
   	else {
-  		s.onSubscribe(new ArraySubscription<>(s, array));
+  		s.onSubscribe(new ArraySubscription<>(s, array));➋
   	}
   }
   ```
