@@ -104,7 +104,11 @@ public:: false
   ```
 - 这和设计模式中的代理模式极为接近，我们每次将一个操作和源`Publisher`组合变成一个`新Publisher`，到这里我们已经明白了，在`subscribe()`之前，我们什么都没做，只是在不断包裹`Publisher`将作为原始的`Publisher`一层又一层的返回回来。终于到了我们最为激动人心的`subscribe()`函数了
 - ## subscribe阶段
--
+- 通过一顿`Jump Definition`大法，我们找到
+- ```java
+  //org.reactivestreams.Publisher#subscribe
+  public void subscribe(Subscriber<? super T> s);
+  ```
 -
 -
 -
