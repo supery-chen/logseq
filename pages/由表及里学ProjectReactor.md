@@ -94,7 +94,14 @@ public:: false
   	return onAssembly(new FluxMap<>(this, mapper));➋
   }
   ```
-- 在➊➋处，我们发现都是简单的将Function包装成了一个新的FluxMapFuseable/FluxMap
+- 在➊➋处，我们发现都是简单的将`Function`包装成了一个新的`FluxMapFuseable/FluxMap`对象返回，我们看到`FluxMap`的构造函数需要两个入参
+- ```java
+  FluxMap(Flux<? extends T> source,
+  		Function<? super T, ? extends R> mapper) {
+  	super(source);
+  	this.mapper = Objects.requireNonNull(mapper, "mapper");
+  }
+  ```
 -
 -
 -
