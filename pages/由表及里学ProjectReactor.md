@@ -75,7 +75,16 @@ public:: false
   		return onAssembly(new FluxArray<>(array));
   	}
   ```
-- 可以看到，这里只是将array包裹成了一个FluxArray对象
+- 可以看到，这里只是将`array`包裹成了一个`FluxArray`对象
+- ```java
+  final class FluxArray<T> extends Flux<T> implements Fuseable, SourceProducer<T> {
+  	final T[] array;
+  	@SafeVarargs
+  	public FluxArray(T... array) {
+  		this.array = Objects.requireNonNull(array, "array");
+  	}
+  }
+  ```
 -
 -
 -
