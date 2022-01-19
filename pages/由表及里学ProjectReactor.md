@@ -102,7 +102,7 @@ public:: false
   	this.mapper = Objects.requireNonNull(mapper, "mapper");
   }
   ```
--
+- 这和设计模式中的代理模式极为接近，我们每次将一个操作和源Publisher组合变成一个新Publisher，到这里我们已经明白了，在subscribe()之前，
 -
 -
 -
