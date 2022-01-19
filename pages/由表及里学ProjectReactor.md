@@ -177,4 +177,5 @@ public:: false
   	}
   }
   ```
-- 很简单，我们又获得了
+- 很简单，我们又获得了我们所定义的`Subscriber`，并调用它的`onSubscribe`函数，因为我们采用Lambda的方式生成的`Subscriber`所以也就是`LambdaSubscriber`对象，具体实现如下
+-
