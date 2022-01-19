@@ -39,7 +39,7 @@
   	this.mapper = Objects.requireNonNull(mapper, "mapper");
   }
   ```
-- 这里和设计模式中的`代理模式`极为接近，我们每次将一个操作和源Publisher组合变成一个
+- 这里和设计模式中的`代理模式`极为接近，我们每次将一个操作和源`Publisher`组合变成一个新`Publisher`，
 -
 -
 -
