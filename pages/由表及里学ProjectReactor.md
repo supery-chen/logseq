@@ -94,8 +94,8 @@ public:: false
   	return onAssembly(new FluxMap<>(this, mapper));➋
   }
   ```
-- ➊
-- er
+- 在➊➋处，我们发现都是简单的将Function包装成了一个新的FluxMapFuseable/FluxMap
+-
 -
 -
 -
