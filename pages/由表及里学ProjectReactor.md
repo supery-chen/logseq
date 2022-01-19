@@ -224,4 +224,25 @@ public:: false
   }
   ```
 - ➊处进行了一个简单的优化，我们直接去阅读`fastPath()`函数
+- ```java
+  void fastPath() {
+  	final T[] a = array;
+  	final int len = a.length;
+  	final Subscriber<? super T> s = actual;
+  
+  	for (int i = index; i != len; i++) {➊
+  		if (cancelled) {
+  			return;
+  		}
+  		T t = a[i];
+  		if (t == null) {/**忽略**/}
+  		s.onNext(t);
+  	}
+  	if (cancelled) {
+  		return;
+  	}
+  	s.onComplete();
+  }
+  ```
+-
 -
