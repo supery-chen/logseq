@@ -200,5 +200,11 @@ public:: false
   		}
   	}
   ```
-- 无论是➊还是➋最为核心的都是调用了`Subscription.request`函数，这里的s也就是我们
--
+- 无论是➊还是➋最为核心的都是调用了`Subscription.request`函数，这里的`s`也就是我们上一步的`MapFuseableSubscriber`
+- ```java
+  @Override
+  public void request(long n) {
+  	s.request(n);
+  }
+  ```
+- 而这里的s，又是我们最开始的FluxArray
