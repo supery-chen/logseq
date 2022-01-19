@@ -245,33 +245,18 @@ public:: false
 - ```java
   @Override
   public void onNext(T t) {
-  	if (sourceMode == ASYNC) {
-  		actual.onNext(null);
+    	//忽略
+  	R v;
+  	try {
+  		v = Objects.requireNonNull(mapper.apply(t),"The mapper returned a null value.");➊
   	}
-  	else {
-  		if (done) {
-  			Operators.onNextDropped(t, actual.currentContext());
-  			return;
-  		}
-  		R v;
-  
-  		try {
-  			v = Objects.requireNonNull(mapper.apply(t),
-  					"The mapper returned a null value.");
-  		}
-  		catch (Throwable e) {
-  			Throwable e_ = Operators.onNextError(t, e, actual.currentContext(), s);
-  			if (e_ != null) {
-  				onError(e_);
-  			}
-  			else {
-  				s.request(1);
-  			}
-  			return;
-  		}
-  
-  		actual.onNext(v);
+  	catch (Throwable e) {
+  		//忽略
   	}
+  	actual.onNext(v);➋
+  	//忽略
   }
   ```
--
+- 在➊处调用了mapper.apply进行处理
+- 在➋处将处理之后的结构传递给下一个`Subscriber`
+- 这里的actual
