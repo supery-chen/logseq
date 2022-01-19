@@ -6,5 +6,12 @@
           .subscribe(System.out::println);
   ```
 - 这段代码的意思是，将`String`对象增加一个邮箱后缀，并过滤出长度大于`5`的字符串再打印出来，这是一个非常简单的逻辑
+- ## 声明阶段
+- ```java
+  public static <T> Mono<T> just(T data) {
+  	return onAssembly(new MonoJust<>(data));
+  }
+  ```
+- 我们可以看到，这里只是将data包裹成了一个MonoJust对象
 -
 -
