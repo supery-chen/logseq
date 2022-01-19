@@ -207,4 +207,20 @@ public:: false
   	s.request(n);
   }
   ```
-- 而这里的s，又是我们最开始的FluxArray
+- 而这里的`s`，又是我们最开始的`FluxArray`，继续往下看
+- ```java
+  @Override
+  public void request(long n) {
+  	if (Operators.validate(n)) {
+  		if (Operators.addCap(REQUESTED, this, n) == 0) {
+  			if (n == Long.MAX_VALUE) {
+  				fastPath();➊
+  			}
+  			else {
+  				slowPath(n);➋
+  			}
+  		}
+  	}
+  }
+  ```
+- ➊
