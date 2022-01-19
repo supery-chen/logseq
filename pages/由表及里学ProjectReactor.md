@@ -231,18 +231,14 @@ public:: false
   	final Subscriber<? super T> s = actual;
   
   	for (int i = index; i != len; i++) {➊
-  		if (cancelled) {
-  			return;
-  		}
+  		if (cancelled) {return;}
   		T t = a[i];
   		if (t == null) {/**忽略**/}
-  		s.onNext(t);
+  		s.onNext(t);➋
   	}
-  	if (cancelled) {
-  		return;
-  	}
+  	if (cancelled) {return;}
   	s.onComplete();
   }
   ```
--
+- 这个函数非常简单，核心就是一个循环体➊，我们在➋
 -
