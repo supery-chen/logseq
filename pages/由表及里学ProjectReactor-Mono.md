@@ -99,5 +99,5 @@
   	return new FluxFilterFuseable.FilterFuseableSubscriber<>(actual, predicate);
   }
   ```
-- 继续往下走到➋处，nextOptimizableSource返回的是MonoFilterFuseable
+- 继续往下走到➋处，nextOptimizableSource返回的是MonoFilterFuseable中的
 -
