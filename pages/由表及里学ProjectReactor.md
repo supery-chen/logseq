@@ -109,7 +109,7 @@ public:: false
   //org.reactivestreams.Publisher#subscribe
   public void subscribe(Subscriber<? super T> s);
   ```
--
+- 通过代码调试，我们看到代码走入了`reactor.core.publisher.Flux#subscribe(org.reactivestreams.Subscriber<? super T>)`，
 -
 -
 -
