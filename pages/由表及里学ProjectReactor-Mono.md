@@ -88,5 +88,5 @@
   	catch (Throwable e) {...}
   }
   ```
-- `Operators.onLastAssembly(this)`返回的实际就是我们最后包装处的MonoFilter，
+- `Operators.onLastAssembly(this)`返回的实际就是我们最后包装出来的`MonoFilterFuseable`，而subscriber则是
 -
