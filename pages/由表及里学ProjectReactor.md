@@ -147,7 +147,7 @@ public:: false
   	return new MapFuseableSubscriber<>(actual, mapper);
   }
   ```
-- 我们自己的Subscriber在这里被包裹成一个
+- 我们自己的Subscriber在这里被包裹成一个MapFuseableSubscriber对象
 -
 -
 -
