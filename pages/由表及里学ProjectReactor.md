@@ -165,6 +165,6 @@ public:: false
   }
   ```
 - 熟悉的味道，➊➋将Subscriber和Publisher包裹成一个Subscription对象，并将其作为onSubscribe函数调用的对象，这样的话，我们就可以完全理解，为什么`Nothing Happens Until You subscribe()`，因为实际上我们在调用`subscribe()`之前的所有方法都只是在申明对象。只有`在subscribe()`之后才能触发`onSubscribe`调用
-- 那问题又来了，`onSubscribe`又做了什么？我们知道现在的这个
+- 那问题又来了，`onSubscribe`又做了什么？我们知道现在的这个`s`也就是`MapFuseableSubscriber`，我们去看看它的`onSubscribe`实现
 -
 -
