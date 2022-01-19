@@ -39,7 +39,8 @@
   	this.mapper = Objects.requireNonNull(mapper, "mapper");
   }
   ```
-- 这里和设计模式中的`代理模式`极为接近，我们每次将一个操作和源`Publisher`组合变成一个新`Publisher`，到这里我们已经明白在`subscribe()`
+- 这里和设计模式中的`代理模式`极为接近，我们每次将一个操作和源`Publisher`组合变成一个新`Publisher`，到这里我们已经明白在`subscribe()`之前，我们什么都没做，只是在不断包裹`Publisher`将作为原始的`Publisher`一层又一层的返回回来
+-
 -
 -
 -
