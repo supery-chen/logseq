@@ -59,7 +59,7 @@
 - 这里也和上面类似，不再细说。终于到了我们最为激动人心的`subscribe()`函数了
 -
 - ## subscribe阶段
-- 在subscribe方法调用之前，我们分别包装了`MonoJust`->`MonoMap`->`MonoFilter`对象，
+- 在`subscribe`方法调用之前，我们分别包装了`MonoJust`->`MonoMap`->`MonoFilter`对象
 - ```java
   @Override
   @SuppressWarnings("unchecked")
@@ -88,4 +88,5 @@
   	catch (Throwable e) {...}
   }
   ```
-- 我们再进入方法subscribeOrReturn看下内部的
+- 最终调用此subscribe方法的实际是
+-
