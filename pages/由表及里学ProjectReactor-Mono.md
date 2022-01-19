@@ -100,5 +100,7 @@
   }
   ```
 - 继续往下走到➋处，`nextOptimizableSource`返回的是`MonoFilterFuseable`中的`source`，也就是调用`.filter(s -> s.length() > 5)`方法的`MonoMapFuseable`
--
+- 所以下一次循环，调用的就是`MonoMapFuseable`类的`subscribeOrReturn`方法，代码如下，可以看到，这里也是包装对象，包装为了`FluxMapFuseable.MapFuseableSubscriber`对象
+- ```java
+  ```
 -
