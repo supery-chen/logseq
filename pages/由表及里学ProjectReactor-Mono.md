@@ -88,5 +88,5 @@
   	catch (Throwable e) {...}
   }
   ```
-- 最终调用此subscribe方法的实际是
+- `Operators.onLastAssembly(this)`返回的实际就是我们最后包装处的MonoFilter，
 -
