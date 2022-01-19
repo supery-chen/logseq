@@ -99,5 +99,6 @@
   	return new FluxFilterFuseable.FilterFuseableSubscriber<>(actual, predicate);
   }
   ```
-- 继续往下走到➋处，nextOptimizableSource返回的是MonoFilterFuseable中的source，也就是调用``.filter(s -> s.length() > 5)``
+- 继续往下走到➋处，`nextOptimizableSource`返回的是`MonoFilterFuseable`中的`source`，也就是调用`.filter(s -> s.length() > 5)`方法的`MonoMapFuseable`
+-
 -
