@@ -257,6 +257,7 @@ public:: false
   	//忽略
   }
   ```
-- 在➊处调用了mapper.apply进行处理
+- 在➊处调用了`mapper.apply`进行处理
 - 在➋处将处理之后的结构传递给下一个`Subscriber`
-- 这里的actual
+- 这里的`actual`也就是我们自己所写的`Subscriber`
+-
