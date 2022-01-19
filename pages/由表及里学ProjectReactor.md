@@ -262,4 +262,5 @@ public:: false
 - 这里的`actual`也就是我们自己所写的`Subscriber`
 -
 - ## 小结一下
-- 、
+- 1. 声明阶段：当我们每进行一次`Operator`操作，就会将原有的`FluxPublisher`包裹成一个新的FluxPublisher
+  2.
