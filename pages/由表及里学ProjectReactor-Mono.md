@@ -33,4 +33,13 @@
   }
   ```
 - 在➊➋处，我们发现都是简单的将这个`Function`包装成一个新的`MonoMapFuseable/MonoMap`对象返回，但是我们可以看到在`MonoMap`的构造函数中需要两个值
+- ```java
+  MonoMap(Mono<? extends T> source, Function<? super T, ? extends R> mapper) {
+  	super(source);
+  	this.mapper = Objects.requireNonNull(mapper, "mapper");
+  }
+  ```
+- 这里和设计模式中的`代理模式`极为接近，我们每次将一个操作和源Publisher组合变成一个
+-
+-
 -
