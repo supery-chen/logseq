@@ -50,6 +50,11 @@
   }
   ```
 - 在➊➋处，起始和上面类似，这里也就是简单的将Predicate包装成一个新的`MonoFilterFuseable/MonoFilter`对象返回，我们可以看到在`MonoFilter`的构造函数中也需要两个值
--
--
+- ```java
+  MonoFilter(Mono<? extends T> source, Predicate<? super T> predicate) {
+  	super(source);
+  	this.predicate = Objects.requireNonNull(predicate, "predicate");
+  }
+  ```
+- 这里也和上面类似，不再细说。终于到了我们最为激动人心的subscribe()
 -
