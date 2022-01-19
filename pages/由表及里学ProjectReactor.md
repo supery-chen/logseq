@@ -148,7 +148,22 @@ public:: false
   }
   ```
 - 我们自己的`Subscriber`在这里被包裹成一个`MapFuseableSubscriber`对象，虽然这个方法叫做`subscribeOrReturn`，但从代码中来看，此方法仅做了包装并`return`，具体订阅是在➋ 处，这里的`publisher`就是我们上面看的`FluxArray`
--
+- 那我们继续看看`FluxArray`是如何处理`subscribe()`函数的
+- ```java
+  @SuppressWarnings("unchecked")
+  public static <T> void subscribe(CoreSubscriber<? super T> s, T[] array) {
+  	if (array.length == 0) {
+  		Operators.complete(s);
+  		return;
+  	}
+  	if (s instanceof ConditionalSubscriber) {
+  		s.onSubscribe(new ArrayConditionalSubscription<>((ConditionalSubscriber<? super T>) s, array));
+  	}
+  	else {
+  		s.onSubscribe(new ArraySubscription<>(s, array));
+  	}
+  }
+  ```
 -
 -
 -
