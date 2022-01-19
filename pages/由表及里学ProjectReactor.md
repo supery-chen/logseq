@@ -135,7 +135,9 @@ public:: false
   	//异常捕获忽略
   }
   ```
-- ➊ 这里我们看到，
+- ➊ 这里我们看到，`publisher`被强转为了`OptimizableOperator`类型，对应的实现为`FluxMapFuseable`，具体实现如下
+- ```java
+  ```
 -
 -
 -
