@@ -49,7 +49,7 @@
   	return onAssembly(new MonoFilter<>(this, tester)); ➋
   }
   ```
-- 在➊➋处，起始和上面类似，这里也就是简单的将Predicate包装成一个新的`MonoFilterFuseable/MonoFilter`对象返回，我们可以看到在`MonoFilterFuseable`的构造函数中也需要两个值
+- 在➊➋处，起始和上面类似，这里也就是简单的将`Predicate`包装成一个新的`MonoFilterFuseable/MonoFilter`对象返回，我们可以看到在`MonoFilterFuseable`的构造函数中也需要两个值
 - ```java
   MonoFilterFuseable(Mono<? extends T> source, Predicate<? super T> predicate) {
   	super(source);
@@ -99,5 +99,5 @@
   	return new FluxFilterFuseable.FilterFuseableSubscriber<>(actual, predicate);
   }
   ```
-- 继续往下走到➋处，nextOptimizableSource返回的是MonoFilterFuseable中的
+- 继续往下走到➋处，nextOptimizableSource返回的是MonoFilterFuseable中的source，也就是调用``.filter(s -> s.length() > 5)``
 -
