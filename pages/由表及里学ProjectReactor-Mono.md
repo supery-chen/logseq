@@ -61,4 +61,30 @@
 - ## subscribe阶段
 - 在subscribe方法调用之前，我们分别包装了`MonoJust`->`MonoMap`->`MonoFilter`对象，
 - ```java
+  @Override
+  @SuppressWarnings("unchecked")
+  public final void subscribe(Subscriber<? super T> actual) {
+  	CorePublisher publisher = Operators.onLastAssembly(this);
+  	CoreSubscriber subscriber = Operators.toCoreSubscriber(actual);
+  	try {
+  		if (publisher instanceof OptimizableOperator) {
+  			OptimizableOperator operator = (OptimizableOperator) publisher;
+  			while (true) {
+  				subscriber = operator.subscribeOrReturn(subscriber);➊
+  				if (subscriber == null) {
+  					// null means "I will subscribe myself", returning...
+  					return;
+  				}
+  				OptimizableOperator newSource = operator.nextOptimizableSource();
+  				if (newSource == null) {
+  					publisher = operator.source();
+  					break;
+  				}
+  				operator = newSource;
+  			}
+  		}
+  		publisher.subscribe(subscriber);
+  	}
+  	catch (Throwable e) {...}
+  }
   ```
