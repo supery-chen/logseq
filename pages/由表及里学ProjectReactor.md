@@ -75,7 +75,7 @@ public:: false
   		return onAssembly(new FluxArray<>(array));
   	}
   ```
--
+- 可以看到，这里只是将array包裹成了一个FluxArray对象
 -
 -
 -
