@@ -56,5 +56,7 @@
   	this.predicate = Objects.requireNonNull(predicate, "predicate");
   }
   ```
-- 这里也和上面类似，不再细说。终于到了我们最为激动人心的subscribe()
+- 这里也和上面类似，不再细说。终于到了我们最为激动人心的`subscribe()`函数了
+-
+- ## subscribe阶段
 -
