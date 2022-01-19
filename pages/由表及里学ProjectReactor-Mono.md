@@ -40,9 +40,15 @@
   }
   ```
 - 这里和设计模式中的`代理模式`极为接近，我们每次将一个操作和源`Publisher`组合变成一个新`Publisher`，到这里我们已经明白在`subscribe()`之前，我们什么都没做，只是在不断包裹`Publisher`将作为原始的`Publisher`一层又一层的返回回来
-- 下一步我们再去看看`.filter(s -> s.length() > 5)`做了什么
+- 下一步我们再去看看`.filter(s -> s.length() > 5)`又做了什么
 - ```java
+  public final Mono<T> filter(final Predicate<? super T> tester) {
+  	if (this instanceof Fuseable) {
+  		return onAssembly(new MonoFilterFuseable<>(this, tester)); ➊
+  	}
+  	return onAssembly(new MonoFilter<>(this, tester)); ➋
+  }
   ```
--
+- 在➊➋处，
 -
 -
