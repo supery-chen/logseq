@@ -137,8 +137,17 @@ public:: false
   ```
 - ➊ 这里我们看到，`publisher`被强转为了`OptimizableOperator`类型，对应的实现为`FluxMapFuseable`，具体实现如下
 - ```java
+  @Override
+  @SuppressWarnings("unchecked")
+  public CoreSubscriber<? super T> subscribeOrReturn(CoreSubscriber<? super R> actual) {
+  	if (actual instanceof ConditionalSubscriber) {
+  		ConditionalSubscriber<? super R> cs = (ConditionalSubscriber<? super R>) actual;
+  		return new MapFuseableConditionalSubscriber<>(cs, mapper);
+  	}
+  	return new MapFuseableSubscriber<>(actual, mapper);
+  }
   ```
--
+- 我们自己的Subscriber在这里被包裹成一个
 -
 -
 -
