@@ -112,5 +112,5 @@
   	return new FluxMapFuseable.MapFuseableSubscriber<>(actual, mapper);
   }
   ```
-- 继续往下走到➋处，`nextOptimizableSource`返回`null`，走到➌处并跳出循环，最终执行➍处的代码，
+- 继续往下走到➋处，`nextOptimizableSource`返回`null`，走到➌处并跳出循环，最终执行➍处的代码，调用`MonoJust`的`subscribe`方法
 -
