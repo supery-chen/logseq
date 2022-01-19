@@ -32,4 +32,5 @@
   	return onAssembly(new MonoMap<>(this, mapper)); ➋
   }
   ```
-- 在➊➋处，我们发现都是简单的
+- 在➊➋处，我们发现都是简单的将这个`Function`包装成一个新的`MonoMapFuseable/MonoMap`对象返回，但是我们可以看到在`MonoMap`的构造函数中需要两个值
+-
