@@ -242,5 +242,35 @@ public:: false
   ```
 - 这个函数非常简单，核心就是一个循环体➊，我们在➋看出我们最终处理单一元素的`onNext`函数，而这个`s`对象是`FluxMapFuseable`对象，在它的`onNext`中
 - ```java
+  @Override
+  public void onNext(T t) {
+  	if (sourceMode == ASYNC) {
+  		actual.onNext(null);
+  	}
+  	else {
+  		if (done) {
+  			Operators.onNextDropped(t, actual.currentContext());
+  			return;
+  		}
+  		R v;
+  
+  		try {
+  			v = Objects.requireNonNull(mapper.apply(t),
+  					"The mapper returned a null value.");
+  		}
+  		catch (Throwable e) {
+  			Throwable e_ = Operators.onNextError(t, e, actual.currentContext(), s);
+  			if (e_ != null) {
+  				onError(e_);
+  			}
+  			else {
+  				s.request(1);
+  			}
+  			return;
+  		}
+  
+  		actual.onNext(v);
+  	}
+  }
   ```
 -
