@@ -1,3 +1,5 @@
+- [深入理解 Java 内存模型（四）——volatile](https://www.infoq.cn/article/java-memory-model-4/)
+- [Java内存访问重排序的研究](https://tech.meituan.com/2014/09/23/java-memory-reordering.html)
 - ## volatile的特性
 - 当我们声明共享变量为volatile后，对这个变量的读写将会很特别
 - 理解volatile特性的一个好方法是：把对volatile变量的单个读写看成是使用同一个监视器锁对单个读写操作做了同步
