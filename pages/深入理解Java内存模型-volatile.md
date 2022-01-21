@@ -109,4 +109,7 @@
 - - 在每个volatile读操作的后面插入一个LoadLoad屏障
 - - 在每个volatile读操作的后面插入一个LoadStore屏障
 -
+- 下面是保守策略下，volatile写插入内存屏障后生成的指令序列示意图：
+- ![image.png](../assets/image_1642760131296_0.png)
+-
 -
