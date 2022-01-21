@@ -70,4 +70,4 @@
   3. 根据happens-before的传递性规则，1 happens-before 4
 - 上述happens-before关系的图形化表现形式如下：
 - ![image.png](../assets/image_1642749583413_0.png)
--
+- 在上图中，每一个箭头链接的两个节点，代表一个happens-before关系。黑色箭头表示程序顺序规则；橙色箭头表示volatile规则；蓝色箭头表示
