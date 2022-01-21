@@ -88,4 +88,5 @@
 - 如果我们把volatile写和volatile读这两个步骤综合起来看的话，在读线程B读一个volatile变量后，写线程A在写这个volatile变量之前所有可见的共享变量值都将立即变得对读线程B可见
 -
 - 下面对volatile写和volatile读的内存语义做总结：
-- - 线程A写
+- - 线程A写一个volatile变量，实质上是线程A向接下来要读这个volatile变量的某个线程发出了(其对共享变量所做修改的)消息
+  - 线程
