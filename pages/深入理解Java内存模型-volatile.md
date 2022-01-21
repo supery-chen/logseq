@@ -47,5 +47,21 @@
 - 从内存语义的角度来讲，volatile与监视器锁有相同效果：volatile写和监视器的释放有相同的内存语义；volatile读与监视器的获取有相同语义
 - 请看下面使用volatile变量的示例代码
 - ```java
+  public class VolatileExample {
+      int a = 0;
+      volatile boolean flag = false;
+  
+      public void writer() {
+          a = 1;              //1
+          flag = true;        //2
+      }
+  
+      public void reader() {
+          if (flag) {         //3
+              int i = a;      //4
+              //...
+          }
+      }
+  }
   ```
--
+- 假设线程A执行writer()方法之后，线程B执行reader()方法。根据happens
