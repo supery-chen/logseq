@@ -1,1 +1,2 @@
-- 提到java原子类，不得不说下关键字volatile和内存可见性
+- 提到java原子类，不得不说下关键字volatile和内存可见性， [[深入理解Java内存模型-volatile]]
+-
