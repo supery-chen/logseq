@@ -120,5 +120,20 @@
 -
 - 上述volatile写和volatile读的内存屏障插入策略非常保守。在实际执行时，只要不改变volatile写 - 读的内存语义，编译器可以根据具体情况省略不必要的屏障。下面我们通过具体的示例代码来说明：
 - ```java
+  public class VolatileBarrierExample {
+      int a;
+      volatile int v1 = 1;
+      volatile int v2 = 2;
+  
+      void readAndWrite() {
+          int i = v1; //第一个volatile读
+          int j = v2; //第二个volatile读
+          a = i + j;  //普通写
+          v1 = i + 1; //第一个volatile写
+          v2 = j * 2; //第二个volatile写
+      }
+  }
   ```
+- 针对readAndWrite()方法，编译器在生成字节码时可以做如下优化：
+- ![image.png](../assets/image_1642760735399_0.png)
 -
