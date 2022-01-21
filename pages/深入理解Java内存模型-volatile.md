@@ -39,4 +39,8 @@
 - 监视器锁的语义决定了临界代码的执行具有原子性。这意味着即使是64位的long型和double型变量，只要它是volatile变量，对该变量的读写就将具有原子性。而如果是多个volatile操作或类似于volatile++这种复合操作，这些操作整体上不具有原子性
 - 简而言之，volatile变量自身具有下列特性：
 - - 可见性：对一个volatile变量的读，总能看到(任意线程)对这个volatile变量最后的写入
-  - 原子性：对任意单个volatile变量的读写具有原子性，但类似volatile++这种复合操作
+- - 原子性：对任意单个volatile变量的读写具有原子性，但类似volatile++这种复合操作则不具有原子性
+-
+- ## volatile写-读建立的happens-before关系
+-
+-
