@@ -69,5 +69,5 @@
   2. 根据volatile规则，2 happens-before 3
   3. 根据happens-before的传递性规则，1 happens-before 4
 - 上述happens-before关系的图形化表现形式如下：
-- [[draws/2022-01-21-15-18-32.excalidraw]]
+- ![image.png](../assets/image_1642749583413_0.png)
 -
