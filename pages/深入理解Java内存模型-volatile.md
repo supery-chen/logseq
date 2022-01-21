@@ -145,7 +145,7 @@
 - 前文提到过，x86处理器仅会对写 - 读操作做重排序。x86不会对读 - 读和写 - 写操作做重排序，因此在x86处理器中会省略掉这三种操作类型对应的内存屏障。在x86中，JMM仅需在volatile写后面插入一个StoreLoad屏障即可正确实现volatile写 - 读的内存语义。这意味着在x86处理器中，volatile写的开销比volatile读的开销会大很多(因为执行StoreLoad屏障开销会比较大)
 -
 - ## JSR-133为什么要增强volatile的内存语义
-- 在JSR-133之前的旧Java内存模型中，虽然不允许volatile变量之间重排序，但旧的Java内存模型允许volatile变量与普通变量之间重排序。在旧的内存模型中，VolatileExample示例程序可能被重排序成下列时许来执行：
+- 在JSR-133之前的旧Java内存模型中，虽然不允许volatile变量之间重排序，但旧的Java内存模型允许volatile变量与普通变量之间重排序。在旧的内存模型中，VolatileExample {{cloze }} 示例程序可能被重排序成下列时许来执行：
 - ![image.png](../assets/image_1642761268483_0.png)
 -
 -
