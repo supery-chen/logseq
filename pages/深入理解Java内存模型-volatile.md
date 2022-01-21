@@ -73,3 +73,6 @@
 - 在上图中，每一个箭头链接的两个节点，代表一个happens-before关系。黑色箭头表示程序顺序规则；橙色箭头表示volatile规则；蓝色箭头表示组合这些规则后提供的happens-before保证
 - 这里A线程写了一个volatile变量后，B线程读同一个volatile变量。A线程在写volatile变量之前所有可见的共享变量，在B线程读同一个volatile变量后，将立即变得对B线程可见
 -
+- ## volatile写 - 读的内存语义
+- volatile写的内存语义如下：
+- - 当写一个volatile变量时，JMM会把该线程
