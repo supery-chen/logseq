@@ -85,4 +85,7 @@
 - ![image.png](../assets/image_1642750072358_0.png)
 - 如上图所示，在读flag变量后，本地内存B已经被置为无效。此时，线程B必须从主内存中读取共享变量。线程B的读取操作将导致本地内存B与主内存中的共享变量值也变成一致
 -
-- 如果我们把volatile写和volatile读这两个步骤综合起来看的话，在读线程B读一个volatile变量后，写线程A
+- 如果我们把volatile写和volatile读这两个步骤综合起来看的话，在读线程B读一个volatile变量后，写线程A在写这个volatile变量之前所有可见的共享变量值都将立即变得对读线程B可见
+-
+- 下面对volatile写和volatile读的内存语义做总结：
+- - 线程A写
