@@ -41,6 +41,7 @@
 - - 可见性：对一个volatile变量的读，总能看到(任意线程)对这个volatile变量最后的写入
 - - 原子性：对任意单个volatile变量的读写具有原子性，但类似volatile++这种复合操作则不具有原子性
 -
-- ## volatile写-读建立的happens-before关系
+- ## volatile写 - 读建立的happens-before关系
+- 上面讲的是volatile变量自身的特性，对于程序员来说，volatile对线程的内存可见性的影响比volatile自身的特性更重要，也更需要我们去关注
 -
 -
