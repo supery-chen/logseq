@@ -136,4 +136,6 @@
   ```
 - 针对readAndWrite()方法，编译器在生成字节码时可以做如下优化：
 - ![image.png](../assets/image_1642760735399_0.png)
-- 注意，最后的StoreLoad屏障不能省略。因为第二个volatile写之后，方法立即return，此时编译器
+- 注意，最后的StoreLoad屏障不能省略。因为第二个volatile写之后，方法立即return，此时编译器可能无法准确判定后面是否会有volatile读或写，为了安全起见，编译器常常会在这里插入一个StoreLoad屏障
+-
+- 上面的优化是针对任意处理器平台，由于不同的处理器有不同的松紧度
