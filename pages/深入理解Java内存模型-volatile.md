@@ -75,4 +75,5 @@
 -
 - ## volatile写 - 读的内存语义
 - volatile写的内存语义如下：
-- - 当写一个volatile变量时，JMM会把该线程
+- - 当写一个volatile变量时，JMM会把该线程对于的本地内存中的共享变量刷新到主内存
+- 以上面示例程序VolatileExample为例，假设线程A首先执行writer()方法，随后线程B执行reader()方法，初始时两个线程的本地内存中flag和a都是初始状态。下图时线程A执行volatile写后，共享变量的
