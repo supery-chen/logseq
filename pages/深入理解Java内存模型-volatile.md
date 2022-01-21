@@ -44,5 +44,8 @@
 - ## volatile写 - 读建立的happens-before关系
 - 上面讲的是volatile变量自身的特性，对于程序员来说，volatile对线程的内存可见性的影响比volatile自身的特性更重要，也更需要我们去关注
 - 从JSR-133开始，volatile变量的写-读可以实现线程间通信
-- 从内存语义的角度来讲，volatile与监视器锁有相同效果：volatile写和监视器的释放有相同的内存语义；volatile
+- 从内存语义的角度来讲，volatile与监视器锁有相同效果：volatile写和监视器的释放有相同的内存语义；volatile读与监视器的获取有相同语义
+- 请看下面使用volatile变量的示例代码
+- ```java
+  ```
 -
