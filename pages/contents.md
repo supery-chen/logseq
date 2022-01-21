@@ -1,2 +1,2 @@
-- {{renderer :tocgen, *, 2, h}}
+- {{renderer :tocgen, *, 3, h}}
 -
