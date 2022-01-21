@@ -116,5 +116,7 @@
 -
 - 下面是保守策略下，volatile读插入内存屏障后生成的指令序列示意图：
 - ![image.png](../assets/image_1642760499027_0.png)
+- 上图中的LoadLoad屏障用来禁止处理器把上面的volatile读与下面的普通读重排序。LoadStore屏障用来禁止处理器把上面的volatile读与下面的普通写重排序
+-
 -
 -
