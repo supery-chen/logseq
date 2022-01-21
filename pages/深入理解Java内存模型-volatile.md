@@ -118,5 +118,7 @@
 - ![image.png](../assets/image_1642760499027_0.png)
 - 上图中的LoadLoad屏障用来禁止处理器把上面的volatile读与下面的普通读重排序。LoadStore屏障用来禁止处理器把上面的volatile读与下面的普通写重排序
 -
--
+- 上述volatile写和volatile读的内存屏障插入策略非常保守。在实际执行时，只要不改变volatile写 - 读的内存语义，编译器可以根据具体情况省略不必要的屏障。下面我们通过具体的示例代码来说明：
+- ```java
+  ```
 -
