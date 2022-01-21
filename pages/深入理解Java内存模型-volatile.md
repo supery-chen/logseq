@@ -111,5 +111,5 @@
 -
 - 下面是保守策略下，volatile写插入内存屏障后生成的指令序列示意图：
 - ![image.png](../assets/image_1642760131296_0.png)
--
+- 上图中的StoreStore屏障可以保证在volatile写之前，其前面的所有普通写操作已经对任意处理器可见了。这是因为StoreStore屏障将保障上面所有普通写在volatile
 -
