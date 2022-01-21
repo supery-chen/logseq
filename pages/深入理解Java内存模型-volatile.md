@@ -101,3 +101,5 @@
 - - 当第一个操作位volatile读时，不管第二个操作是什么，都不能重排序。这个规则确保volatile读之后的操作不会被编译器重排序到volatile读之前
 - - 当第一个操作是volatile写，第二个操作是volatile读时，不能重排序
 -
+- [[draws/2022-01-21-16-09-33.excalidraw]]
+-
