@@ -2,7 +2,7 @@ public:: false
 
 - [Ref-由表及里学 ProjectReactor](http://blog.yanick.site/2018/06/26/java/spring/projectreactor/)
 - [[由表及里学ProjectReactor-Mono]]
-- # 响应式编程
+# 响应式编程
 - 本质上是一个`观察者模式`
 - ![image.png](../assets/image_1642490318088_0.png)
 - # 官方示例

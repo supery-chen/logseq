@@ -24,13 +24,11 @@
       public synchronized void set(long l) {
           v1 = l; //对单个普通的变量的写使用一个同步监视器同步
       }
-  
       public void increment() {//普通方法调用
           long temp = get();   //调用同步的读方法
           temp += 1;           //普通写
           set(temp);           //调用同步的写方法
       }
-  
       public synchronized long get() {
           return v1; //对单个普通变量的读使用一个同步监视器同步
       }
@@ -53,12 +51,10 @@
   public class VolatileExample {
       int a = 0;
       volatile boolean flag = false;
-  
       public void writer() {
           a = 1;              //1
           flag = true;        //2
       }
-  
       public void reader() {
           if (flag) {         //3
               int i = a;      //4
@@ -125,7 +121,6 @@
       int a;
       volatile int v1 = 1;
       volatile int v2 = 2;
-  
       void readAndWrite() {
           int i = v1; //第一个volatile读
           int j = v2; //第二个volatile读
