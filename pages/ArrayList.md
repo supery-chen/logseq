@@ -9,26 +9,26 @@
 	- Cloneable：可以被克隆
 	- Serializable：可以被序列化
 - ## 源码解析
-- ### 属性
-- ```java
-      private static final int DEFAULT_CAPACITY = 10; //默认容量
-      private static final Object[] EMPTY_ELEMENTDATA = {}; //空数组，如果传入的容量为0时使用
-  
-      /**
-       * 空数组，不传入容量时使用，当添加第一个元素的时候会重新初始化为默认容量大小
-       */
-      private static final Object[] DEFAULTCAPACITY_EMPTY_ELEMENTDATA = {};
-      /**
-       * 存储元素的数组，使用transient是为了不序列化这个字段
-       */
-      transient Object[] elementData;
-  
-      /**
-       * 数组真正存储元素的个数
-       */
-      private int size;
-  ```
-- ### 构造方法
-- #### ArrayList(int initialCapacity)
+	- ### 属性
+		- ```java
+		      private static final int DEFAULT_CAPACITY = 10; //默认容量
+		      private static final Object[] EMPTY_ELEMENTDATA = {}; //空数组，如果传入的容量为0时使用
+		  
+		      /**
+		       * 空数组，不传入容量时使用，当添加第一个元素的时候会重新初始化为默认容量大小
+		       */
+		      private static final Object[] DEFAULTCAPACITY_EMPTY_ELEMENTDATA = {};
+		      /**
+		       * 存储元素的数组，使用transient是为了不序列化这个字段
+		       */
+		      transient Object[] elementData;
+		  
+		      /**
+		       * 数组真正存储元素的个数
+		       */
+		      private int size;
+		  ```
+	- ### 构造方法
+		- #### ArrayList(int initialCapacity)
 -
 -
