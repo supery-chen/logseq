@@ -48,10 +48,26 @@
 		- #### ArrayList()
 			- ```java
 			      public ArrayList() {
-			        	//未指定初始容量，则使用空数组DEFAULTCAPACITY_EMPTY_ELEMENTDATA，此数组在第一次添加元素的时候会被重新初始化为默认容量大小
+			        	//未指定初始容量，则使用空数组DEFAULTCAPACITY_EMPTY_ELEMENTDATA
+			        	//此数组在第一次添加元素的时候会被重新初始化为默认容量大小
 			          this.elementData = DEFAULTCAPACITY_EMPTY_ELEMENTDATA;
 			      }
 			  ```
 		- #### ArrayList(Collection c)
+			- ```java
+			      public ArrayList(Collection<? extends E> c) {
+			          Object[] a = c.toArray();
+			          if ((size = a.length) != 0) {
+			              if (c.getClass() == ArrayList.class) {
+			                  elementData = a;
+			              } else {
+			                  elementData = Arrays.copyOf(a, size, Object[].class);
+			              }
+			          } else {
+			              // replace with empty array.
+			              elementData = EMPTY_ELEMENTDATA;
+			          }
+			      }
+			  ```
 -
 -
