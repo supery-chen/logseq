@@ -16,4 +16,22 @@
 - 运行上面的代码可以发现，输出的是a-b<0。很显然，a<b明显是错误的，而a-b<0由于发生了溢出，因此结果是负的
 - 说清楚了这些背景只是后，下面详细分析一下ArrayList#grow()的代码
 - ```java
+      /**
+       * Increases the capacity to ensure that it can hold at least the
+       * number of elements specified by the minimum capacity argument.
+       *
+       * @param minCapacity the desired minimum capacity
+       */
+      private void grow(int minCapacity) {
+          // overflow-conscious code
+          int oldCapacity = elementData.length;
+          int newCapacity = oldCapacity + (oldCapacity >> 1);
+          if (newCapacity - minCapacity < 0)
+              newCapacity = minCapacity;
+          if (newCapacity - MAX_ARRAY_SIZE > 0)
+              newCapacity = hugeCapacity(minCapacity);
+          // minCapacity is usually close to size, so this is a win:
+          elementData = Arrays.copyOf(elementData, newCapacity);
+      }
   ```
+-
