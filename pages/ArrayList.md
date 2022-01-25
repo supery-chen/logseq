@@ -58,13 +58,16 @@
 			      public ArrayList(Collection<? extends E> c) {
 			          Object[] a = c.toArray();
 			          if ((size = a.length) != 0) {
+			            	//如果传入的集合大小不为0
+			              //如果集合本身也是ArrayList，则直接赋值
 			              if (c.getClass() == ArrayList.class) {
 			                  elementData = a;
 			              } else {
+			                  //如果集合本身不是ArrayList，则使用拷贝
 			                  elementData = Arrays.copyOf(a, size, Object[].class);
 			              }
 			          } else {
-			              // replace with empty array.
+			            	//如果传入的集合大小为0，则初始化为空数组EMPTY_ELEMENTDATA
 			              elementData = EMPTY_ELEMENTDATA;
 			          }
 			      }
