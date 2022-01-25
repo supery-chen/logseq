@@ -34,4 +34,5 @@
           elementData = Arrays.copyOf(elementData, newCapacity);
       }
   ```
+- 假设oldCapacity接近Integer.MAX_VALUE，那么`int newCapacity = oldCapacity + (oldCapacity >> 1)`，此时newCapacity必然发生溢出，从而变成负数
 -
