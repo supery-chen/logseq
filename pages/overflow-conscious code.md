@@ -40,4 +40,4 @@
 - 此时第二个条件`if (newCapacity - MAX_ARRAY_SIZE > 0)`的结果肯定也是大于0的，所以会执行`newCapacity = hugeCapacity(minCapacity)`，从而消除了newCapacity发生溢出的影响
 -
 - > 这里说明下为什么`newCapacity - minCapacity`和`newCapacity - MAX_ARRAY_SIZE`的结果都是大于0
-- 通过源码网上追溯，可以发现，minCapacity = oldCapacity + 1，所以，如果newCapacity发生溢出
+- 通过源码网上追溯，可以发现，minCapacity = oldCapacity + 1，所以，如果newCapacity发生溢出，因为oldCapacity的最大值为Integer.MAX_VALUE，所以newCapacity的最大值为
