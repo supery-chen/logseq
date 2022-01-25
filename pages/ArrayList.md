@@ -82,24 +82,36 @@
 			      return true;
 			  }
 			  
-			      private void ensureCapacityInternal(int minCapacity) {
-			          ensureExplicitCapacity(calculateCapacity(elementData, minCapacity));
-			      }
+			  private void ensureCapacityInternal(int minCapacity) {
+			      ensureExplicitCapacity(calculateCapacity(elementData, minCapacity));
+			  }
 			  
-			      private static int calculateCapacity(Object[] elementData, int minCapacity) {
-			          if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {
-			              return Math.max(DEFAULT_CAPACITY, minCapacity);
-			          }
-			          return minCapacity;
+			  private static int calculateCapacity(Object[] elementData, int minCapacity) {
+			      if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {
+			          return Math.max(DEFAULT_CAPACITY, minCapacity);
 			      }
+			      return minCapacity;
+			  }
 			  
-			      private void ensureExplicitCapacity(int minCapacity) {
-			          modCount++;
+			  private void ensureExplicitCapacity(int minCapacity) {
+			      modCount++;
 			  
-			          // overflow-conscious code
-			          if (minCapacity - elementData.length > 0)
-			              grow(minCapacity);
-			      }
+			      // overflow-conscious code
+			      if (minCapacity - elementData.length > 0)
+			          grow(minCapacity);
+			  }
+			  
+			  private void grow(int minCapacity) {
+			      // overflow-conscious code
+			      int oldCapacity = elementData.length;
+			      int newCapacity = oldCapacity + (oldCapacity >> 1);
+			      if (newCapacity - minCapacity < 0)
+			          newCapacity = minCapacity;
+			      if (newCapacity - MAX_ARRAY_SIZE > 0)
+			          newCapacity = hugeCapacity(minCapacity);
+			      // minCapacity is usually close to size, so this is a win:
+			      elementData = Arrays.copyOf(elementData, newCapacity);
+			  }
 			  ```
 			-
 		- #### add(int index, E element)
