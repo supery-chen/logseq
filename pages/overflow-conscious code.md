@@ -20,10 +20,10 @@
        * Increases the capacity to ensure that it can hold at least the
        * number of elements specified by the minimum capacity argument.
        *
-       * @param minCapacity the desired minimum capacity
+       * @param minCapacity 希望的最小容量
        */
       private void grow(int minCapacity) {
-          // overflow-conscious code
+          // overflow-conscious code - 考虑了溢出的情况
           int oldCapacity = elementData.length;
           int newCapacity = oldCapacity + (oldCapacity >> 1);
           if (newCapacity - minCapacity < 0)
