@@ -31,6 +31,17 @@
 	- ### 构造方法
 		- #### ArrayList(int initialCapacity)
 			- ```java
+			      public ArrayList(int initialCapacity) {
+			        	//如果初始容量大于0，初始化elementData数组
+			          if (initialCapacity > 0) {
+			              this.elementData = new Object[initialCapacity];
+			          } else if (initialCapacity == 0) {
+			              this.elementData = EMPTY_ELEMENTDATA;
+			          } else {
+			              throw new IllegalArgumentException("Illegal Capacity: "+
+			                                                 initialCapacity);
+			          }
+			      }
 			  ```
 		- #### ArrayList()
 		- #### ArrayList(Collection c)
