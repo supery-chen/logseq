@@ -102,7 +102,7 @@
 			  
 			  //计算精确的容量
 			  private void ensureExplicitCapacity(int minCapacity) {
-			    	//modCount+1
+			    	//修改次数加一
 			      modCount++;
 			  
 			      // overflow-conscious code
