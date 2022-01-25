@@ -74,12 +74,14 @@
 			  ```
 	- ### 其它方法
 		- #### add(E e)
+			-
 		- #### add(int index, E element)
 		- #### addAll(Collection c)
 		- #### get(int index)
 		- #### remove(int index)
 		- #### remove(Object o)
 		- #### retainAll(Collection c)
+		- #### removeAll(Collection c)
 		-
 		-
 -
