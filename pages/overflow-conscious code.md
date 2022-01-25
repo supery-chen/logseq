@@ -6,5 +6,11 @@
 - 这里说考虑了溢出的情况，是如何考虑溢出呢？考虑了哪个变量的溢出？在溢出情况下是怎么应对的？
 -
 - ## 解释
-- 在计算机中，`a-b<0`和`a<b`并不完全等价。在没有发生溢出的情况下
+- 在计算机中，a-b<0和a<b并不完全等价。在没有发生溢出的情况下，两者是等价的，但如果发生溢出，情况将会变得不同。
+- ```java
+  int a = Integer.MAX_VALUE;
+  int b = Integer.MIN_VALUE;
+  if (a < b) {System.out.println("a < b");}
+  if (a - b < 0) {System.out.println("a - b < 0");}
+  ```
 -
