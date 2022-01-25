@@ -32,18 +32,22 @@
 		- #### ArrayList(int initialCapacity)
 			- ```java
 			      public ArrayList(int initialCapacity) {
-			        	//如果初始容量大于0，初始化elementData数组
+			        	//如果初始容量大于0，初始化elementData数组，大小为初始容量
 			          if (initialCapacity > 0) {
 			              this.elementData = new Object[initialCapacity];
 			          } else if (initialCapacity == 0) {
+			          //如果初始容量等于0，则初始化elementData数组为空数组EMPTY_ELEMENTDATA
 			              this.elementData = EMPTY_ELEMENTDATA;
 			          } else {
+			          //如果初始容量小于0，则抛出异常
 			              throw new IllegalArgumentException("Illegal Capacity: "+
 			                                                 initialCapacity);
 			          }
 			      }
 			  ```
 		- #### ArrayList()
+			- ```java
+			  ```
 		- #### ArrayList(Collection c)
 -
 -
