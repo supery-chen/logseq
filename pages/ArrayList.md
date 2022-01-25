@@ -3,4 +3,6 @@
 -
 - ## 继承体系
 - ![image.png](../assets/image_1643073454713_0.png)
--
+- ArrayList实现了List、Serializable、Cloneable、RandomAccess等接口
+	- List：提供了基础的添加、删除、遍历等操作
+	-
