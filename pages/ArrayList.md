@@ -119,9 +119,8 @@
 			      //旧的容量大小为elementData数组的长度
 			      int oldCapacity = elementData.length;
 			      //新的容量大小，相当于是旧容量大小的1.5倍(>>1 右移一位，相当于除以2，但效率更高)
+			      //这里可能会发生溢出，但oldCapacity + (oldCapacity >> 1)超过Integer.MAX_VALUE后，newCapacity会从Integer.MIN_VALUE往上增加
 			      int newCapacity = oldCapacity + (oldCapacity >> 1);
-			      //如果不发生溢出，从前面的代码可以看到，minCapacity的大小是elementData.length+1，则下面这段代码肯定是false
-			      //如果发生溢出，
 			      if (newCapacity - minCapacity < 0)
 			          newCapacity = minCapacity;
 			      if (newCapacity - MAX_ARRAY_SIZE > 0)
@@ -130,7 +129,7 @@
 			      elementData = Arrays.copyOf(elementData, newCapacity);
 			  }
 			  ```
-			- [[overflow-conscious code]]
+			- 关于溢出处理的部分，具体见[[overflow-conscious code]]
 			-
 		- #### add(int index, E element)
 		- #### addAll(Collection c)
