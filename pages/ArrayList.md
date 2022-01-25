@@ -5,4 +5,8 @@
 - ![image.png](../assets/image_1643073454713_0.png)
 - ArrayList实现了List、Serializable、Cloneable、RandomAccess等接口
 	- List：提供了基础的添加、删除、遍历等操作
-	-
+	- RandomAccess：提供了随机访问的能力
+	- Cloneable：可以被克隆
+	- Serializable：可以被序列化
+- ## 源码解析
+-
