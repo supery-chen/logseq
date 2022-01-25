@@ -19,14 +19,16 @@
        */
       private static final Object[] DEFAULTCAPACITY_EMPTY_ELEMENTDATA = {};
       /**
-       * 存储元素的数组
+       * 存储元素的数组，使用transient是为了不序列化这个字段
        */
       transient Object[] elementData;
   
       /**
-       * 数组元素个数
+       * 数组真正存储元素的个数
        */
       private int size;
   ```
+- ### 构造方法
+- #### ArrayList(int initialCapacity)
 -
 -
