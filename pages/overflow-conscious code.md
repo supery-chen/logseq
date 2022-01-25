@@ -35,4 +35,4 @@
       }
   ```
 - 假设oldCapacity接近Integer.MAX_VALUE，那么`int newCapacity = oldCapacity + (oldCapacity >> 1)`，此时newCapacity必然发生溢出，从而变成负数
-- 在newCapacity发生溢出时，如果使用`newCapacity<minCapacity`来进行判断，很明显
+- 在newCapacity发生溢出时，如果使用`newCapacity<minCapacity`来进行判断，结果很明显为true，此时如果走if表达式中的内容，将
