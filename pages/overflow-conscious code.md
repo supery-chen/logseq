@@ -43,4 +43,4 @@
 - 通过源码网上追溯，可以发现，`minCapacity = oldCapacity + 1`，所以，如果newCapacity发生溢出，因为oldCapacity的最大值为Integer.MAX_VALUE，所以newCapacity的最大值为`-Integer.MAX_VALUE >> 1`，所以`newCapacity - minCapacity`会发生溢出，从而导致结果为正数，同理`newCapacity - MAX_ARRAY_SIZE`也会发生溢出导致结果为正数
 -
 - ## 总结
-- 从上面的解释中可以看出，Java源码中这么写同时兼顾了
+- 从上面的解释中可以看出，Java源码中这么写同时兼顾了溢出与非溢出的情况，且无论溢出不溢出，都可以始终保持扩容后的newCapacity结果为正数。这也就是代码中的注释`overflow-conscious code`的意义
