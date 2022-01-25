@@ -77,16 +77,22 @@
 			- 添加指定元素到列表末尾
 			- ```java
 			  public boolean add(E e) {
+			    	//检测是否需要扩容
 			      ensureCapacityInternal(size + 1);  // Increments modCount!!
+			    	//把元素插入到最后一位
 			      elementData[size++] = e;
 			      return true;
 			  }
 			  
+			  //检测是否需要扩容
 			  private void ensureCapacityInternal(int minCapacity) {
 			      ensureExplicitCapacity(calculateCapacity(elementData, minCapacity));
 			  }
 			  
+			  //计算需要的容量
 			  private static int calculateCapacity(Object[] elementData, int minCapacity) {
+			    	//如果elementData是通过无参构造函数创建时初始化的DEFAULTCAPACITY_EMPTY_ELEMENTDATA
+			    	//则将
 			      if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {
 			          return Math.max(DEFAULT_CAPACITY, minCapacity);
 			      }
