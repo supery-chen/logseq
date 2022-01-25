@@ -81,6 +81,25 @@
 			      elementData[size++] = e;
 			      return true;
 			  }
+			  
+			      private void ensureCapacityInternal(int minCapacity) {
+			          ensureExplicitCapacity(calculateCapacity(elementData, minCapacity));
+			      }
+			  
+			      private static int calculateCapacity(Object[] elementData, int minCapacity) {
+			          if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {
+			              return Math.max(DEFAULT_CAPACITY, minCapacity);
+			          }
+			          return minCapacity;
+			      }
+			  
+			      private void ensureExplicitCapacity(int minCapacity) {
+			          modCount++;
+			  
+			          // overflow-conscious code
+			          if (minCapacity - elementData.length > 0)
+			              grow(minCapacity);
+			      }
 			  ```
 			-
 		- #### add(int index, E element)
