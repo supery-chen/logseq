@@ -74,6 +74,7 @@
 			  ```
 	- ### 其它方法
 		- #### add(E e)
+		  id:: 61ef90f4-0d6d-405a-8224-c656b2b66191
 			- 添加指定元素到列表末尾
 			- ```java
 			  public boolean add(E e) {
