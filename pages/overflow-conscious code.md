@@ -13,4 +13,5 @@
   if (a < b) {System.out.println("a < b");}
   if (a - b < 0) {System.out.println("a - b < 0");}
   ```
+- 运行上面的代码可以发现，输出的是a - b < 0。很显然，a<b明显是错误的，而a-b<0由于发生了溢出，因此结果是
 -
