@@ -47,6 +47,10 @@
 			  ```
 		- #### ArrayList()
 			- ```java
+			      public ArrayList() {
+			        	//未指定初始容量，则使用空数组DEFAULTCAPACITY_EMPTY_ELEMENTDATA，此数组在第一次添加元素的时候会被重新初始化为默认容量大小
+			          this.elementData = DEFAULTCAPACITY_EMPTY_ELEMENTDATA;
+			      }
 			  ```
 		- #### ArrayList(Collection c)
 -
