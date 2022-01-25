@@ -63,7 +63,7 @@
 			              if (c.getClass() == ArrayList.class) {
 			                  elementData = a;
 			              } else {
-			                  //如果集合本身不是ArrayList，则使用拷贝
+			                  //如果集合本身不是ArrayList，则拷贝成Object类型
 			                  elementData = Arrays.copyOf(a, size, Object[].class);
 			              }
 			          } else {
