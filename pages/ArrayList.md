@@ -107,14 +107,21 @@
 			      modCount++;
 			  
 			      // overflow-conscious code
+			    	// 只有在minCapacity大于elementData长度的时候，才需要进行扩容(因为此时elementData无法存放这么多的数据)
 			      if (minCapacity - elementData.length > 0)
 			          grow(minCapacity);
 			  }
 			  
+			  //具体的扩容逻辑
 			  private void grow(int minCapacity) {
 			      // overflow-conscious code
+			    	//下面的代码考虑到了溢出的情况
+			      //旧的容量大小为elementData数组的长度
 			      int oldCapacity = elementData.length;
+			      //新的容量大小，相当于是旧容量大小的1.5倍(>>1 右移一位，相当于除以2，但效率更高)
 			      int newCapacity = oldCapacity + (oldCapacity >> 1);
+			      //如果不发生溢出，从前面的代码可以看到，minCapacity的大小是elementData.length+1，则下面这段代码肯定是false
+			      //如果发生溢出，
 			      if (newCapacity - minCapacity < 0)
 			          newCapacity = minCapacity;
 			      if (newCapacity - MAX_ARRAY_SIZE > 0)
