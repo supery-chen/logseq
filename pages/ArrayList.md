@@ -30,5 +30,9 @@
 		  ```
 	- ### 构造方法
 		- #### ArrayList(int initialCapacity)
+			- ```java
+			  ```
+		- #### ArrayList()
+		- #### ArrayList(Collection c)
 -
 -
