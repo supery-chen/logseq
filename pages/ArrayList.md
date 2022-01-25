@@ -74,6 +74,14 @@
 			  ```
 	- ### 其它方法
 		- #### add(E e)
+			- 添加指定元素到列表末尾
+			- ```java
+			  public boolean add(E e) {
+			      ensureCapacityInternal(size + 1);  // Increments modCount!!
+			      elementData[size++] = e;
+			      return true;
+			  }
+			  ```
 			-
 		- #### add(int index, E element)
 		- #### addAll(Collection c)
