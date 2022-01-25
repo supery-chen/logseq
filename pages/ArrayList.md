@@ -92,13 +92,15 @@
 			  //计算需要的容量
 			  private static int calculateCapacity(Object[] elementData, int minCapacity) {
 			    	//如果elementData是通过无参构造函数创建时初始化的DEFAULTCAPACITY_EMPTY_ELEMENTDATA
-			    	//则将
+			    	//则返回minCapacity和默认容量两个之中最大的值
 			      if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {
 			          return Math.max(DEFAULT_CAPACITY, minCapacity);
 			      }
+			    	//否则返回minCapacity
 			      return minCapacity;
 			  }
 			  
+			  //计算精确的容量
 			  private void ensureExplicitCapacity(int minCapacity) {
 			      modCount++;
 			  
