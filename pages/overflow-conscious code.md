@@ -39,4 +39,5 @@
 - 因此这里使用的是`if (newCapacity - minCapacity < 0)`和`if (newCapacity - MAX_ARRAY_SIZE > 0)`来判断。当newCapacity为负数时，`newCapacity - minCapacity`必然也会发生溢出，也就意味着`newCapacity - minCapacity`的结果是大于0的，这种情况下就会跳过执行`newCapacity = minCapacity`逻辑
 - 此时第二个条件`if (newCapacity - MAX_ARRAY_SIZE > 0)`的结果肯定也是大于0的，所以会执行`newCapacity = hugeCapacity(minCapacity)`，从而消除了newCapacity发生溢出的影响
 -
+- > 这里说明下为什么`newCapacity - minCapacity`和newCapacity - MAX_ARRAY_SIZE 的结果都是大于0
 -
