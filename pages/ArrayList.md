@@ -129,7 +129,13 @@
 			      elementData = Arrays.copyOf(elementData, newCapacity);
 			  }
 			  
-			  
+			  private static int hugeCapacity(int minCapacity) {
+			      if (minCapacity < 0) // overflow
+			          throw new OutOfMemoryError();
+			      return (minCapacity > MAX_ARRAY_SIZE) ?
+			          Integer.MAX_VALUE :
+			          MAX_ARRAY_SIZE;
+			  }
 			  ```
 			- 关于溢出处理的部分，具体见[[overflow-conscious code]]
 			-
