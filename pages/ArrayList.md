@@ -146,7 +146,7 @@
 			  }
 			  ```
 			- 关于溢出处理的部分，具体见[[overflow-conscious code]]
-			- 从hugeCapacity可以看出，ArrayList最大允许的长度是Integer.MAX_VALUE，而推荐的长度是MAX_ARRAY_SIZE(Integer.MAX_VALUE-8)，因为大部分虚拟机在头中保存数组长度，所以
+			- 从hugeCapacity可以看出，ArrayList最大允许的长度是Integer.MAX_VALUE，而推荐的长度是MAX_ARRAY_SIZE(Integer.MAX_VALUE-8)，因为大部分虚拟机在头中保存数组信息，
 		- #### add(int index, E element)
 		- #### addAll(Collection c)
 		- #### get(int index)
