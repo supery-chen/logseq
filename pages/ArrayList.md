@@ -129,12 +129,13 @@
 			      elementData = Arrays.copyOf(elementData, newCapacity);
 			  }
 			  
+			  //超大容量情况的处理
 			  private static int hugeCapacity(int minCapacity) {
+			    	//如果minCapacity都溢出了，无法再分配，抛出OOM异常
 			      if (minCapacity < 0) // overflow
 			          throw new OutOfMemoryError();
-			      return (minCapacity > MAX_ARRAY_SIZE) ?
-			          Integer.MAX_VALUE :
-			          MAX_ARRAY_SIZE;
+			    	//如果minCapacity大于MAX_ARRAY_SIZE，则最大分配Integer.MAX_VALUE，否则分配MAX_ARRAY_SIZE
+			      return (minCapacity > MAX_ARRAY_SIZE) ? Integer.MAX_VALUE : MAX_ARRAY_SIZE;
 			  }
 			  ```
 			- 关于溢出处理的部分，具体见[[overflow-conscious code]]
