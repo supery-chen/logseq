@@ -128,6 +128,8 @@
 			      // minCapacity is usually close to size, so this is a win:
 			      elementData = Arrays.copyOf(elementData, newCapacity);
 			  }
+			  
+			  
 			  ```
 			- 关于溢出处理的部分，具体见[[overflow-conscious code]]
 			-
