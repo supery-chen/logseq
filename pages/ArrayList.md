@@ -146,7 +146,7 @@
 			  }
 			  ```
 			- 关于溢出处理的部分，具体见[[overflow-conscious code]]
-			-
+			- 从hugeCapacity可以看出，
 		- #### add(int index, E element)
 		- #### addAll(Collection c)
 		- #### get(int index)
