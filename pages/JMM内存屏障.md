@@ -1,3 +1,4 @@
+- #Java
 - ## LoadLoad Barriers
 	- 示例：`Load1;LoadLoad;Load2`
 	- 该屏障确保Load1数据的装载优先于Load2机器后所有装载指令的操作
