@@ -32,3 +32,10 @@
 - ../assets/image_1643073454713_0.png
 - ../assets/image_1642749583413_0.png
 - ../assets/image_1642749901268_0.png
+- ../assets/image_1642750072358_0.png
+- ../assets/image_1642751090659_0.png
+- ../assets/image_1642760131296_0.png
+- ../assets/image_1642760499027_0.png
+- ../assets/image_1642760735399_0.png
+- ../assets/image_1642761268483_0.png
+- ../assets/image_1643018276652_0.png

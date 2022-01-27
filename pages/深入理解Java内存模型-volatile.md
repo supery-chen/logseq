@@ -82,7 +82,7 @@
 - **volatile读**的语义如下：
 - - 当读一个volatile变量时，JMM会把该线程对于的本**地内存置为无效**。线程接下来将从主内存中读取共享变量值
 - 下面时线程B读同一个volatile变量后 ，共享变量的状态示意图：
-- ![image.png](../assets/image_1642750072358_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642750072358_0.png)
 - 如上图所示，在读flag变量后，本地内存B已经被置为无效。此时，线程B必须从主内存中读取共享变量。线程B的读取操作将导致本地内存B与主内存中的共享变量值也变成一致
 -
 - 如果我们把volatile写和volatile读这两个步骤综合起来看的话，在读线程B读一个volatile变量后，写线程A在写这个volatile变量之前所有可见的共享变量值都将立即变得对读线程B可见
@@ -95,7 +95,7 @@
 - ## volatile内存语义的实现
 - 下面，让我们来看看JMM是如何实现volatile读写的内存语义
 - 前文我们提到过重排序分为编译器重排序和处理器重排序。为了实现volatile内存语义，JMM会分别限制这两种类型的重排序。下面是JMM针对编译器制定的volatile重排序规则表：
-- ![image.png](../assets/image_1642751090659_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642751090659_0.png)
 - 从上表我们可以看出：
 - - 当第二个操作是volatile写时，不管第一个操作是什么，都不能重排序。这个规则确保volatile写之前的操作不会被编译器重排序到volatile写之后
 - - 当第一个操作位volatile读时，不管第二个操作是什么，都不能重排序。这个规则确保volatile读之后的操作不会被编译器重排序到volatile读之前
@@ -108,12 +108,12 @@
 - - 在每个volatile读操作的后面插入一个LoadStore屏障
 -
 - 下面是保守策略下，volatile写插入内存屏障后生成的指令序列示意图：
-- ![image.png](../assets/image_1642760131296_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642760131296_0.png)
 - 上图中的StoreStore屏障可以保证在volatile写之前，其前面的所有普通写操作已经对任意处理器可见了。这是因为StoreStore屏障将保障上面所有普通写在volatile写之前刷新到主内存
 - 这里比较有意思的是volatile写后面的StoreLoad屏障。这个屏障的作用是避免volatile写与后面可能有的volatile读写操作重排序。因为编译器常常无法准确判断在一个volatile写后面，是否需要插入一个SotreLoad屏障(比如一个volatile写之后方法立即return)。为了保证能正确实现volatile的内存语义，JMM在这里采取了保守策略：在每个volatile写的后面或在每个volatile读的前面插入一个StoreLoad屏障。从整体执行效率的角度考虑，JMM选择了在每个volatile写的后面插入一个StoreLoad屏障。因为volatile写 - 读内存语义的常见使用模式是：一个写线程写volatile变量，多个读线程读同一个volatile变量。当读线程的数量大大超过写线程时，选择在volatile写之后插入StoreLoad屏障将带来客观的执行效率提升。从这里我们可以看到JMM在实现上的一个特点：首先确保正确性，然后再追求执行效率
 -
 - 下面是保守策略下，volatile读插入内存屏障后生成的指令序列示意图：
-- ![image.png](../assets/image_1642760499027_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642760499027_0.png)
 - 上图中的LoadLoad屏障用来禁止处理器把上面的volatile读与下面的普通读重排序。LoadStore屏障用来禁止处理器把上面的volatile读与下面的普通写重排序
 -
 - 上述volatile写和volatile读的内存屏障插入策略非常保守。在实际执行时，只要不改变volatile写 - 读的内存语义，编译器可以根据具体情况省略不必要的屏障。下面我们通过具体的示例代码来说明：
@@ -132,7 +132,7 @@
   }
   ```
 - 针对readAndWrite()方法，编译器在生成字节码时可以做如下优化：
-- ![image.png](../assets/image_1642760735399_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642760735399_0.png)
 - 注意，最后的StoreLoad屏障不能省略。因为第二个volatile写之后，方法立即return，此时编译器可能无法准确判定后面是否会有volatile读或写，为了安全起见，编译器常常会在这里插入一个StoreLoad屏障
 -
 - 上面的优化是针对任意处理器平台，由于不同的处理器有不同的`松紧度`的处理器内存模型，内存屏障的插入还可以根据具体的处理器内存模型继续优化。以x86处理器为例，上图中除最后的StoreLoad屏障外，其它屏障都会被省略
@@ -142,7 +142,7 @@
 -
 - ## JSR-133为什么要增强volatile的内存语义
 - 在JSR-133之前的旧Java内存模型中，虽然不允许volatile变量之间重排序，但旧的Java内存模型允许volatile变量与普通变量之间重排序。在旧的内存模型中，VolatileExample {{embed ((61ea797e-895a-4a96-91bb-ef23b7e5b193)) }} 示例程序可能被重排序成下列时许来执行：
-- ![image.png](../assets/image_1642761268483_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642761268483_0.png)
 - 在旧的内存模型中，当1和2之间没有数据依赖关系时，1和2之间就可能被重排序(3和4类似)。其结果就是：读线程B执行4时，不一定能看到写线程A在执行1时对共享变量的修改
 - 因此在旧的内存模型中，volatile的写 - 读没有监视器的释放 - 获取所具有的内存语义。为了提供一种比监视器锁更轻量级的线程之间通信机制，JSR-133专家组决定增强volatile的内存语义：严格限制编译器和处理器对volatile变量与普通变量的重排序，确保volatile的写 - 读和监视器的释放 - 获取一样，具有相同的内存语义。从编译器重排序规则和处理器内存屏障插入策略来看，只要volatile变量与普通变量之间的重排序可能会破坏volatile的内存语义，这种重排序就会被编译器重排序规则和处理器内存屏障插入策略禁止
 -
