@@ -69,7 +69,7 @@
   2. 根据volatile规则，2 happens-before 3
   3. 根据happens-before的传递性规则，1 happens-before 4
 - 上述happens-before关系的图形化表现形式如下：
-- ![image.png](../assets/image_1642749583413_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642749583413_0.png)
 - 在上图中，每一个箭头链接的两个节点，代表一个happens-before关系。黑色箭头表示程序顺序规则；橙色箭头表示volatile规则；蓝色箭头表示组合这些规则后提供的happens-before保证
 - 这里A线程写了一个volatile变量后，B线程读同一个volatile变量。A线程在写volatile变量之前所有可见的共享变量，在B线程读同一个volatile变量后，将立即变得对B线程可见
 -
@@ -77,7 +77,7 @@
 - **volatile写**的内存语义如下：
 - - 当写一个volatile变量时，JMM会把该线程对于的本地内存中的共享变量**刷新**到主内存
 - 以上面示例程序VolatileExample为例，假设线程A首先执行writer()方法，随后线程B执行reader()方法，初始时两个线程的本地内存中flag和a都是初始状态。下图时线程A执行volatile写后，共享变量的状态示意图：
-- ![image.png](../assets/image_1642749901268_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642749901268_0.png)
 - 如上图所示，线程A在写flag变量后，本地内存A中倍线程A更新过的两个共享变量值被刷新导主内存中。此时本地内存A与主内存中的共享变量值一致
 - **volatile读**的语义如下：
 - - 当读一个volatile变量时，JMM会把该线程对于的本**地内存置为无效**。线程接下来将从主内存中读取共享变量值
