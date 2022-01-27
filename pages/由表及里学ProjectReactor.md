@@ -271,13 +271,13 @@ public:: false
 - 2. `subscribe`阶段：当我们最终进行`subscribe`操作的时候，就会从最外层的`Publisher`一层一层的处理，从这层将`Subscriber`变化成需要的`Subscriber`直到最外层的`Publisher`
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642579019847_0.png)
 - 最后生成的对象是这样的
-- ![image.png](../assets/image_1642579057268_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642579057268_0.png)
 -
 - 3. `onSubscribe`阶段：在最外层的`Publisher`的时候调用上一层`Subscriber`的`onSubscribe`函数，在此处将`Publisher`和`Subscriber`包裹成一个`Subscription`对象作为`onSubscribe`的入参
-- ![image.png](../assets/image_1642579460111_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642579460111_0.png)
 - 4. 最终在原始`Subscriber`对象调用`request`，触发`Subscription`的`Source`获得数据作为`onNext`的参数，但是注意`Subscription`包裹的是我们封装的`Subscriber`，所有的数据是从`MapSubscriber`进行一次转换再给我们的原始`Subscriber`的
-- ![image.png](../assets/image_1642579591670_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642579591670_0.png)
 - 经过一顿分析，整个流程是如何将操作整合起来的，我们已经有一个大致的了解，通过不断的包裹出新的 `Subscriber`对象，在最终的`request()`行为中触发整个消息的处理，这个过程非常像俄罗斯套娃，一层一层的将变化组合形变操作变成一个新的`Subscriber`，然后就和一个管道一样，一层一层的往下传递。
 - 5. 最终在`Subscription`开始了我们整个系统的数据处理
-- ![image.png](../assets/image_1642579693892_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642579693892_0.png)
 -
