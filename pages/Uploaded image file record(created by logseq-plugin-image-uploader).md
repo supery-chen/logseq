@@ -39,3 +39,8 @@
 - ../assets/image_1642760735399_0.png
 - ../assets/image_1642761268483_0.png
 - ../assets/image_1643018276652_0.png
+- ../assets/image_1642490318088_0.png
+- ../assets/image_1642756857560_0.png
+- ../assets/image_1642578394869_0.png
+- ../assets/image_1642578662404_0.png
+- ../assets/image_1642579019847_0.png

@@ -4,7 +4,7 @@ public:: false
 - [[由表及里学ProjectReactor-Mono]]
 # 响应式编程
 - 本质上是一个`观察者模式`
-- ![image.png](../assets/image_1642490318088_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642490318088_0.png)
 - # 官方示例
 - ```java
   userService.getFavorites(userId) ➊
@@ -60,7 +60,7 @@ public:: false
 - ➊ 获取N个元素往下传递
 - ➋ 取消执行
 - 笔者认为这个元素的作用一是为了解耦，二是在`Reference`中有提到`Backpressure`也就是下游可以保护自己不受上游大流量冲击，这个在`Stream`中式无法做到的，想要做到这点，就需要控制流速，那秘密看起来也就是在`request(long n)`中
-- ![image.png](../assets/image_1642756857560_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642756857560_0.png)
 -
 - # 他们是如何工作的
 - 我们使用一个最简单的例子进行探索
@@ -265,11 +265,11 @@ public:: false
 -
 - ## 小结一下
 - 1. 声明阶段：当我们每进行一次`Operator`操作(`map`、`filter`、`flatmap`)，就会将原有的`FluxPublisher`包裹成一个新的`FluxPublisher`
-  ![image.png](../assets/image_1642578394869_0.png)
+  ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642578394869_0.png)
 - 最后生成的对象是这样的
-- ![image.png](../assets/image_1642578662404_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642578662404_0.png)
 - 2. `subscribe`阶段：当我们最终进行`subscribe`操作的时候，就会从最外层的`Publisher`一层一层的处理，从这层将`Subscriber`变化成需要的`Subscriber`直到最外层的`Publisher`
-- ![image.png](../assets/image_1642579019847_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1642579019847_0.png)
 - 最后生成的对象是这样的
 - ![image.png](../assets/image_1642579057268_0.png)
 -

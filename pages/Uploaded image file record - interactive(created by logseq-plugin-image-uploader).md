@@ -1,4 +1,5 @@
-- #+BEGIN_QUERY
+- query-table:: false
+  #+BEGIN_QUERY
   {:title "Not uploaded images"
     :query [:find (pull ?b [*])
           :where
@@ -39,3 +40,8 @@
 - ![Uploaded by Image Uploder](../assets/image_1642760735399_0.png)
 - ![Uploaded by Image Uploder](../assets/image_1642761268483_0.png)
 - ![Uploaded by Image Uploder](../assets/image_1643018276652_0.png)
+- ![Uploaded by Image Uploder](../assets/image_1642490318088_0.png)
+- ![Uploaded by Image Uploder](../assets/image_1642756857560_0.png)
+- ![Uploaded by Image Uploder](../assets/image_1642578394869_0.png)
+- ![Uploaded by Image Uploder](../assets/image_1642578662404_0.png)
+- ![Uploaded by Image Uploder](../assets/image_1642579019847_0.png)
