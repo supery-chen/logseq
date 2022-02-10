@@ -1,4 +1,4 @@
-title:: 4.2安装
+title:: mongodb 4.2安装
 
 - [mongodb主从仲裁节点配置](https://blog.csdn.net/weixin_33691817/article/details/91431611)
 - ## 安装环境准备
@@ -309,4 +309,3 @@ title:: 4.2安装
 		  cfg.members[2].votes=0;
 		  rs.reconfig(cfg);
 		  ```
--
