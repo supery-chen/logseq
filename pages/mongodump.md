@@ -1,5 +1,7 @@
 - [Reference > MongoDB Package Components > mongodump](https://docs.mongodb.com/v4.2/reference/program/mongodump/)
-- [hj@mongodb-master ~]$ mongodump --uri="mongodb://172.25.240.3:27017,172.25.240.28:27017,172.25.240.29:27017/konke_iot?replicaSet=mongodb-repl-test&readPreference=secondaryPreferred&appname=MongoDB%20Compass&ssl=false" -o=/tmp/mongodb
+-
+- ```shell
+  [hj@mongodb-master ~]$ mongodump --uri="mongodb://172.25.240.3:27017,172.25.240.28:27017,172.25.240.29:27017/konke_iot?replicaSet=mongodb-repl-test&readPreference=secondaryPreferred&appname=MongoDB%20Compass&ssl=false" -o=/tmp/mongodb
   2022-02-10T16:06:00.407+0800	writing konke_iot.t_device_status to /tmp/mongodb/konke_iot/t_device_status.bson
   2022-02-10T16:06:00.409+0800	writing konke_iot.t_devices to /tmp/mongodb/konke_iot/t_devices.bson
   2022-02-10T16:06:00.410+0800	writing konke_iot.t_hardwares to /tmp/mongodb/konke_iot/t_hardwares.bson
@@ -34,3 +36,4 @@
   2022-02-10T16:06:00.868+0800	done dumping konke_iot.t_cache_map (109 documents)
   2022-02-10T16:06:00.873+0800	done dumping konke_iot.t_finger (111 documents)
   2022-02-10T16:06:00.893+0800	done dumping konke_iot.t_device_extras (8959 documents)
+  ```
