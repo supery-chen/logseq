@@ -4,4 +4,7 @@
 	- 保证备份了最新的数据，参考[MongoDB Backup Methods](https://docs.mongodb.com/manual/core/backups/)
 - ### 维护窗口
 	- 如果您的安装包含副本集([replica sets](https://docs.mongodb.com/manual/reference/glossary/#std-term-replica-set))，请在预定义的维护时段内计划升级
+- ### 更改流
+	- Starting in MongoDB 4.0.7, change streams use a version 1 v1 resume tokens. MongoDB versions earlier than 4.0.7 use v0 resume tokens.
+	- When upgrading from MongoDB 4.0.6 or earlier to MongoDB 4.0.7 or later, a client may try to resume change streams using the new v1 resume token when connected to a member that has not been updated (i.e. only accepts v0 or BinData token) and fail. In such cases, the client must wait for the upgrade to complete before resuming change streams.
 -
