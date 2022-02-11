@@ -7,4 +7,7 @@
 - ### 更改流
 	- Starting in MongoDB 4.0.7, change streams use a version 1 v1 resume tokens. MongoDB versions earlier than 4.0.7 use v0 resume tokens.
 	- When upgrading from MongoDB 4.0.6 or earlier to MongoDB 4.0.7 or later, a client may try to resume change streams using the new v1 resume token when connected to a member that has not been updated (i.e. only accepts v0 or BinData token) and fail. In such cases, the client must wait for the upgrade to complete before resuming change streams.
+- ### 暂存环境检查
+	- 在升级生产环境之前，请按照本文档中的过程来升级复制生产环境的暂存环境，以确保您的配置与所有更改兼容
+- ## 升级程序
 -
