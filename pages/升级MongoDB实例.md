@@ -1,1 +1,2 @@
-- 要升级
+- 要升级mongod或mongos实例，请使用以下方法之一
+	- - 使用操作系统的包管理工具和MongoDB官方升级实例。这是首选方法。请参阅[安装MongoDB](https://docs.mongodb.com/manual/installation/)
