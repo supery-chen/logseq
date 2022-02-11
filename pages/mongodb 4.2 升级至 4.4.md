@@ -3,4 +3,5 @@
 - ### 备份
 	- 保证备份了最新的数据，参考[MongoDB Backup Methods](https://docs.mongodb.com/manual/core/backups/)
 - ### 维护窗口
-	- 如果
+	- 如果您的安装包含副本集([replica sets](https://docs.mongodb.com/manual/reference/glossary/#std-term-replica-set))，请在预定义的维护时段内计划升级
+-
