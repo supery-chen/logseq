@@ -1,3 +1,4 @@
+- #image-uploader
 - query-table:: false
   #+BEGIN_QUERY
   {:title "Not uploaded images"
