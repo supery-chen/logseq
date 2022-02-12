@@ -14,4 +14,7 @@
 	- 1. 连接上PRIMARY节点(`mongo host:port` host与port为PRIMARY节点的连接地址)
 	  2. mongo命令行执行`rs.stepDown()`，将PRIMARY节点降级
 	  3. 降级完成后，退出命令行，停掉进程
--
+	  4. 备份`bin/mongo`、`bin/mongod`、`bin/mongos`三个文件
+	  5. 使用下载的新的`mongo`、`mongod`、`mongos`三个二进制文件进行替换
+	  6. 重新启动，并通过rs.status()命令观察节点状态，直至恢复至PRIMARY
+	- 有个疑问，
