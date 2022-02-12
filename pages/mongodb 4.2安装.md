@@ -309,3 +309,4 @@ title:: mongodb 4.2安装
 		  cfg.members[2].votes=0;
 		  rs.reconfig(cfg);
 		  ```
+-
