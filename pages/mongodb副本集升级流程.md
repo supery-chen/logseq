@@ -11,5 +11,6 @@
 -
 - ## PRIMARY升级
 	- 待ARBITER节点以及所有SECONDARY节点都升级完成后，即可进行PRIMARY节点的升级，PRIMARY节点升级比其它节点稍微复杂些，需要先将当前的PRIMARY节点进行降级，并等待其它SECONDARY节点选举出新的PRIMARY节点([[#red]]==从降级到选举出新节点这段时间服务无法使用，尽量挑选夜间升级，不要影响线上用户使用==)后方可开始升级
-	- 1. 命令行连接上PRIMARY节点(``)
+	- 1. 连接上PRIMARY节点(`mongo host:port` host与port为PRIMARY节点的连接地址)
+	  2.
 -
