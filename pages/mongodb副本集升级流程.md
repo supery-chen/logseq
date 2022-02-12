@@ -1,1 +1,6 @@
-- 副本集升级按先升级
+- > 副本集升级按先升级SECONDARY、ARBITER，最后升级PRIMARY的顺序逐个升级
+- ## ARBITER、SECONDARY升级
+	-
+-
+- ## PRIMARY升级
+-
