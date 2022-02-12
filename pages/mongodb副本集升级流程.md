@@ -10,4 +10,4 @@
 	  4. 重新启动，并通过rs.status()命令观察节点状态，直至恢复至ARBITER或SECONDARY
 -
 - ## PRIMARY升级
-- 待ARBITER节点以及所有SECONDARY节点都升级完成后，
+- 待ARBITER节点以及所有SECONDARY节点都升级完成后，即可进行PRIMARY节点的升级，PRIMARY节点升级比其它节点稍微复杂些，需要先将当前的PRIMARY节点进行降级，并等待其它SECONDARY节点选举出新的PRIMARY节点后
