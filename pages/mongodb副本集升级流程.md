@@ -5,7 +5,9 @@
 	  3. 解压下载的压缩包，提取其中bin目录下的`mongo`、`mongod`、`mongos`三个二进制文件，上传至服务器
 - ## 注意
 - SECONDARY节点必须要配置为优先级(`priority`)大于0，且允许参与选举PRIMARY节点(`"votes" : 1`)，否则当进行 ((62070f4c-f3d1-4eb9-913d-bb4449895904))时，执行完`rs.stepDown()`无法从SECONDARY中选举出PRIMARY节点
-- 如果priority为0，
+- 如果SECONDARY节点的priority都为0，则执行`rs.stepDown()`会报如下错误
+	-
+-
 -
 - ## ARBITER、SECONDARY升级
 	- 1. 停掉进程
