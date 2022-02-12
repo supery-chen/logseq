@@ -6,8 +6,23 @@
 - ## 注意
 - SECONDARY节点必须要配置为优先级(`priority`)大于0，且允许参与选举PRIMARY节点(`"votes" : 1`)，否则当进行 ((62070f4c-f3d1-4eb9-913d-bb4449895904))时，执行完`rs.stepDown()`无法从SECONDARY中选举出PRIMARY节点
 - 如果SECONDARY节点的priority都为0，则执行`rs.stepDown()`会报如下错误
-	-
--
+	- ```json
+	  mongodb-repl-test:PRIMARY> rs.stepDown();
+	  {
+	  	"operationTime" : Timestamp(1644631361, 2),
+	  	"ok" : 0,
+	  	"errmsg" : "No electable secondaries caught up as of 2022-02-12T10:02:59.372+08:00. Please use the replSetStepDown command with the argument {force: true} to force node to step down.",
+	  	"code" : 262,
+	  	"codeName" : "ExceededTimeLimit",
+	  	"$clusterTime" : {
+	  		"clusterTime" : Timestamp(1644631361, 2),
+	  		"signature" : {
+	  			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+	  			"keyId" : NumberLong(0)
+	  		}
+	  	}
+	  }
+	  ```
 -
 - ## ARBITER、SECONDARY升级
 	- 1. 停掉进程
