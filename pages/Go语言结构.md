@@ -16,4 +16,4 @@
     fmt.Println("Hello, World!")
   }
   ```
--
+- 1. 第一行代码package main定义了包名。你必须在源文件中非注释的第一行指明这个文件属于哪个包，如：package main
