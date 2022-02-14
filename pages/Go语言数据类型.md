@@ -6,4 +6,5 @@
   |派生|指针(Pointer)、数组、结构体(struct)、联合体(union)、函数、切片、接口(interface)、Map、Channel|
 -
 - ## 数字类型
+- Go也有基于架构的类型，如:int、uint、uintptr
 -
