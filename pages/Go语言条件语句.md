@@ -153,5 +153,9 @@
 	    	//如果上面都没成功，则进入default分支处理流程
 	  }
 	  ```
-	- 更多关于信道(channel)
+	- 更多关于信道(channel)的内容，可以前往[channel详解](https://www.w3cschool.cn/go/channel.html)进行了解
+	- ### 语法
+		- Go编程语言中select语句的语法如下
+		- ```go
+		  ```
 -
