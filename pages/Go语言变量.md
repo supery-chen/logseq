@@ -76,4 +76,5 @@
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644823579371_0.png)
 	- 当使用等号=将一个变量的值赋值给另一个变量时，如`j = i`，实际上是在内存中将`i`的值进行了拷贝
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644823644880_0.png)
+	- 你可以通过`&i`来获取变量`i`的内存地址，例如:`0xf840000040`(每次地址都可能不一样)。值类型的变量值存储在栈中
 	-
