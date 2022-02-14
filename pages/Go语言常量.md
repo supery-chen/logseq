@@ -55,6 +55,7 @@
   ```
 -
 - ## iota
+	- [带你开始探究 Go iota](https://maiyang.me/post/2021-04-20-deep-dive-iota-in-go/)
 	- 特殊常量，可以认为是一个可以被编译器修改的常量
 	- 在每一个const关键字出现时，被重置为0，然后在下一个const出现之前，每出现一次iota，其所代表的数字会自动加1
 	- iota可以被用作枚举值
