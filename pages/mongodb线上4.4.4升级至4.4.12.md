@@ -1,12 +1,12 @@
 title:: mongodb线上4.4.4升级至4.4.12
 
-- ## 节点地址
+- ## 节点服务器
 	- **PRIMARY**：`172.24.60.173:27017`
 	- **SECONDARY**：`172.24.60.175:27017`
 	- **ARBITER**：`172.24.71.31:27017`
 -
 - ## 配置文件
-	- ### master
+	- ### PRIMARY
 		- `/usr/local/konke/mongodb/mongodb-konke/bin/mongodb_yaml/master/mongodb.yaml`
 		- ```yaml
 		  systemLog:
@@ -68,7 +68,7 @@ title:: mongodb线上4.4.4升级至4.4.12
 		     replSetName: mongodb-repl-konke
 		     enableMajorityReadConcern: true
 		  ```
-	- ### slave
+	- ### SECONDARY
 		- `/usr/local/konke/mongodb/mongodb-konke/bin/mongodb_yaml/slave1/mongodb.yaml`
 		- ```yaml
 		  systemLog:
@@ -130,7 +130,7 @@ title:: mongodb线上4.4.4升级至4.4.12
 		     replSetName: mongodb-repl-konke
 		     enableMajorityReadConcern: true
 		  ```
-	- ### arbiter
+	- ### ARBITER
 		- `/usr/local/konke/mongodb/mongodb-konke/bin/mongodb_yaml/arbiter/mongodb.yaml`
 		- ```yaml
 		  systemLog:
