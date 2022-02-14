@@ -2,14 +2,22 @@
 - 声明变量的一般形式是使用 var 关键字`var identifier type`
 - ## 变量声明
 	- 第一种，指定变量类型，声明后若不赋值，使用默认值
-	- ```go
-	  var v_name v_type
-	  v_name = v_value
-	  ```
+		- ```go
+		  var v_name v_type
+		  v_name = v_value
+		  ```
 	- 第二种，根据值自行判断变量类型
-	- ```go
-	  var v_name = v_value
-	  ```
+		- ```go
+		  var v_name = v_value
+		  ```
 	- 第三种，省略var。注意:=左侧的变量不应该是已经声明过的，否则会导致编译错误
+		- ```go
+		  v_name := v_value
+		  //例如
+		  var a int = 10
+		  var b = 10
+		  c := 10
+		  ```
+	- 实例如下
 	- ```go
 	  ```
