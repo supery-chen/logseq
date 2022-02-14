@@ -102,7 +102,9 @@
 		  ```
 - ## Type Switch
 	- switch语句还可以被用于type-switch来判断某个interface变量中实际存储的变量类型
-	-
+	- Type Switch语法格式如下
+	- ```go
+	  ```
 -
 - ## select语句
 -
