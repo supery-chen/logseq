@@ -1,5 +1,5 @@
 - #image-uploader
-- query-table:: false
+- query-table:: true
   #+BEGIN_QUERY
   {:title "Not uploaded images"
     :query [:find (pull ?b [*])
