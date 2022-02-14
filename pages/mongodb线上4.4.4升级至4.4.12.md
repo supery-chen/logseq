@@ -201,4 +201,5 @@ title:: mongodb线上4.4.4升级至4.4.12
 - ## 工具包
 	- [MongoDB Database Tools](https://fastdl.mongodb.org/tools/db/mongodb-database-tools-rhel70-x86_64-100.5.2.tgz)
 -
+- ## Step1 上传升级包至服务器
 -
