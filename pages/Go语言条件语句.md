@@ -33,9 +33,21 @@
 		  ```
 	- ### 实例
 		- ```go
+		  package main
+		  
+		  func main() {
+		  	var a int = 20
+		  	if a > 20 {
+		  		println("a is greater than 20")
+		  	} else {
+		  		println("a is not greater than 20")
+		  	}
+		  	println("a is", a)
+		  }
 		  ```
 -
 - ## if嵌套语句
+	-
 -
 - ## switch语句
 -
