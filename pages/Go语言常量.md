@@ -30,3 +30,12 @@
   }
   ```
 -
+- 常量还可以用作枚举
+- ```go
+  const (
+  	Unknown = 0
+    	Female = 1
+    	Male = 2
+  )
+  ```
+- 常量可以用len()、cap()、
