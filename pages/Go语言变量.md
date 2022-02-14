@@ -72,4 +72,6 @@
 	  ```
 -
 - ## 值类型和引用类型
--
+	- 所有像int、float、bool和string这些基本类型都属于值类型，使用这些类型的变量直接指向存在内存中的值
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644823579371_0.png)
+	- 当使用等号=
