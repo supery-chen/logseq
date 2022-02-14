@@ -34,5 +34,5 @@
 	- |运算符|描述|实例|
 	  |--|--|--|
 	  |&&|逻辑与。如果两边操作数都是True，则条件为True，否则为False|A&&B为False|
-	  |逻辑或。如果两边操作数有一个为True，则条件为True，否则为False|A||B为True|
+	  |`\\`||`A||B`为True||A\|\|B为True|
 	  |!|逻辑非。如果条件为True，则逻辑非为False，否则为True|!A为False|
