@@ -175,5 +175,8 @@
 			- 如果有多个case都可以运行，select会随机公平地选出一个执行，其它不会执行
 			- 否则：
 				- 1. 如果有default子句，则执行该语句
-				  2. 如果没有default子句，select将阻塞，直到某个通信可以运行；
+				  2. 如果没有default子句，select将阻塞，直到某个通信可以运行；Go不会重新对channel或值进行求值
+		- **select知识点小结如下**
+			- 1. select语句只能用于信道的读写操作
+			  2. select中的case条件(非阻塞)
 -
