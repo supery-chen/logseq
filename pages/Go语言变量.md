@@ -101,5 +101,9 @@
 	  }
 	  ```
 	- 尝试编译这段代码将得到错误`a declared and not used`
+	- 此外，单纯地给a赋值也是不够的，这个值必须被使用，所以使用下面代码会移除错误
+	- ```go
+	  fmt.Println("hello, world", a)
+	  ```
 	-
 -
