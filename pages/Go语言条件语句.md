@@ -67,7 +67,42 @@
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644846129377_0.png)
 	- ### 实例
 		- ```go
+		  package main
+		  
+		  func main() {
+		  	var grade = "B"
+		  	var marks = 90
+		  
+		  	switch marks {
+		  	case 90:
+		  		grade = "A"
+		  	case 80:
+		  		grade = "B"
+		  	case 50, 60, 70:
+		  		grade = "C"
+		  	default:
+		  		grade = "D"
+		  	}
+		  
+		  	switch {
+		  	case grade == "A":
+		  		println("Excellent")
+		  	case grade == "B", grade == "C":
+		  		println("Well done")
+		  	case grade == "D":
+		  		println("You passed")
+		  	case grade == "F":
+		  		println("Better try again")
+		  	default:
+		  		println("Invalid grade")
+		  	}
+		  
+		  	println("Your grade is", grade)
+		  }
 		  ```
+- ## Type Switch
+	- switch语句还可以被用于type-switch来判断某个interface变量中实际存储的变量类型
+	-
 -
 - ## select语句
 -
