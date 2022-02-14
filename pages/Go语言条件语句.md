@@ -66,7 +66,8 @@
 		- 您可以同时测试多个可能符合条件的值，使用逗号分割它们，例如：case val1, val2, val3
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644846129377_0.png)
 	- ### 实例
-		-
+		- ```go
+		  ```
 -
 - ## select语句
 -
