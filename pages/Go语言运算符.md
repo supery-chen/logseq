@@ -32,3 +32,6 @@
 - ## 逻辑运算符
 	- 下表列出了所有Go语言的逻辑运算符。假定A值为True，B值为False
 	- |运算符|描述|实例|
+	- |--|--|--||&&|逻辑与。如果两边操作数都是True，则条件为True，否则为False|A&&B为False|
+	  ||||逻辑或。如果两边操作数有一个为True，则条件为True，否则为False|A||B为True|
+	  |!|逻辑非。如果条件为True，则逻辑非为False，否则为True|!A为False<br>!B为True|
