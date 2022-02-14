@@ -192,3 +192,8 @@ title:: mongodb线上4.4.4升级至4.4.12
 		     replSetName: mongodb-repl-konke
 		     enableMajorityReadConcern: true
 		  ```
+-
+- ## 安装包
+- [MongoDB 4.4.12.tgz](https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-4.4.12.tgz)
+-
+-
