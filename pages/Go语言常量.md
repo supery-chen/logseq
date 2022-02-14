@@ -11,4 +11,19 @@
 - ```go
   const c_name1, c_name2 = value1, value2
   ```
-- 以下实例
+- 以下实例演示了常量的应用
+- ```go
+  package main
+  
+  import "fmt"
+  
+  func main(){
+    const LENGTH int = 10
+    const WIDTH = 5
+    var area int
+    const a, b, c = 1, false, "str"
+    
+    area = LENGTH * WIDTH
+    
+  }
+  ```
