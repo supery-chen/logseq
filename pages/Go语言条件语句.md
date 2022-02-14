@@ -102,9 +102,20 @@
 		  ```
 - ## Type Switch
 	- switch语句还可以被用于type-switch来判断某个interface变量中实际存储的变量类型
-	- Type Switch语法格式如下
-	- ```go
-	  ```
+	- ### 语法
+		- ```go
+		  switch x.(type){
+		      case type:
+		         statement(s)     
+		      case type:
+		         statement(s)
+		      /* 你可以定义任意个数的case */
+		      default: /* 可选 */
+		         statement(s)
+		  }
+		  ```
+	- ### 实例
+		-
 -
 - ## select语句
 -
