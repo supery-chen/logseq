@@ -204,6 +204,7 @@ title:: mongodb线上4.4.4升级至4.4.12
 - ## 正常升级流程
 	- DONE 上传升级包至服务器
 	- TODO 数据备份： [[mongodump]]
+		- `./mongodump --uri="mongodb://172.24.60.173:27017,172.24.60.175:27017,172.24.71.31:27017/konke_iot?readPreference=secondaryPreferred&appname=MongoDB%20Compass&ssl=false" -o=/tmp/mongodb`
 	- TODO 升级ARBITER
 	- TODO 升级SECONDARY
 	- TODO 升级PRIMARY
