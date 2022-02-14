@@ -157,5 +157,17 @@
 	- ### 语法
 		- Go编程语言中select语句的语法如下
 		- ```go
+		  select {
+		    case communication clause:
+		    	statement(s)
+		    case communication clause:
+		    	statement(s)
+		    /* 你可以定义任意数量的case */
+		    default:
+		    	statement(s)
+		  }
 		  ```
+		- **以下描述了select语句的语法**
+			- 每个case都必须是一个通信
+			-
 -
