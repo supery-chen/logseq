@@ -1,5 +1,6 @@
 - Go语言内置的运算符有
 	- ((620a4bc8-de5d-4e24-afeb-77f9b2d98d2a))
+	- ((620a4d5f-452f-4991-83c8-d0acf7cf82de))
 	- 关系运算符
 	- 逻辑运算符
 	- 位运算符
@@ -30,9 +31,11 @@
 	  |<=|左边是否小于等于右边|A<=B为True|
 -
 - ## 逻辑运算符
+  id:: 620a4d5f-452f-4991-83c8-d0acf7cf82de
 	- 下表列出了所有Go语言的逻辑运算符。假定A值为True，B值为False
 	- |运算符|描述|实例|
 	  |--|--|--|
 	  |&&|逻辑与。如果两边操作数都是True，则条件为True，否则为False|A&&B为False|
 	  |\vert\vert|逻辑或。如果任一操作数为True，则条件为True，否则为False|A \vert\vert B为True|
 	  |!|逻辑非。如果条件为True，则逻辑非为False，否则为True|!A为False|
+-
