@@ -196,4 +196,7 @@ title:: mongodb线上4.4.4升级至4.4.12
 - ## 安装包
 - [MongoDB 4.4.12.tgz](https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-4.4.12.tgz)
 -
+- ## 工具包
+- [MongoDB Database Tools](https://fastdl.mongodb.org/tools/db/mongodb-database-tools-rhel70-x86_64-100.5.2.tgz)
+-
 -
