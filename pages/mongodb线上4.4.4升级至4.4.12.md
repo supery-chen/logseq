@@ -201,9 +201,11 @@ title:: mongodb线上4.4.4升级至4.4.12
 - ## 工具包
 	- [MongoDB Database Tools](https://fastdl.mongodb.org/tools/db/mongodb-database-tools-rhel70-x86_64-100.5.2.tgz)
 -
-- DONE 上传升级包至服务器
-- TODO 数据备份
-- TODO 升级ARBITER
-- TODO 升级SECONDARY
-- TODO 升级PRIMARY
--
+- ## 正常升级流程
+	- DONE 上传升级包至服务器
+	- TODO 数据备份： [[mongodump]]
+	- TODO 升级ARBITER
+	- TODO 升级SECONDARY
+	- TODO 升级PRIMARY
+- ## 异常处理
+	- TODO 数据恢复
