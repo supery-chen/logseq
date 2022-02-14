@@ -7,7 +7,7 @@ title:: mongodb线上4.4.4升级至4.4.12
 -
 - ## 配置文件
 	- ### master
-		-
+		- `/usr/local/konke/mongodb/mongodb-konke/bin/mongodb_yaml/master/mongodb.yaml`
 		- ```yaml
 		  systemLog:
 		     verbosity: 0
@@ -69,6 +69,7 @@ title:: mongodb线上4.4.4升级至4.4.12
 		     enableMajorityReadConcern: true
 		  ```
 	- ### slave
+		- `/usr/local/konke/mongodb/mongodb-konke/bin/mongodb_yaml/slave1/mongodb.yaml`
 		- ```yaml
 		  systemLog:
 		     verbosity: 0
@@ -130,6 +131,7 @@ title:: mongodb线上4.4.4升级至4.4.12
 		     enableMajorityReadConcern: true
 		  ```
 	- ### arbiter
+		- `/usr/local/konke/mongodb/mongodb-konke/bin/mongodb_yaml/arbiter/mongodb.yaml`
 		- ```yaml
 		  systemLog:
 		     verbosity: 0
