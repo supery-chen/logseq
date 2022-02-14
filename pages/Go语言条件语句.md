@@ -2,6 +2,13 @@
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644845681167_0.png)
 - Go语言提供了以下几种条件判断语句
 - ## if语句
+- ### 语法
+- ```go
+  if 布尔表达式 {
+    /* 在布尔表达式为true时执行 */
+  }
+  ```
+-
 -
 - ## if...else...语句
 -
@@ -9,4 +16,5 @@
 -
 - ## switch语句
 -
+- ## select语句
 -
