@@ -1,4 +1,5 @@
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644811111407_0.png)
+- [W3Cscholl Go教程](https://www.w3cschool.cn/go/)
 - Go 从C语言继承了相似的表达式语法、控制流结构、基础数据类型、调用参数传值、指针等很多思想，还有C语言一直所看中的编译后机器码的运行效率以及和现有操作系统的无缝适配。
 - 因为Go语言没有类和继承的概念，所以它和 Java 或 C++ 看起来并不相同。但是它通过接口（interface）的概念来实现多态性
 - Go 是编译型语言

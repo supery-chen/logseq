@@ -209,4 +209,4 @@ title:: mongodb线上4.4.4升级至4.4.12
 	- TODO 升级PRIMARY
 - ## 异常处理
 	- TODO 数据恢复： [[mongorestore]]
-	- TODO 重装4.4.12： [[mongodb 4.2安装]]
+	- TODO 重装
