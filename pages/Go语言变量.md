@@ -20,4 +20,14 @@
 		  ```
 	- 实例如下
 	- ```go
+	  package main
+	  
+	  var a = "a"
+	  var b string = "b"
+	  c := "c"
+	  var d bool
+	  
+	  func main(){
+	    println(a, b, c, d)
+	  }
 	  ```
