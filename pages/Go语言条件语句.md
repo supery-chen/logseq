@@ -47,9 +47,13 @@
 		  ```
 -
 - ## if嵌套语句
-	-
+	- [if 嵌套语句](https://www.w3cschool.cn/go/go-nested-if-statements.html)
 -
 - ## switch语句
+	- switch 语句执行的过程从上至下，直到找到匹配项，匹配项后面也不需要再加break
+	- ### 语法
+		- ```go
+		  ```
 -
 - ## select语句
 -
