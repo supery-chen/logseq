@@ -24,6 +24,9 @@
     const a, b, c = 1, false, "str"
     
     area = LENGTH * WIDTH
-    
+    fmt.Printf("面积为: %d", area)
+    println()
+    println(a, b, c)
   }
   ```
+-
