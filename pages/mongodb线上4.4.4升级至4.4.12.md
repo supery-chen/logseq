@@ -5,6 +5,8 @@ title:: mongodb线上4.4.4升级至4.4.12
 	- **SECONDARY**：`172.24.60.175:27017`
 	- **ARBITER**：`172.24.71.31:27017`
 	- **部署文件夹**：`/usr/local/konke/mongodb/mongodb-konke`
+	- **日志路径**：`/appdata/logs/mongodb/mongodb.log`
+	-
 -
 - ## 配置文件
 	- ### PRIMARY
