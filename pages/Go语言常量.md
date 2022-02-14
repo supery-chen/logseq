@@ -59,4 +59,10 @@
 	- 在每一个const关键字出现时，被重置为0，然后在下一个const出现之前，每出现一次iota，其所代表的数字会自动加1
 	- iota可以被用作枚举值
 	- ```go
+	  const (
+	    a = iota
+	    b = iota
+	    c = iota
+	  )
 	  ```
+	- a = 0，b = 1, c = 2
