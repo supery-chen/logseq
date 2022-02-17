@@ -12,7 +12,11 @@
 	  import "fmt"
 	  
 	  func main(){
-	    
+	    //声明局部变量
 	    var a, b, c int
+	    a = 10
+	    b = 20
+	    c = a + b
+	    fmt.Printf("结果：")
 	  }
 	  ```
