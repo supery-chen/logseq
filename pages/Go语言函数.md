@@ -61,6 +61,20 @@
 - ## 函数返回多个值
 	- Go函数可以返回多个值，例如
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func swap(x, y string) (string, string) {
+	     return y, x
+	  }
+	  
+	  func main() {
+	     a, b := swap("Mahesh", "Kumar")
+	     fmt.Println(a, b)
+	  }
 	  ```
-- a
 -
+- ## 函数参数
+	- 函数如果使用参数，该变量可称为函数的形参
+	- 形参就像是定义在函数体
