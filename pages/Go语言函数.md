@@ -17,4 +17,15 @@
 		- return_types：返回类型，函数返回一列值。return_types是该列值的数据类型。有些功能不需要返回值，这种情况下return_types不是必须的
 		- 函数体：函数定义的代码集合
 	- ### 实例
-	- 以下实例为max()函数的代码，该函数传入两个整型参数num1和num2
+	- 以下实例为max()函数的代码，该函数传入两个整型参数num1和num2，并返回这两个参数的最大值
+	- ```go
+	  func max(num1, num2 int) int {
+	    var result int
+	    if (num1 > num2){
+	      result = num1
+	    } else {
+	      result = num2
+	    }
+	    return result
+	  }
+	  ```
