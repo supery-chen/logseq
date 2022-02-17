@@ -34,4 +34,30 @@
 	- 当创建函数时，你定义了函数需要做什么，通过调用该函数来执行指定任务
 	- 调用函数，向函数传递参数，并返回值，例如
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main(){
+	    var a int = 100
+	    var b int = 200
+	    var ret int
+	    
+	    ret = max(a, b)
+	    fmt.Printf("最大值是: %d\n", ret)
+	  }
+	  
+	  func max(num1, num2 int) int {
+	    var result int
+	    if (num1 > num2){
+	      result = num1
+	    } else {
+	      result = num2
+	    }
+	    return result
+	  }
 	  ```
+-
+- ## 函数返回多个值
+-
+-
