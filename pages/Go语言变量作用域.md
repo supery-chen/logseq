@@ -42,4 +42,15 @@
 	  ```
 	- Go语言程序中全局变量与局部变量名称可以相同，但是函数内的局部变量会被优先考虑
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  var g int = 20
+	  
+	  func main() {
+	  	var g int = 10
+	  	fmt.Printf("g = %d\n", g)
+	  }
 	  ```
+	-
