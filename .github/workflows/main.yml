@@ -28,6 +28,6 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: 'supery-chen',
               repo: 'supery-chen.github.io',
-              workflow_id: 'main.yml'
+              workflow_id: 'main.yml',
               ref: 'main'
             })
