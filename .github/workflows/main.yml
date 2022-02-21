@@ -25,7 +25,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Logseq Publish 🚩
-        uses: supery-chen/superychen.github.io@main
+        uses: supery-chen/supery-chen.github.io@main
 
       # Runs a set of commands using the runners shell
       - name: add a nojekyll file
