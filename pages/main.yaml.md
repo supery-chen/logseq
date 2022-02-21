@@ -4,5 +4,6 @@ title:: main.yaml
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1645433122036_0.png)
 - 选择`Simple workflow`进行创建
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1645433167024_0.png)
-- 输入名称为`main.yaml`
--
+- 输入名称为`main.yaml`，内容如下
+- ```yaml
+  ```
