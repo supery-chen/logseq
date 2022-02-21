@@ -23,7 +23,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/github-script@v6
         with:
-          github-token: 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
+          github-token: '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'
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'supery-chen',
