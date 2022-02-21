@@ -24,6 +24,6 @@ jobs:
               owner: 'supery-chen',
               repo: 'supery-chen.github.io',
               workflow_id: 'main.yml'
-              ref: 'main'
+              ref: 'master'
             })
         
