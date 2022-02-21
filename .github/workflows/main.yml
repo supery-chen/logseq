@@ -23,7 +23,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/github-script@v6
         with:
-          github-token: ${{ secrets.MY_PAT }}
+          github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'supery-chen',
