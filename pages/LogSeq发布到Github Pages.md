@@ -7,5 +7,6 @@ public:: true
 - ## 编写`Github Action`
 	- 创建[[action.yaml]]
 	- 创建[[main.yaml]]
+- ## 配置Github Pages
 	-
 -
