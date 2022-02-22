@@ -1,3 +1,5 @@
+public:: true
+
 - 条件语句需要开发者通过指定一个或多个条件，并通过测试条件是否位true来决定是否执行指定语句，并在条件位false的情况再执行另外的语句
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644845681167_0.png)
 - Go语言提供了以下几种条件判断语句

@@ -1,3 +1,5 @@
+public:: true
+
 - |类型|描述|
   |-----|-----|
   |布尔|布尔型的值只可以是常量 true 或者 false。一个简单的例子：var b bool = true|

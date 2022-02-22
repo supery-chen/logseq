@@ -1,3 +1,5 @@
+public:: true
+
 - Go语言内置的运算符有
 	- ((620a4bc8-de5d-4e24-afeb-77f9b2d98d2a))
 	- ((620a4d5f-452f-4991-83c8-d0acf7cf82de))
