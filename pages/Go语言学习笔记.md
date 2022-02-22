@@ -1,3 +1,5 @@
+public:: true
+
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644811111407_0.png)
 - [W3Cscholl Go教程](https://www.w3cschool.cn/go/)
 - [Go语言原本](https://golang.design/under-the-hood/)

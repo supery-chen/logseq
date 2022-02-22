@@ -1,3 +1,5 @@
+public:: true
+
 - > 背景：目前手里有一个bywave账号，购买了150G的流量，刚好又有一个公网IP的阿里云ECS服务器空闲，想要搭一个代理随时可用
 - https://clash.gitbook.io/doc/restful-api
 - https://github.com/Dreamacro/clash-ctl
