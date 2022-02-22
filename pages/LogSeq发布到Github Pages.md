@@ -8,5 +8,6 @@ public:: true
 	- 创建[[action.yaml]]
 	- 创建[[main.yaml]]
 - ## 配置Github Pages
-	-
+	- > 首次可能还未创建`gh-pages`，可以手动触发一次`main.yaml`，
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1645499594972_0.png)
 -
