@@ -1,3 +1,5 @@
+public:: true
+
 - [[MongoDB备份恢复]]
 - [[mongodb 4.2安装]]
 - [[mongodb 4.2 数据迁移]]

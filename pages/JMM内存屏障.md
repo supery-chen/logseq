@@ -1,3 +1,5 @@
+public:: true
+
 - #Java
 - ## LoadLoad Barriers
 	- 示例：`Load1;LoadLoad;Load2`

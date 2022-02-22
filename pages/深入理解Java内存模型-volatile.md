@@ -1,3 +1,5 @@
+public:: true
+
 - #Java
 - [深入理解 Java 内存模型（四）——volatile](https://www.infoq.cn/article/java-memory-model-4/)
 - [Java内存访问重排序的研究](https://tech.meituan.com/2014/09/23/java-memory-reordering.html)
