@@ -7,5 +7,7 @@
 	- ```go
 	  var variable_name [SIZE] variable_type
 	  ```
-	-
+	- 以上为一维数组的定义方式。数组长度必须是整数且大于0。例如以下定义了数组balance长度为10，类型为float32
+	- ```go
+	  ```
 -
