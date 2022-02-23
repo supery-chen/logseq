@@ -29,4 +29,9 @@
 	- 以上实例读取了第五个元素。数组元素可以通过索引(位置)来读取(或者修改)，索引从0开始，第一个元素索引为0，第二个索引为1，以此类推
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1645585423361_0.png)
 -
--
+- ## 访问数组元素
+	- 数组元素可以通过索引(位置)来读取。格式为数组名后加中括号，中括号中为索引的值。
+	- ```go
+	  float32 salary = balance[9]
+	  ```
+	-
