@@ -1,2 +1,3 @@
 @echo off
-git push origin
+cd /e e:\workspace\LogSeq
+git push origin main
