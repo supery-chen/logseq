@@ -112,13 +112,13 @@
   :block/updated-at 1645493261760}
  {:block/name "go语言变量作用域",
   :block/created-at 1645067471143,
-  :block/updated-at 1645493297929}
+  :block/updated-at 1645584891224}
  {:block/name "go语言基础语法",
   :block/created-at 1644821373818,
   :block/updated-at 1645493251872}
  {:block/name "go语言学习笔记",
   :block/created-at 1644810072219,
-  :block/updated-at 1645493098064}
+  :block/updated-at 1645584909820}
  {:block/name "go语言常量",
   :block/created-at 1644830188174,
   :block/updated-at 1645493266752}
@@ -128,6 +128,9 @@
  {:block/name "go语言数据类型",
   :block/created-at 1644821915655,
   :block/updated-at 1645493256760}
+ {:block/name "go语言数组",
+  :block/created-at 1645584918159,
+  :block/updated-at 1645585185867}
  {:block/name "go语言条件语句",
   :block/created-at 1644845625616,
   :block/updated-at 1645493280432}
