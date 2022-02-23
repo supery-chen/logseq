@@ -37,5 +37,12 @@
 	- 以上实例读取了数组balance第10个元素的值
 	- 以下演示了数组完整操作(声明、赋值、访问)的实例
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main(){
+	    
+	  }
 	  ```
 -
