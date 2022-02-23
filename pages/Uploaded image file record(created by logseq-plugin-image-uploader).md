@@ -70,3 +70,4 @@
 - ../assets/image_1645499594972_0.png
 - ../assets/image_1645585049298_0.png
 - ../assets/image_1645585423361_0.png
+- ../assets/image_1645586716201_0.png
