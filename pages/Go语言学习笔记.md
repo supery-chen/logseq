@@ -1,6 +1,6 @@
 public:: true
 
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/6a415ae00839bdef7cb5b31243f144c_1645683960137_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644811111407_0.png)
 - [W3Cscholl Go教程](https://www.w3cschool.cn/go/)
 - [Go语言原本](https://golang.design/under-the-hood/)
 - Go 从C语言继承了相似的表达式语法、控制流结构、基础数据类型、调用参数传值、指针等很多思想，还有C语言一直所看中的编译后机器码的运行效率以及和现有操作系统的无缝适配。
