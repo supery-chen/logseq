@@ -55,4 +55,15 @@
 	- 一个指针变量通常缩写为ptr
 	- 查看以下实例
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main(){
+	    var ptr *int
+	    fmt.Printf("ptr 的值为 ：%x\n", ptr)
+	  }
+	  ```
+	- 空指针判断
+	- ```go
 	  ```
