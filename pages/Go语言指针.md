@@ -33,4 +33,21 @@
 		- 访问指针变量中指向地址的值
 	- 在指针类型前面加上*号来获取指针所指向的内容
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main() {
+	  	var a int = 20
+	  	var ip *int
+	  
+	  	ip = &a
+	  	fmt.Printf("a 变量的地址是: %x\n", &a)
+	  	fmt.Printf("ip 变量的地址是: %x\n", ip)
+	  	fmt.Printf("*ip 变量的值是: %d\n", *ip)
+	  }
 	  ```
+-
+- ## Go空指针
+	- 当一个指针被定义后没有分配到任何变量时，它的值为nil
+	-
