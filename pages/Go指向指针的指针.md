@@ -1,0 +1,4 @@
+- 如果一个指针变量存放的又是另外一个指针变量的地址，则称这个指针变量为指向指针的指针变量
+- 当定义一个指向指针的指针变量时，第一个指针存放第二个指针的地址，第二个指针存放变量的地址
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1645667220783_0.png)
+-
