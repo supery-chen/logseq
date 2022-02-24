@@ -19,4 +19,9 @@
 	- ```go
 	  var var_name *var-type
 	  ```
-	-
+	- var-type为指针类型，var_name为指针变量名，*号用于指定变量是作为一个指针。以下是有效的指针声明
+	- ```go
+	  var ip *int
+	  var fp *float32
+	  ```
+	- 本例中这是一个指向int
