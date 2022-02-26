@@ -89,9 +89,6 @@
  {:block/name "feb 21st, 2022",
   :block/created-at 1645432504128,
   :block/updated-at 1645432504128}
- {:block/name "feb 23rd, 2022",
-  :block/created-at 1645574400000,
-  :block/updated-at 1645574400000}
  {:block/name "feb 26th, 2022",
   :block/created-at 1645833600000,
   :block/updated-at 1645833600000}
