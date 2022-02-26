@@ -73,3 +73,5 @@
 - ../assets/image_1645586716201_0.png
 - ../assets/image_1645667220783_0.png
 - ../assets/6a415ae00839bdef7cb5b31243f144c_1645683960137_0.png
+- ../assets/image_1645875943356_0.png
+- ../assets/image_1645876390097_0.png
