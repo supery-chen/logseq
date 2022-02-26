@@ -1,0 +1,58 @@
+- ```go
+  var variable_name [SIZE1][SIZE2]...[SIZEN] variable_type
+  ```
+- 以下实例声明了三位的整型数组
+- ```go
+  var threedim [5][10][4]int
+  ```
+-
+- ## 二维数组
+	- 二维数组本质上是由一维数组组成的，定义方式如下
+	- ```go
+	  var arrayName [x][y] variable_type
+	  ```
+	- variable_type为Go语言的数据类型，arrayName为数组名，二维数组可认为是一个表格，x为行，y为列，下图演示了一个二维数组a为3行4列
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1645586716201_0.png)
+	- 二维数组中的元素可以通过a[i][j]来访问
+-
+- ## 初始化二维数组
+	- 多为数组可通过大括号来初始化。以下实例为一个3行4列的二维数组
+	- ```go
+	  a = [3][4]int{  
+	   {0, 1, 2, 3} ,   /*  第一行索引为 0 */
+	   {4, 5, 6, 7} ,   /*  第二行索引为 1 */
+	   {8, 9, 10, 11}   /*  第三行索引为 2 */
+	  }
+	  ```
+-
+- ## 访问二维数组
+	- 二维数组通过指定坐标来访问。如数组中的行索引与列索引
+	- ```go
+	  int val = a[2][3]
+	  ```
+	- 以上实例访问了二维数组a的第三行第四个元素
+	- 二维数组可以使用循环嵌套来输出元素
+	- background-color:: #264c9b
+	  ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main() {
+	    var a = [5][2]int{
+	      {0, 0},
+	      {1, 2},
+	      {2, 4},
+	      {3, 6},
+	      {4, 8}
+	    }
+	    var i, j int
+	    
+	    for i=0; i<5; i++ {
+	      for j=0; j<2; j++ {
+	        fmt.Printf()
+	      }
+	    }
+	  }
+	  ```
+	-
