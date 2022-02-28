@@ -4,4 +4,11 @@
 - ## 定义切片
 	- 你可以声明一个未指定大小的数组来定义切片
 	- ```go
+	  var identifier []type
 	  ```
+	- 切片不需要说明长度
+	- 或使用make()函数来创建切片
+	- ```go
+	  var slice1 []type = make([]type, len)
+	  ```
+	-
