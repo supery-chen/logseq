@@ -27,4 +27,11 @@
 	  ```
 	- 直接初始化切片,[]表示是切片类型,{1,2,3}初始化值依次是1,2,3,其中cap=len=3
 	- ```go
+	  s := arr[:]
 	  ```
+	- 初始化切片s,是数组arr的引用
+	- ```go
+	  s := arr[startIndex:endIndex]
+	  ```
+	- 将arr中从下标startIndex到endIndex-1下的元素创建为一个新的切片
+	-
