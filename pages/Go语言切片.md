@@ -11,4 +11,8 @@
 	- ```go
 	  var slice1 []type = make([]type, len)
 	  ```
+	- 也可以简写为
+	- ```go
+	  slice1 := make([]type, len)
+	  ```
 	-
