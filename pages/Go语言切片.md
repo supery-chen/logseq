@@ -72,4 +72,24 @@
 - ## 空(nil)切片
 	- 一个切片在未初始化之前默认为nil,长度为0
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main() {
+	  	var numbers []int
+	  	printSlice(numbers)
+	  	if numbers == nil {
+	  		fmt.Printf("切片是空的\n")
+	  	}
+	  }
+	  
+	  func printSlice(x []int) {
+	  	fmt.Printf("len=%d cap=%d slice=%v\n", len(x), cap(x), x)
+	  }
+	  ```
+-
+- ## 切片截取
+	- 可以通过设置下限及上限来设置截取切片[lower-bound:upper-bound]
+	- ```go
 	  ```
