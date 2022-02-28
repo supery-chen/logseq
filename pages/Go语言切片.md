@@ -55,4 +55,18 @@
 	- 切片是可索引的,并且可以由len()方法获取长度
 	- 切片提供了计算容量的方法cap()可以测量切片最长可以达到多少
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main() {
+	    var numbers = make([]int, 3, 5)
+	    printSlice(numbers)
+	  }
+	  
+	  func printSlice(x []int){
+	    fmt.Printf("len=%d cap=%d slice=%v\n", len(x), cap(x), x)
+	  }
 	  ```
+-
+-
