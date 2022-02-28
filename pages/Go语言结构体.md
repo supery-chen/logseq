@@ -18,4 +18,8 @@
 	  ```
 	- 一旦定义了结构体类型,它就能用于变量的声明,语法格式如下
 	- ```go
+	  variable_name := structure_variable_type {value1, value2, ..., valuen}
 	  ```
+-
+- ## 访问结构体成员
+	- 如果要访问结构体成员,
