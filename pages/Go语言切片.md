@@ -34,4 +34,12 @@
 	  s := arr[startIndex:endIndex]
 	  ```
 	- 将arr中从下标startIndex到endIndex-1下的元素创建为一个新的切片
+	- ```go
+	  s := arr[startIndex:]
+	  ```
+	- 缺省endIndex时表示一直到arr的最后一个元素
+	- ```go
+	  s := arr[:endIndex]
+	  ```
+	- 缺省startIndex时表示从arr的第一个元素开始
 	-
