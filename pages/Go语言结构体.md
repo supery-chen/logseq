@@ -25,4 +25,44 @@
 	- 如果要访问结构体成员,需要使用点号(.)操作符,格式为:`结构体.成员名`
 	- 结构体类型变量使用struct关键字定义
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  type Books struct {
+	  	title   string
+	  	author  string
+	  	subject string
+	  	book_id int
+	  }
+	  
+	  func main() {
+	  	var Book1 Books
+	  	var Book2 Books
+	  
+	  	Book1.title = "Go Programming"
+	  	Book1.author = "Mahesh Kumar"
+	  	Book1.subject = "Go Programming Tutorial"
+	  	Book1.book_id = 6495407
+	  
+	  	Book2.title = "Python Programming"
+	  	Book2.author = "Mahesh Kumar"
+	  	Book2.subject = "Python Programming Tutorial"
+	  	Book2.book_id = 6495700
+	  
+	  	/* 打印 Book1 信息 */
+	  	fmt.Printf("Book 1 title : %s\n", Book1.title)
+	  	fmt.Printf("Book 1 author : %s\n", Book1.author)
+	  	fmt.Printf("Book 1 subject : %s\n", Book1.subject)
+	  	fmt.Printf("Book 1 book_id : %d\n", Book1.book_id)
+	  
+	  	/* 打印 Book2 信息 */
+	  	fmt.Printf("Book 2 title : %s\n", Book2.title)
+	  	fmt.Printf("Book 2 author : %s\n", Book2.author)
+	  	fmt.Printf("Book 2 subject : %s\n", Book2.subject)
+	  	fmt.Printf("Book 2 book_id : %d\n", Book2.book_id)
+	  }
 	  ```
+-
+- ## 结构体作为函数参数
+	- 你可以像其它数据类型一样将结构体类型作为参数传递给函数.并以以上实例
