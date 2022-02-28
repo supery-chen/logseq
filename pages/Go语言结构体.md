@@ -67,4 +67,45 @@
 - ## 结构体作为函数参数
 	- 你可以像其它数据类型一样将结构体类型作为参数传递给函数.并以以上实例的方式访问结构体变量
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  type Books struct {
+	  	title   string
+	  	author  string
+	  	subject string
+	  	book_id int
+	  }
+	  
+	  func main() {
+	  	var Book1 Books
+	  	var Book2 Books
+	  
+	  	Book1.title = "Go Programming"
+	  	Book1.author = "Mahesh Kumar"
+	  	Book1.subject = "Go Programming Tutorial"
+	  	Book1.book_id = 6495407
+	  
+	  	Book2.title = "Python Programming"
+	  	Book2.author = "Mahesh Kumar"
+	  	Book2.subject = "Python Programming Tutorial"
+	  	Book2.book_id = 6495700
+	  
+	  	printBook(Book1)
+	  	printBook(Book2)
+	  }
+	  
+	  func printBook(book Books) {
+	  	/* 打印 Book1 信息 */
+	  	fmt.Printf("Book title : %s\n", book.title)
+	  	fmt.Printf("Book author : %s\n", book.author)
+	  	fmt.Printf("Book subject : %s\n", book.subject)
+	  	fmt.Printf("Book book_id : %d\n", book.book_id)
+	  }
+	  ```
+-
+- ## 结构体指针
+	- 你可以定义指向结构体的指针,类似于其它指针变量,格式如下
+	- ```go
 	  ```
