@@ -42,4 +42,11 @@
 	  s := arr[:endIndex]
 	  ```
 	- 缺省startIndex时表示从arr的第一个元素开始
-	-
+	- ```go
+	  s1 := s[startIndex:endIndex]
+	  ```
+	- 通过切片s初始化切片s1
+	- ```go
+	  s := make([]int, len, cap)
+	  ```
+	- 通过内置函数make()初始化切片s,[]int标识
