@@ -123,4 +123,29 @@
 	- 如果想增加切片的容量,我们必须创建一个新的更大的切片把原切片的内容都拷贝过来
 	- 下面的代码描述了从拷贝切片的copy方法和向切片追加新元素的append方法
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main() {
+	  	var numbers []int
+	  	printSlice(numbers)
+	  
+	  	numbers = append(numbers, 0)
+	  	printSlice(numbers)
+	  
+	  	numbers = append(numbers, 1)
+	  	printSlice(numbers)
+	  
+	  	numbers = append(numbers, 2, 3, 4)
+	  	printSlice(numbers)
+	  
+	  	numbers1 := make([]int, len(numbers), (cap(numbers))*2)
+	  	copy(numbers1, numbers)
+	  	printSlice(numbers1)
+	  }
+	  
+	  func printSlice(x []int) {
+	  	fmt.Printf("len=%d cap=%d slice=%v\n", len(x), cap(x), x)
+	  }
 	  ```
