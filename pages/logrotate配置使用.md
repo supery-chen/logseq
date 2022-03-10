@@ -40,4 +40,4 @@
   */1 * * * * sh /etc/cron.d/logrotate
   ```
 -
-- 按上述配置完成后,可以再次临时将logrotate配置中的size修改为1M,
+- 按上述配置完成后,可以再次临时将logrotate配置中的size修改为1M,然后等待一分钟后查看定时任务执行情况,同时也可以通过`tail -f /var/log/cron`查看定时任务执行情况
