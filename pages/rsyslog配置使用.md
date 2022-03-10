@@ -7,3 +7,4 @@
 - 执行上述命令并重启rsyslog后,再次查看状态,可以发现正常
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646889988551_0.png)
 -
+-
