@@ -14,10 +14,10 @@
 - ## 服务器端操作
 	- 使用xshell登录服务器,并切换到root用户
 	- 使用`df -Th`命令可以查看我们当前磁盘挂载,磁盘格式及各分区使用情况等信息
-	- 从图中可以看到,我们挂载的硬盘格式为xfs,所以待会我们新
+	- 从图中可以看到,我们挂载的硬盘格式为xfs,所以待会我们新挂载的时候也使用xfs格式进行挂载
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878445459_0.png)
 	- 使用`fdisk -l`可以看到我们添加的所有硬盘,根据大小我们可以看到新加的硬盘为`/dev/sdc`
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878532345_0.png)
-	-
+	- 找到新加硬盘后,我们需要先对硬盘进行格式化,并指定类型,上一步我们已经知道需要将
 	-
 -
