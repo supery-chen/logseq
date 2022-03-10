@@ -28,6 +28,8 @@
 	- `mount -t xfs /dev/sdc /data1`
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878847458_0.png)
 	- 从上图可以看到,硬盘已成功挂载至`/data1`下
-	- 接下来,我们需要为其配置上开机自动挂载,否则重启后还需要自己手动
+	- 接下来,我们需要为其配置上开机自动挂载,否则重启后还需要自己手动再次挂载
+	- 修改`/etc/fstab`文件,添加一行内容如下
+	-
 	-
 -
