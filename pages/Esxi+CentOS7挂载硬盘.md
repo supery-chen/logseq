@@ -15,6 +15,8 @@
 	- 使用xshell登录服务器,并切换到root用户
 	- 使用`df -Th`命令可以查看我们当前磁盘挂载,磁盘格式及各分区使用情况等信息
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878445459_0.png)
+	- 使用`fdisk -l`可以看到我们添加的所有硬盘,根据大小我们可以看到新加的硬盘为`/dev/sdc`
+	- ![image.png](../assets/image_1646878532345_0.png)
 	-
 	-
 -
