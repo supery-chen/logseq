@@ -20,6 +20,10 @@
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878532345_0.png)
 	- 找到新加硬盘后,我们需要先对硬盘进行格式化,并指定类型,上一步我们已经知道需要将硬盘格式化为xfs格式
 	- 执行`mkfs -t xfs /dev/sdc`
-	- 格式化后,此硬盘就可以用于挂载了,
+	- 格式化后,此硬盘就可以用于挂载了,接下来我们创建需要挂载的路径,比如`/data1`
+	- `mkdir /data1`
+	- 创建成功后,将`/dev/sdc`挂载至`/data1`
+	- `mount -t xfs /dev/sdc /data1`
+	-
 	-
 -
