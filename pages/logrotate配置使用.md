@@ -39,3 +39,5 @@
   # 每分钟执行一次
   */1 * * * * sh /etc/cron.d/logrotate
   ```
+-
+- 按上述配置完成后,可以再次临时将logrotate配置中的size修改为1M,
