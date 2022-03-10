@@ -6,6 +6,9 @@
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878081232_0.png)
 	- 弹出的编辑窗口中选择**添加硬盘**,然后选择**新标准硬盘**
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878110223_0.png)
-	- 填写新**硬盘大小**,磁盘置备选择精简置备后点击保存
+	- 填写新**硬盘大小**,磁盘置备选择**精简置备**后点击**保存**
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878222000_0.png)
+	- 保存后,我们可以在硬件配置中看到此新增的硬盘
+	- ![image.png](../assets/image_1646878292809_0.png)
+	-
 -
