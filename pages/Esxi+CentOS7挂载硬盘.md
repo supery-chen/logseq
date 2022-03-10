@@ -9,6 +9,9 @@
 	- 填写新**硬盘大小**,磁盘置备选择**精简置备**后点击**保存**
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878222000_0.png)
 	- 保存后,我们可以在硬件配置中看到此新增的硬盘
-	- ![image.png](../assets/image_1646878292809_0.png)
-	-
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878292809_0.png)
+-
+- ## 服务器端操作
+	- 使用xshell登录服务器,并切换到root用户
+	- 使用`df -Th`命令可以查看我们当前挂载的
 -
