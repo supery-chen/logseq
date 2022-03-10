@@ -8,4 +8,4 @@
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646889988551_0.png)
 - 关于SELinux与rsyslog的问题,[这篇文章](https://support.logz.io/hc/en-us/articles/209486429-Troubleshooting-Rsyslog-SELinux-configuration)可能有用
 -
--
+- 上述配置完成后,仅仅是实现了指定rsyslog将远程日志打印至指定路径,但如果
