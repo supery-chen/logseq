@@ -2,7 +2,9 @@
 - > 大部分参考了上面文章中的内容
 - 下面以我们当前测试环境部署的Esxi及CentOS7服务器为例,进行演示
 - ## 网页端操作
-	- 登录Esxi服务器,选中我们需要挂载新硬盘的服务器,并点击编辑
+	- 登录Esxi服务器,选中我们需要挂载新硬盘的服务器,并点击**编辑**
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878081232_0.png)
-	-
+	- 弹出的编辑窗口中选择**添加硬盘**,然后选择**新标准硬盘**
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878110223_0.png)
+	-
+-
