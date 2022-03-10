@@ -1,0 +1,3 @@
+- [Centos7配置logrotate日志轮转](https://blog.51cto.com/u_14832653/2512113)
+- 修改`/etc/logrotate.d/syslog`,配置`/data/logs/kk_ccu_log/*.log`的日志轮转
+-
