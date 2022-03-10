@@ -26,4 +26,4 @@
 -
 - 按上述配置完成后,可以先临时将size配置为1M,然后手动执行`logrotate -f /etc/logrotate.conf`进行测试,正常情况下,首次执行时,只要现存日志文件大于1M,就会在日志路径下创建一个`remotehost.log.1`,等`remotehost.log`再次达到1M大小以后,再次执行`logrotate -f /etc/logrotate.conf`,可以看到原先的`remotehost.log.1`已经被压缩为`remotehost.log.2.gz`,而原先的`remotehost.log`则被重命名为`remotehost.log.1`,并重新创建了一个空的`remotehost.log`文件
 -
--
+- 到这里还没有配置完成,按照我们当前测试环境日志打印情况来看,每天的日志量在未压缩的情况下
