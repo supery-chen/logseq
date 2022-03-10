@@ -34,4 +34,8 @@
   
   /usr/sbin/logrotate -s /var/lib/logrotate/logrotate.status -f /etc/logrotate.conf
   ```
-- 使用`root`执行`crontab -e`用户创建定时任务
+- 使用`root`用户执行`crontab -e`创建定时任务,定时任务如下
+- ```shell
+  # 每分钟执行一次
+  */1 * * * * sh /etc/cron.d/logrotate
+  ```
