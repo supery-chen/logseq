@@ -28,4 +28,10 @@
 -
 - 到这里还没有配置完成,按照我们当前测试环境日志打印情况来看,每天的日志量在未压缩的情况下约有6G大小,不排除以后还会更多,如果我们直接使用logrotate提供的daily参数来指定日志为每天回滚一次,不仅压缩时耗时更长,且这么大的日志不利于排查问题,所以需要我们再结合cron定时任务来当时触发`logrotate -f /etc/logrotate.conf`命令,尽量保证日志每次到达500M以后就能尽快回滚
 -
-- 创建
+- 创建脚本`/etc/cron.d/logrotate`,内容如下
+- ```shell
+  #!/bin/sh
+  
+  /usr/sbin/logrotate -s /var/lib/logrotate/logrotate.status -f /etc/logrotate.conf
+  ```
+- 使用`root`执行`crontab -e`用户创建定时任务
