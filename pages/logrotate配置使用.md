@@ -32,7 +32,7 @@
 - ```shell
   #!/bin/sh
   
-  /usr/sbin/logrotate -s /var/lib/logrotate/logrotate.status -f /etc/logrotate.conf
+  /usr/sbin/logrotate -s /var/lib/logrotate/logrotate.status /etc/logrotate.conf
   ```
 - 使用`root`用户执行`crontab -e`创建定时任务,定时任务如下
 - ```shell
