@@ -82,3 +82,5 @@
 - ../assets/image_1646878397416_0.png
 - ../assets/image_1646878445459_0.png
 - ../assets/image_1646878532345_0.png
+- ../assets/image_1646878791603_0.png
+- ../assets/image_1646878813316_0.png
