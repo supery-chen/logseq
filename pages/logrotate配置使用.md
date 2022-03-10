@@ -24,4 +24,6 @@
   ```
 - 配置中的相关配置项都有注释说明,除此之外,其它配置项含义可以参考[Centos7配置logrotate日志轮转](https://blog.51cto.com/u_14832653/2512113)这篇文章中的说明
 -
-- 按上述配置完成后,可以先临时将size配置为1M,然后手动执行`logrotate -f /etc/logrotate.conf`进行测试,正常情况下,首次执行时,只要现存日志文件大于1M,就会在日志路径下创建一个`remotehost.log.1`,等`remotehost.log`再次达到
+- 按上述配置完成后,可以先临时将size配置为1M,然后手动执行`logrotate -f /etc/logrotate.conf`进行测试,正常情况下,首次执行时,只要现存日志文件大于1M,就会在日志路径下创建一个`remotehost.log.1`,等`remotehost.log`再次达到1M大小以后,再次执行`logrotate -f /etc/logrotate.conf`,可以看到原先的`remotehost.log.1`已经被压缩为`remotehost.log.2.gz`,而原先的`remotehost.log`则被重命名为`remotehost.log.1`,并重新创建了一个空的`remotehost.log`文件
+-
+-
