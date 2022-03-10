@@ -13,5 +13,7 @@
 -
 - ## 服务器端操作
 	- 使用xshell登录服务器,并切换到root用户
-	- 使用`df -Th`命令可以查看我们当前挂载的
+	- 使用`df -Th`命令可以查看我们当前磁盘挂载,磁盘格式及各分区使用情况等信息
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878397416_0.png)
+	-
 -
