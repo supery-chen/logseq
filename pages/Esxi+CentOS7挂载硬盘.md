@@ -18,6 +18,8 @@
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878445459_0.png)
 	- 使用`fdisk -l`可以看到我们添加的所有硬盘,根据大小我们可以看到新加的硬盘为`/dev/sdc`
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646878532345_0.png)
-	- 找到新加硬盘后,我们需要先对硬盘进行格式化,并指定类型,上一步我们已经知道需要将
+	- 找到新加硬盘后,我们需要先对硬盘进行格式化,并指定类型,上一步我们已经知道需要将硬盘格式化为xfs格式
+	- 执行`mkfs -t xfs /dev/sdc`
+	- 格式化后,此硬盘就可以用于挂载了,
 	-
 -
