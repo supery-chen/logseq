@@ -45,15 +45,18 @@
 			- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646985283147_0.png)
 	-
 	- ### [编译安装](https://nginx.org/en/docs/njs/install.html#install_sources)
-		- 1. 首先安装`Mercurial client`,需要借助其克隆njs的源码
+		- collapsed:: true
+		  1. 首先安装`Mercurial client`,需要借助其克隆njs的源码
 			- ```shell
 			  sudo yum -y install mercurial
 			  ```
-		- 2. 克隆`njs`源码,执行下面的命令会下载`njs`源码到当前路径下的`njs`目录
+		- collapsed:: true
+		  2. 克隆`njs`源码,执行下面的命令会下载`njs`源码到当前路径下的`njs`目录
 			- ```shell
 			  hg clone http://hg.nginx.org/njs
 			  ```
-		- 3. 重新编译安装`nginx`(增加`njs`模块)
+		- collapsed:: true
+		  3. 重新编译安装`nginx`(增加`njs`模块)
 			- 到之前编译`nginx`的路径下,重新执行编译命令(在命令最后增加`--add-module=njs下载路径/nginx`)
 			- 假设原先的`nginx`编译命令如下:
 				- `./configure --with-http_ssl_module --with-http_stub_status_module --with-http_gzip_static_module --with-pcre --with-stream`
@@ -62,7 +65,7 @@
 				- `./configure --with-http_ssl_module --with-http_stub_status_module --with-http_gzip_static_module --with-pcre --with-stream --add-module=/home/hj/njs/nginx`
 	-
 	- ### 编写脚本
-		-
+		- 按上述任一方式安装`njs`完成后,下一步进行`js`脚本的编写,此处可以参考
 	-
 	- ### 修改配置
 		-
