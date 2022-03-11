@@ -2,9 +2,14 @@
 - ## [nginx](https://nginx.org/en/download.html)
 	- 本次使用的服务器为`CentOS 7`, `nginx`版本为`1.20.2`
 	- `nginx`安装可以选择使用包管理工具或编译安装两种方式
-	- ##
+	- ### 包管理工具安装
+		-
+	- ### 编译安装
+		-
 -
 - ## [njs](https://nginx.org/en/docs/njs/install.html)
+	- 根据`nginx`安装方式不同,njs需要使用相同的安装方式
+	-
 -
 - ## 参考文档
 	- [choosing-upstream-in-stream-based-on-the-underlying-protocol-stream-detect-http](https://github.com/nginx/njs-examples#choosing-upstream-in-stream-based-on-the-underlying-protocol-stream-detect-http)
