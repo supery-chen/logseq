@@ -54,7 +54,7 @@
 			  hg clone http://hg.nginx.org/njs
 			  ```
 		- 3. 重新编译安装nginx(增加njs模块)
-			- 到之前编译nginx的路径下,重新执行编译命令(记得在最后增加)
+			- 到之前编译nginx的路径下,重新执行编译命令(在命令最后增加`--add-module=njs下载路径/nginx`)
 -
 -
 - ## 参考文档
