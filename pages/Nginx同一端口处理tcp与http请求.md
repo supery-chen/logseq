@@ -5,7 +5,6 @@
 	- > njs is a subset of the JavaScript language that allows extending nginx functionality. njs is created in compliance with ECMAScript 5.1 (strict mode) with some ECMAScript 6 and later extensions. The compliance is still evolving.
 	  从[nginx官方文档介绍](https://nginx.org/en/docs/njs/)可以看到,njs是nginx提供的一个JavaScript的子集,方便我们使用js编写代码来扩展nginx功能
 	- ### 安装
-	  collapsed:: true
 		- 本次使用的服务器为`CentOS 7`, `nginx`版本为`1.20.2`
 		- 根据`nginx`安装方式不同,`njs`需要使用相同的安装方式
 		- #### [包管理工具安装](https://nginx.org/en/docs/njs/install.html#install_package)
@@ -59,7 +58,7 @@
 				- 则新的编译命令如下:
 					- `./configure --with-http_ssl_module --with-http_stub_status_module --with-http_gzip_static_module --with-pcre --with-stream --add-module=/home/hj/njs/nginx`
 	-
-	- ### 编写脚本
+	- ### 脚本编写
 		- 按上述任一方式安装`njs`完成后,下一步进行`js`脚本的编写,此处可以参考[github](https://github.com/nginx/njs-examples#choosing-upstream-in-stream-based-on-the-underlying-protocol-stream-detect-http)的官方示例.脚本编写完成后,我们将其存放至`path-to-nginx/njs/detect_http.js`
 			- ```js
 			  var is_http = 0;
@@ -87,7 +86,7 @@
 			  export default {detect_http, upstream_type}
 			  ```
 	-
-	- ### 修改配置
+	- ### 配置
 		- 脚本编写完成后,下一步我们需要在`nginx.conf`中进行配置以使用.在`nginx.conf`中追加如下配置
 			- ```conf
 			  stream {
