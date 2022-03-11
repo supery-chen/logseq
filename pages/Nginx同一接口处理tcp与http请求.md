@@ -7,6 +7,10 @@
 	- 本次使用的服务器为`CentOS 7`, `nginx`版本为`1.20.2`
 	- 根据`nginx`安装方式不同,`njs`需要使用相同的安装方式
 	- ### [包管理工具安装](https://nginx.org/en/docs/njs/install.html#install_package)
+		- Install the prerequisites:
+			- ```shell
+			  sudo yum install yum-utils
+			  ```
 		-
 	- ### [编译安装](https://nginx.org/en/docs/njs/install.html#install_sources)
 		-
