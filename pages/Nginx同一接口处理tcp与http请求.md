@@ -47,8 +47,12 @@
 	- ### [编译安装](https://nginx.org/en/docs/njs/install.html#install_sources)
 		- 1. 首先安装`Mercurial client`,需要借助其克隆njs的源码
 			- ```shell
+			  sudo yum -y install mercurial
 			  ```
 		- 2. 克隆njs源码
+			- ```shell
+			  hg clone http://hg.nginx.org/njs
+			  ```
 		- 3. 重新编译安装nginx(增加njs模块)
 -
 -
