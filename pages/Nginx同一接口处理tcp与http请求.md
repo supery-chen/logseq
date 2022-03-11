@@ -66,65 +66,67 @@
 	-
 	- ### 编写脚本
 		- 按上述任一方式安装`njs`完成后,下一步进行`js`脚本的编写,此处可以参考[github](https://github.com/nginx/njs-examples#choosing-upstream-in-stream-based-on-the-underlying-protocol-stream-detect-http)的官方示例.脚本编写完成后,我们将其存放至`path-to-nginx/njs/detect_http.js`
-		- ```js
-		  var is_http = 0;
-		  
-		  function detect_http(s) {
-		      s.on('upload', function (data, flags) {
-		          var n = data.indexOf('\r\n');
-		        	//判断数据包格式,如果格式满足http协议,则is_http为真,否则为假
-		          if (n != -1 && data.substr(0, n - 1).endsWith(" HTTP/1.")) {
-		              is_http = 1;
-		          }
-		  		
-		          if (data.length || flags.last) {
-		              s.done();
-		          }
-		      });
-		  }
-		  
-		  function upstream_type(s) {
-		    	//如果是http协议,则返回httpback,否则返回tcpback
-		      return is_http ? "httpback" : "tcpback";
-		  }
-		  
-		  //暴露出这两个方法,供nginx使用
-		  export default {detect_http, upstream_type}
-		  ```
+		  collapsed:: true
+			- ```js
+			  var is_http = 0;
+			  
+			  function detect_http(s) {
+			      s.on('upload', function (data, flags) {
+			          var n = data.indexOf('\r\n');
+			        	//判断数据包格式,如果格式满足http协议,则is_http为真,否则为假
+			          if (n != -1 && data.substr(0, n - 1).endsWith(" HTTP/1.")) {
+			              is_http = 1;
+			          }
+			  		
+			          if (data.length || flags.last) {
+			              s.done();
+			          }
+			      });
+			  }
+			  
+			  function upstream_type(s) {
+			    	//如果是http协议,则返回httpback,否则返回tcpback
+			      return is_http ? "httpback" : "tcpback";
+			  }
+			  
+			  //暴露出这两个方法,供nginx使用
+			  export default {detect_http, upstream_type}
+			  ```
 	-
 	- ### 修改配置
 		- 脚本编写完成后,下一步我们需要在`nginx.conf`中进行配置以使用.在`nginx.conf`中追加如下配置
-		- ```conf
-		  stream {
-		      # 配置njs脚本所在目录
-		      js_path "/path-to-nginx/njs/";
-		      # 引入刚才编写的脚本detect_http.js
-		      js_import main from detect_http.js;
-		      # 设置upstream的值为upstream_type方法的返回值
-		      js_set $upstream main.upstream_type;
-		  
-		  	# 定义名称为httpback的upstream,指定内部server指向我们的http服务
-		      # 注意这里的httpback需要与脚本中的upstream_type方法返回字符串一致
-		      upstream httpback {
-		          server 172.25.240.36:8000;
-		      }
-		  	# 定义名称为tcpback的upstream,指定内部server指向我们的tcp服务
-		      # 注意这里的tcpback需要与脚本中的upstream_type方法返回字符串一致
-		      upstream tcpback {
-		          server 172.25.240.36:8001;
-		      }
-		  	# 定义server
-		      server {
-		      	# 指定监听端口
-		          listen 8002;
-		          # 在预读阶段调用detect_http方法
-		          js_preread  main.detect_http;
-		          # 代理
-		          proxy_pass $upstream;
-		      }
-		  }
-		  ```
-		- 关于`ngx_stream_js_module`更多的用法可以参考[官方文档](https://nginx.org/en/docs/njs/)
+		  collapsed:: true
+			- ```conf
+			  stream {
+			      # 配置njs脚本所在目录
+			      js_path "/path-to-nginx/njs/";
+			      # 引入刚才编写的脚本detect_http.js
+			      js_import main from detect_http.js;
+			      # 设置upstream的值为upstream_type方法的返回值
+			      js_set $upstream main.upstream_type;
+			  
+			  	# 定义名称为httpback的upstream,指定内部server指向我们的http服务
+			      # 注意这里的httpback需要与脚本中的upstream_type方法返回字符串一致
+			      upstream httpback {
+			          server 172.25.240.36:8000;
+			      }
+			  	# 定义名称为tcpback的upstream,指定内部server指向我们的tcp服务
+			      # 注意这里的tcpback需要与脚本中的upstream_type方法返回字符串一致
+			      upstream tcpback {
+			          server 172.25.240.36:8001;
+			      }
+			  	# 定义server
+			      server {
+			      	# 指定监听端口
+			          listen 8002;
+			          # 在预读阶段调用detect_http方法
+			          js_preread  main.detect_http;
+			          # 根据detect_http执行结果代理请求至tcpback或httpback
+			          proxy_pass $upstream;
+			      }
+			  }
+			  ```
+		- 关于`njs`模块的更多的用法可以参考[官方文档](https://nginx.org/en/docs/njs/)
 	-
 	- ### 测试
 		-
