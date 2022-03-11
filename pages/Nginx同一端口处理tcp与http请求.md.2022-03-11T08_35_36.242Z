@@ -40,7 +40,7 @@
 				  load_module modules/ngx_http_js_module.so;
 				  ```
 				- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646985283147_0.png)
-				-
+		-
 		- #### [编译安装](https://nginx.org/en/docs/njs/install.html#install_sources)
 			- 1. 首先安装`Mercurial client`,需要借助其克隆njs的源码
 				- ```shell
@@ -57,7 +57,7 @@
 				- `njs`下载路径为`/home/hj/njs`
 				- 则新的编译命令如下:
 					- `./configure --with-http_ssl_module --with-http_stub_status_module --with-http_gzip_static_module --with-pcre --with-stream --add-module=/home/hj/njs/nginx`
-					-
+	-
 	- ### 脚本编写
 		- 按上述任一方式安装`njs`完成后,下一步进行`js`脚本的编写,此处可以参考[github](https://github.com/nginx/njs-examples#choosing-upstream-in-stream-based-on-the-underlying-protocol-stream-detect-http)的官方示例.脚本编写完成后,我们将其存放至`path-to-nginx/njs/detect_http.js`
 			- ```js
@@ -85,7 +85,7 @@
 			  //暴露出这两个方法,供nginx使用
 			  export default {detect_http, upstream_type}
 			  ```
-			  -
+	-
 	- ### 配置
 		- 脚本编写完成后,下一步我们需要在`nginx.conf`中进行配置以使用.在`nginx.conf`中追加如下配置
 			- ```conf
@@ -122,13 +122,13 @@
 			  ```
 		- 关于`njs`模块的更多的用法可以参考[官方文档](https://nginx.org/en/docs/njs/)
 		- 上述配置完成后,执行`nginx -s reload`使配置生效
-		-
+	-
 	- ### 测试
 		- 为了进行测试,我用python脚本分别编写了一个http服务与tcp服务,分别监听8001与8002端口,并提供了请求的echo功能
 		- 此时分别使用http与tcp请求nginx服务器的8000端口进行测试,结果如下
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646987347498_0.png)
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646987446342_0.png)
-		-
-		-
+-
+-
 - ## 参考文档
 	- [choosing-upstream-in-stream-based-on-the-underlying-protocol-stream-detect-http](https://github.com/nginx/njs-examples#choosing-upstream-in-stream-based-on-the-underlying-protocol-stream-detect-http)
