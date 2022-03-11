@@ -1,3 +1,5 @@
+- > 原理:借助nginx提供的[njs](https://nginx.org/en/docs/njs/install.html)模块,通过分析
 - ## nginx
 -
-- ##
+- ## njs
+-
