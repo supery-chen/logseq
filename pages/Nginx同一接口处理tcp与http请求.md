@@ -11,7 +11,7 @@
 			- ```shell
 			  sudo yum install yum-utils
 			  ```
-		- To set up the yum repository, create the file named /etc/yum.repos.d/nginx.repo with the following contents:
+		- 设置yum存储库,创建`/etc/yum.repos.d/nginx.repo`并填写如下内容:
 			- ```
 			  [nginx-stable]
 			  name=nginx stable repo
@@ -29,9 +29,9 @@
 			  gpgkey=https://nginx.org/keys/nginx_signing.key
 			  module_hotfixes=true
 			  ```
-		- To install njs, run the following command:
+		- 执行以下命令进行安装:
 			- ```shell
-			  yum -y install nginx-module-njs
+			  sudo yum -y install nginx-module-njs
 			  ```
 	- ### [编译安装](https://nginx.org/en/docs/njs/install.html#install_sources)
 		-
