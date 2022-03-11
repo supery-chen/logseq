@@ -132,9 +132,9 @@
 	-
 	- ### 测试
 		- 为了进行测试,我用python脚本分别编写了一个http服务与tcp服务,分别监听8001与8002端口,并提供了请求的echo功能
-		- 此时分别使用http与tcp请求nginx服务器的8000端口进行测试
+		- 此时分别使用http与tcp请求nginx服务器的8000端口进行测试,结果如下
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646987347498_0.png)
-		-
+		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646987446342_0.png)
 -
 -
 - ## 参考文档
