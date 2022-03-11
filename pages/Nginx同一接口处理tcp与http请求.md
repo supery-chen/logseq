@@ -49,7 +49,7 @@
 			- ```shell
 			  sudo yum -y install mercurial
 			  ```
-		- 2. 克隆njs源码
+		- 2. 克隆`njs`源码,执行下面的命令会在当前目录下载`njs`源码
 			- ```shell
 			  hg clone http://hg.nginx.org/njs
 			  ```
