@@ -74,6 +74,9 @@
  {:block/name "done",
   :block/created-at 1642756477862,
   :block/updated-at 1642756477862}
+ {:block/name "esxi+centos7挂载新硬盘",
+  :block/created-at 1646877917540,
+  :block/updated-at 1646879037147}
  {:block/name "favorites",
   :block/created-at 1642756477862,
   :block/updated-at 1642756477862}
@@ -200,6 +203,9 @@
  {:block/name "later",
   :block/created-at 1642756477862,
   :block/updated-at 1642756477862}
+ {:block/name "logrotate配置使用",
+  :block/created-at 1646890228814,
+  :block/updated-at 1646896529003}
  {:block/name "logseq发布到github pages",
   :block/created-at 1645432511856,
   :block/updated-at 1645499686066}
@@ -213,14 +219,8 @@
   :block/created-at 1645433014975,
   :block/updated-at 1645499502161}
  {:block/name "mar 10th, 2022",
-  :block/created-at 1646875730328,
-  :block/updated-at 1646875730328}
- {:block/name "mar 8th, 2022",
-  :block/created-at 1646697600000,
-  :block/updated-at 1646697600000}
- {:block/name "mar 9th, 2022",
-  :block/created-at 1646808802983,
-  :block/updated-at 1646808802983}
+  :block/created-at 1646876017294,
+  :block/updated-at 1646890228815}
  {:block/name "mongodb",
   :block/created-at 1643249173928,
   :block/updated-at 1645493111160}
@@ -272,6 +272,9 @@
  {:block/name "projectreactor debug记录",
   :block/created-at 1642761914275,
   :block/updated-at 1643016635873}
+ {:block/name "rsyslog配置使用",
+  :block/created-at 1646876037968,
+  :block/updated-at 1646890211967}
  {:block/name "set vs lazyset",
   :block/created-at 1642761989654,
   :block/updated-at 1643247528088}
