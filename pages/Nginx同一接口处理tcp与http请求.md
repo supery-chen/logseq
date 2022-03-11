@@ -33,7 +33,10 @@
 			- ```shell
 			  sudo yum -y install nginx-module-njs
 			  ```
-		- 4. 安装完成后,修改nginx配置文件
+		- 4. 安装完成后,需要修改nginx.conf,在顶部声明加载对应模块
+			- ``````
+		-
+		- 6. ``
 	- ### [编译安装](https://nginx.org/en/docs/njs/install.html#install_sources)
 		-
 -
