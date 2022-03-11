@@ -7,11 +7,11 @@
 	- 本次使用的服务器为`CentOS 7`, `nginx`版本为`1.20.2`
 	- 根据`nginx`安装方式不同,`njs`需要使用相同的安装方式
 	- ### [包管理工具安装](https://nginx.org/en/docs/njs/install.html#install_package)
-		- Install the prerequisites:
+		- 1. 安装前先执行以下命令:
 			- ```shell
 			  sudo yum install yum-utils
 			  ```
-		- 设置yum存储库,创建`/etc/yum.repos.d/nginx.repo`并填写如下内容:
+		- 2. 设置`yum`存储库,创建`/etc/yum.repos.d/nginx.repo`并填写如下内容:
 			- ```
 			  [nginx-stable]
 			  name=nginx stable repo
@@ -29,10 +29,11 @@
 			  gpgkey=https://nginx.org/keys/nginx_signing.key
 			  module_hotfixes=true
 			  ```
-		- 执行以下命令进行安装:
+		- 3. 执行以下命令进行安装:
 			- ```shell
 			  sudo yum -y install nginx-module-njs
 			  ```
+		- 4. 安装完成后,修改nginx配置文件
 	- ### [编译安装](https://nginx.org/en/docs/njs/install.html#install_sources)
 		-
 -
