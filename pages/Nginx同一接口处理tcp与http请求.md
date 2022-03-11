@@ -60,8 +60,15 @@
 			- `njs`下载路径为`/home/hj/njs`
 			- 则新的编译命令如下:
 				- `./configure --with-http_ssl_module --with-http_stub_status_module --with-http_gzip_static_module --with-pcre --with-stream --add-module=/home/hj/njs/nginx`
-	- 1
 	-
+	- ### 编写脚本
+		-
+	-
+	- ### 修改配置
+		-
+	-
+	- ### 测试
+		-
 -
 -
 - ## 参考文档
