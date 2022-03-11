@@ -6,9 +6,9 @@
 	  从[nginx官方文档介绍](https://nginx.org/en/docs/njs/)可以看到,njs是nginx提供的一个JavaScript的子集,用于扩展nginx功能
 	- 本次使用的服务器为`CentOS 7`, `nginx`版本为`1.20.2`
 	- 根据`nginx`安装方式不同,`njs`需要使用相同的安装方式
-	- ### 包管理工具安装
+	- ### [包管理工具安装](https://nginx.org/en/docs/njs/install.html#install_package)
 		-
-	- ### 编译安装
+	- ### [编译安装](https://nginx.org/en/docs/njs/install.html#install_sources)
 		-
 -
 -
