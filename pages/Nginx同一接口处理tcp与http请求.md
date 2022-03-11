@@ -38,8 +38,8 @@
 			  load_module modules/ngx_stream_js_module.so;
 			  load_module modules/ngx_http_js_module.so;
 			  ```
-		-
-		- 6. ``
+			- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646985283147_0.png)
+	-
 	- ### [编译安装](https://nginx.org/en/docs/njs/install.html#install_sources)
 		-
 -
