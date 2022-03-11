@@ -93,8 +93,28 @@
 		  ```
 	-
 	- ### 修改配置
-		- 脚本编写完成后,下一步我们需要在`nginx.conf`中进行配置以使用
+		- 脚本编写完成后,下一步我们需要在`nginx.conf`中进行配置以使用.在`nginx.conf`中追加如下配置
 		- ```conf
+		  stream {
+		      js_path "/etc/nginx/njs/";
+		      js_import main from stream/detect_http.js;
+		      
+		      js_set $upstream main.upstream_type;
+		  
+		      upstream httpback {
+		          server 172.25.240.36:8000;
+		      }
+		  
+		      upstream tcpback {
+		          server 172.25.240.36:8001;
+		      }
+		  
+		      server {
+		          listen 8002;
+		          js_preread  main.detect_http;
+		          proxy_pass $upstream;
+		      }
+		  }
 		  ```
 	-
 	- ### 测试
