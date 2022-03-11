@@ -56,10 +56,11 @@
 		- 3. 重新编译安装`nginx`(增加`njs`模块)
 			- 到之前编译`nginx`的路径下,重新执行编译命令(在命令最后增加`--add-module=njs下载路径/nginx`)
 			- 假设原先的`nginx`编译命令如下
-				- ```shell
-				  ./configure --with-http_ssl_module --with-http_stub_status_module --with-http_gzip_static_module --with-pcre --with-stream
-				  ```
-			- ``,njs下载路径为`/home/hj/njs`,则新的编译命令为`./configure --with-http_ssl_module --with-http_stub_status_module --with-http_gzip_static_module --with-pcre --with-stream --add-module=/home/hj/njs/nginx`
+				- `shell
+				  ./configure --with-http_ssl_module --with-http_stub_status_module \
+				  --with-http_gzip_static_module --with-pcre --with-stream`
+			- 则新的编译命令为
+			- `./configure --with-http_ssl_module --with-http_stub_status_module --with-http_gzip_static_module --with-pcre --with-stream --add-module=/home/hj/njs/nginx`
 -
 -
 - ## 参考文档
