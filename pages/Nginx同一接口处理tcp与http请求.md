@@ -96,21 +96,28 @@
 		- 脚本编写完成后,下一步我们需要在`nginx.conf`中进行配置以使用.在`nginx.conf`中追加如下配置
 		- ```conf
 		  stream {
-		      js_path "/etc/nginx/njs/";
-		      js_import main from stream/detect_http.js;
-		      
+		      # 配置njs脚本所在目录
+		      js_path "/path-to-nginx/njs/";
+		      # 引入刚才编写的脚本detect_http.js
+		      js_import main from detect_http.js;
+		      # 设置upstream的值为upstream_type方法的返回值
 		      js_set $upstream main.upstream_type;
 		  
+		  	# 定义名称为httpback的upstream,指定内部server指向我们的http服务
+		      # 注意这里的httpback需要与脚本中的upstream_type方法返回字符串一致
 		      upstream httpback {
 		          server 172.25.240.36:8000;
 		      }
-		  
+		  	# 定义名称为tcpback的upstream,指定内部server指向我们的tcp服务
+		      # 注意这里的tcpback需要与脚本中的upstream_type方法返回字符串一致
 		      upstream tcpback {
 		          server 172.25.240.36:8001;
 		      }
-		  
+		  	# 定义server
 		      server {
+		      	# 指定监听端口
 		          listen 8002;
+		          # 启用js_preread,提前解析数据
 		          js_preread  main.detect_http;
 		          proxy_pass $upstream;
 		      }
