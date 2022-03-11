@@ -117,13 +117,13 @@
 		      server {
 		      	# 指定监听端口
 		          listen 8002;
-		          # 启用js_preread,提前解析数据
+		          # 在预读阶段调用detect_http方法
 		          js_preread  main.detect_http;
 		          proxy_pass $upstream;
 		      }
 		  }
 		  ```
-		- 关于`ngx_stream_js_module`更多的用法可以参考[官方文档]()
+		- 关于`ngx_stream_js_module`更多的用法可以参考[官方文档](https://nginx.org/en/docs/njs/)
 	-
 	- ### 测试
 		-
