@@ -3,7 +3,7 @@
 -
 - ## [njs](https://nginx.org/en/docs/njs/)
 	- > njs is a subset of the JavaScript language that allows extending nginx functionality. njs is created in compliance with ECMAScript 5.1 (strict mode) with some ECMAScript 6 and later extensions. The compliance is still evolving.
-	  从[nginx官方文档介绍](https://nginx.org/en/docs/njs/)可以看到,njs是nginx提供的一个JavaScript的子集,用于扩展nginx功能
+	  从[nginx官方文档介绍](https://nginx.org/en/docs/njs/)可以看到,njs是nginx提供的一个JavaScript的子集,方便我们使用js编写代码来扩展nginx功能
 	- 本次使用的服务器为`CentOS 7`, `nginx`版本为`1.20.2`
 	- 根据`nginx`安装方式不同,`njs`需要使用相同的安装方式
 	- ### [包管理工具安装](https://nginx.org/en/docs/njs/install.html#install_package)
