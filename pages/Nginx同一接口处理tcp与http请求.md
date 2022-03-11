@@ -119,6 +119,7 @@
 		          listen 8002;
 		          # 在预读阶段调用detect_http方法
 		          js_preread  main.detect_http;
+		          # 
 		          proxy_pass $upstream;
 		      }
 		  }
