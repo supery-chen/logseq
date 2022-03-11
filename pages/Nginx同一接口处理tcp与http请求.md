@@ -65,17 +65,18 @@
 				- `./configure --with-http_ssl_module --with-http_stub_status_module --with-http_gzip_static_module --with-pcre --with-stream --add-module=/home/hj/njs/nginx`
 	-
 	- ### 编写脚本
-		- 按上述任一方式安装`njs`完成后,下一步进行`js`脚本的编写,此处可以参考[github](https://github.com/nginx/njs-examples#choosing-upstream-in-stream-based-on-the-underlying-protocol-stream-detect-http)的官方示例
+		- 按上述任一方式安装`njs`完成后,下一步进行`js`脚本的编写,此处可以参考[github](https://github.com/nginx/njs-examples#choosing-upstream-in-stream-based-on-the-underlying-protocol-stream-detect-http)的官方示例.脚本编写完成后,我们将其存放到`path-to-nginx/njs/detect_http.js
 		- ```js
 		  var is_http = 0;
 		  
 		  function detect_http(s) {
 		      s.on('upload', function (data, flags) {
 		          var n = data.indexOf('\r\n');
+		        	//判断数据包格式,如果格式满足http协议,则is_http为真,否则为假
 		          if (n != -1 && data.substr(0, n - 1).endsWith(" HTTP/1.")) {
 		              is_http = 1;
 		          }
-		  
+		  		
 		          if (data.length || flags.last) {
 		              s.done();
 		          }
@@ -83,9 +84,11 @@
 		  }
 		  
 		  function upstream_type(s) {
+		    	//如果是http协议,则返回httpback,否则返回tcpback
 		      return is_http ? "httpback" : "tcpback";
 		  }
 		  
+		  //暴露出这两个方法,供nginx使用
 		  export default {detect_http, upstream_type}
 		  ```
 	-
