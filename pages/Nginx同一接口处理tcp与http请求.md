@@ -1,5 +1,5 @@
 - > 原理:借助nginx提供的[njs](https://nginx.org/en/docs/njs/install.html)模块,分析数据包格式,判断是否为http数据包,如果满足,则转发至后端http服务进行处理,否则转发至后端tcp服务
--
+- **Nginx的安装比较简单,网上文档很多,这里就不再说明**
 - ## [njs](https://nginx.org/en/docs/njs/install.html)
 	- 本次使用的服务器为`CentOS 7`, `nginx`版本为`1.20.2`
 	- 根据`nginx`安装方式不同,`njs`需要使用相同的安装方式
