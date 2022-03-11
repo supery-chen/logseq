@@ -1,4 +1,4 @@
-- > 原理:借助nginx提供的[njs](https://nginx.org/en/docs/njs/install.html)模块,通过分析
+- > 原理:借助nginx提供的[njs](https://nginx.org/en/docs/njs/install.html)模块,分析数据包格式,判断是否为http数据包,如果满足,则转发至后端http服务进行处理,否则转发至后端tcp服务
 - ## nginx
 -
 - ## njs
