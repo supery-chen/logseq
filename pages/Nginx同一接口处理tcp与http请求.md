@@ -7,11 +7,13 @@
 	- 本次使用的服务器为`CentOS 7`, `nginx`版本为`1.20.2`
 	- 根据`nginx`安装方式不同,`njs`需要使用相同的安装方式
 	- ### [包管理工具安装](https://nginx.org/en/docs/njs/install.html#install_package)
-		- 1. 安装前先执行以下命令:
+		- collapsed:: true
+		  1. 安装前先执行以下命令:
 			- ```shell
 			  sudo yum install yum-utils
 			  ```
-		- 2. 设置`yum`存储库,创建`/etc/yum.repos.d/nginx.repo`并填写如下内容:
+		- collapsed:: true
+		  2. 设置`yum`存储库,创建`/etc/yum.repos.d/nginx.repo`并填写如下内容:
 			- ```
 			  [nginx-stable]
 			  name=nginx stable repo
@@ -29,11 +31,13 @@
 			  gpgkey=https://nginx.org/keys/nginx_signing.key
 			  module_hotfixes=true
 			  ```
-		- 3. 执行以下命令进行安装:
+		- collapsed:: true
+		  3. 执行以下命令进行安装:
 			- ```shell
 			  sudo yum -y install nginx-module-njs
 			  ```
-		- 4. 安装完成后,需要修改nginx.conf,在顶部声明加载对应模块
+		- collapsed:: true
+		  4. 安装完成后,需要修改nginx.conf,在顶部声明加载对应模块
 			- ```conf
 			  load_module modules/ngx_stream_js_module.so;
 			  load_module modules/ngx_http_js_module.so;
@@ -41,7 +45,7 @@
 			- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1646985283147_0.png)
 	-
 	- ### [编译安装](https://nginx.org/en/docs/njs/install.html#install_sources)
-		-
+		- 1. 首先安装`Mercurial client`,需要借助其克隆njs的源码
 -
 -
 - ## 参考文档
