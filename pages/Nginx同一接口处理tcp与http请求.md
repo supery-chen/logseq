@@ -95,7 +95,6 @@
 	-
 	- ### 修改配置
 		- 脚本编写完成后,下一步我们需要在`nginx.conf`中进行配置以使用.在`nginx.conf`中追加如下配置
-		  collapsed:: true
 			- ```conf
 			  stream {
 			      # 配置njs脚本所在目录
@@ -108,17 +107,19 @@
 			  	# 定义名称为httpback的upstream,指定内部server指向我们的http服务
 			      # 注意这里的httpback需要与脚本中的upstream_type方法返回字符串一致
 			      upstream httpback {
-			          server 172.25.240.36:8000;
+			      	# 这是测试用的http服务地址
+			          server 127.0.0.1:8001;
 			      }
 			  	# 定义名称为tcpback的upstream,指定内部server指向我们的tcp服务
 			      # 注意这里的tcpback需要与脚本中的upstream_type方法返回字符串一致
 			      upstream tcpback {
-			          server 172.25.240.36:8001;
+			      	# 这是测试用的tcp服务地址
+			          server 127.0.0.1:8002;
 			      }
 			  	# 定义server
 			      server {
 			      	# 指定监听端口
-			          listen 8002;
+			          listen 8000;
 			          # 在预读阶段调用detect_http方法
 			          js_preread  main.detect_http;
 			          # 根据detect_http执行结果代理请求至tcpback或httpback
