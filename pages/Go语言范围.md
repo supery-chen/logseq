@@ -5,4 +5,6 @@
   |Array或者slice a [n]E|索引i int|a[i] E|
   |String s string type|索引i int|rune int|
   |map m map[K]V|键k K|值 m[k] V|
+  |channel c chan E|元素 e E|none|
+-
 -
