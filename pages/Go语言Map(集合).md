@@ -10,4 +10,30 @@
 	  ```
 	- 如果不初始化map,那么就会创建一个nil map.nil map不能用来存放键值对
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main() {
+	  	//创建集合
+	  	var countryCapitalMap map[string]string
+	  	countryCapitalMap = make(map[string]string)
+	  	//map插入key-value对,各个国家对应的首都
+	  	countryCapitalMap["France"] = "Paris"
+	  	countryCapitalMap["Italy"] = "Rome"
+	  	countryCapitalMap["Japan"] = "Tokyo"
+	  	countryCapitalMap["India"] = "New Delhi"
+	  	//使用key输出map值
+	  	for country := range countryCapitalMap {
+	  		fmt.Printf("Capital of %s is %s\n", country, countryCapitalMap[country])
+	  	}
+	  	//查看元素在集合中是否存在
+	  	capital, ok := countryCapitalMap["United States"]
+	  	if ok {
+	  		fmt.Println("Capital of United States is", capital)
+	  	} else {
+	  		fmt.Println("Capital of United States is not present")
+	  	}
+	  }
 	  ```
+	-
