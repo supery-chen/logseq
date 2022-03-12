@@ -3,4 +3,11 @@
 - ## 定义Map
 	- 可以使用内建函数make也可以使用map关键字来定义Map
 	- ```go
+	  //声明变量,默认map是nil
+	  var map_variable map[key_data_type]value_data_type
+	  //使用make函数
+	  map_variable = make(map[key_data_type]value_data_type)
+	  ```
+	- 如果不初始化map,那么就会创建一个nil map.nil map不能用来存放键值对
+	- ```go
 	  ```
