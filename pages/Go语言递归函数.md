@@ -15,4 +15,21 @@
 - ## 阶乘
 	- 以下实例通过Go语言中的递归函数实现阶乘
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func Factorial(x int) (result int) {
+	  	if x == 0 {
+	  		return 1
+	  	}
+	  	return x * Factorial(x-1)
+	  }
+	  
+	  func main() {
+	  	var i int = 15
+	  	fmt.Printf("%d 的阶乘是 %d\n", i, Factorial(i))
+	  }
 	  ```
+-
+-
