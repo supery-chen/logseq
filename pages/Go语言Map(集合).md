@@ -40,4 +40,21 @@
 - ## delete()函数
 	- delete()函数用于删除集合的元素,参数为map和其对应的key
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main() {
+	  	countryCapitalMap := map[string]string{"France": "Paris", "Italy": "Rome", "Japan": "Tokyo"}
+	  	fmt.Println("原始map")
+	  	for country := range countryCapitalMap {
+	  		fmt.Printf("%s: %s\n", country, countryCapitalMap[country])
+	  	}
+	  	delete(countryCapitalMap, "France")
+	  	fmt.Println("Entry for France is deleted")
+	  	fmt.Println("删除元素后map")
+	  	for country := range countryCapitalMap {
+	  		fmt.Printf("%s: %s\n", country, countryCapitalMap[country])
+	  	}
+	  }
 	  ```
