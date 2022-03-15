@@ -69,4 +69,9 @@
 	  ```
 	- 执行以上程序,输出结果为
 	- ```
+	  100/10 =  10
+	  errorMsg is:  
+	          Cannot proceed, the divider is zero.
+	          dividee: 100
+	          divider: 0
 	  ```
