@@ -32,31 +32,34 @@
 -
 - ## ValueOf
 	- ValueOf返回一个初始化为interface接口保管的具体值的Value,ValueOf(nil)返回Value零值
-	- ```go
-	  package main
-	  
-	  import (
-	  	"fmt"
-	  	"reflect"
-	  )
-	  
-	  func main() {
-	  	var booknum float32 = 6
-	  	var isbook bool = true
-	  	bookauthor := "www.w3cschool.cn"
-	  	bookdetail := make(map[string]string)
-	  	bookdetail["Go语言教程"] = "www.w3cschool.cn"
-	  	fmt.Println(reflect.ValueOf(booknum))
-	  	fmt.Println(reflect.ValueOf(isbook))
-	  	fmt.Println(reflect.ValueOf(bookauthor))
-	  	fmt.Println(reflect.ValueOf(bookdetail))
-	  }
-	  ```
-	- 以上代码执行结果如下
-	- ```
-	  6
-	  true
-	  www.w3cschool.cn
-	  map[Go语言教程:www.w3cschool.cn]
-	  ```
-	-
+	- ### 通过反射获取值
+		- ```go
+		  package main
+		  
+		  import (
+		  	"fmt"
+		  	"reflect"
+		  )
+		  
+		  func main() {
+		  	var booknum float32 = 6
+		  	var isbook bool = true
+		  	bookauthor := "www.w3cschool.cn"
+		  	bookdetail := make(map[string]string)
+		  	bookdetail["Go语言教程"] = "www.w3cschool.cn"
+		  	fmt.Println(reflect.ValueOf(booknum))
+		  	fmt.Println(reflect.ValueOf(isbook))
+		  	fmt.Println(reflect.ValueOf(bookauthor))
+		  	fmt.Println(reflect.ValueOf(bookdetail))
+		  }
+		  ```
+		- 以上代码执行结果如下
+		- ```
+		  6
+		  true
+		  www.w3cschool.cn
+		  map[Go语言教程:www.w3cschool.cn]
+		  ```
+	- ### 通过反射设置值
+		- ```go
+		  ```
