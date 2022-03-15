@@ -51,4 +51,8 @@
 	  	phone.call()
 	  }
 	  ```
-	- 在上面的例子中,我们定义了一个接口Phone,接口里面定义了一个方法call().然后我们在main函数里定义了一个Phone类型变量,并分别为之赋值为NokiaPhone和IPhone
+	- 在上面的例子中,我们定义了一个接口Phone,接口里面定义了一个方法call().然后我们在main函数里定义了一个Phone类型变量,并分别为之赋值为NokiaPhone和IPhone.然后调用call()方法,输出结果如下
+	- ```
+	  I am Nokia, I can call you! 
+	  I am iPhone, I can call you!
+	  ```
