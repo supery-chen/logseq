@@ -23,4 +23,17 @@
 -
 - ## go不支持隐式类型转换
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  func main(){
+	    var a int64 = 3
+	    var b int32
+	    b = a
+	    fmt.Printf("b 为: %d", b)
+	  }
+	  ```
+	- 以上代码执行会报错
+	- ```shell
 	  ```
