@@ -26,4 +26,47 @@
 -
 - ## 实例
 	- ```go
+	  package main
+	  
+	  import "fmt"
+	  
+	  type DevideError struct {
+	  	dividee int
+	  	divider int
+	  }
+	  
+	  func (de *DevideError) ERROR() string {
+	  	strFormat := `
+	  	Cannot proceed, the divider is zero.
+	  	dividee: %d
+	  	divider: 0
+	  `
+	  	return fmt.Sprintf(strFormat, de.dividee)
+	  }
+	  
+	  func Divide(varDividee int, varDivider int) (result int, errorMsg string) {
+	  	if varDivider == 0 {
+	  		dData := DevideError{
+	  			dividee: varDividee,
+	  			divider: varDivider,
+	  		}
+	  		errorMsg = dData.ERROR()
+	  		return
+	  	}
+	  	return varDividee / varDivider, ""
+	  }
+	  
+	  func main() {
+	  	//正常情况
+	  	if result, errorMsg := Divide(100, 10); errorMsg == "" {
+	  		fmt.Println("100/10 = ", result)
+	  	}
+	  	//当被除数为零时候会返回错误信息
+	  	if _, errorMsg := Divide(100, 0); errorMsg != "" {
+	  		fmt.Println("errorMsg is: ", errorMsg)
+	  	}
+	  }
+	  ```
+	- 执行以上程序,输出结果为
+	- ```
 	  ```
