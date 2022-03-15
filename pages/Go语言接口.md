@@ -2,4 +2,12 @@
 -
 - ## 实例
 	- ```go
+	  
+	  type interface_name interface {
+	  	method_name [return_type]
+	  }
+	  
+	  type struct_name struct {
+	    
+	  }
 	  ```
