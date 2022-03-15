@@ -35,5 +35,8 @@
 	  }
 	  ```
 	- 以上代码执行会报错
-	- ```shell
+	- ```
+	  cannot use a (type int64) as type int32 in assignment
+	  cannot use b (type int32) as type string in argument to fmt.Printf
 	  ```
+	- 但如果改成`b = int32(a)`就不会报错了
