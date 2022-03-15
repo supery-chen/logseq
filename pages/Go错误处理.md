@@ -15,4 +15,4 @@
     // 实现
   }
   ```
--
+- 在下面的例子中,我们在调用Sqrt的时候传入的一个负数,然后就得到了non-nil的error对象,将此对象与nil比较,结果为true,,所以`fmt.Println(fmt包处理error时会调用Error方法)`
