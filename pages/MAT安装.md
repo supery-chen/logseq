@@ -10,4 +10,15 @@
 	  -vm
 	  path-to-jdk/bin/javaw.exe
 	  ```
-	- 以我的为例，修改后的`Memory`
+	- 以我的为例，修改后的`MemoryAnalyzer.ini`内容如下
+	- ```ini
+	  -vm
+	  D:/Program Files/Java/jdk-17.0.2/bin/javaw.exe
+	  -startup
+	  plugins/org.eclipse.equinox.launcher_1.6.200.v20210416-2027.jar
+	  --launcher.library
+	  plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.2.200.v20210429-1609
+	  -vmargs
+	  -Xmx1024m
+	  ```
+	- 保存后再次点击exe文件即可打开
