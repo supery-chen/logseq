@@ -1,5 +1,5 @@
 - > https://www.eclipse.org/mat/
-- ![close up photo of tabby cat](https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNDYwNDl8MHwxfHNlYXJjaHwxfHxjYXR8ZW58MHx8fHwxNjQ3NDQ2MDM5&ixlib=rb-1.2.1&q=80&w=400){:height 275, :width 400}
+-
 - [[MAT安装]]
 - [[术语说明]]
 - [[Heap Dump文件]]
