@@ -90,3 +90,4 @@
 - ../assets/image_1646985283147_0.png
 - ../assets/image_1646987347498_0.png
 - ../assets/image_1646987446342_0.png
+- ../assets/image_1647443228331_0.png
