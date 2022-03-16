@@ -4,4 +4,5 @@
 	  ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1647443228331_0.png)
 -
 - ## 启动
-	- 下载后得到的是一个免安装的
+	- 下载后得到的是一个免安装的压缩包，解压后点击**MemoryAnalyzer.exe**即可启动
+	- 如果启动时提示需要jdk11或以上版本，
