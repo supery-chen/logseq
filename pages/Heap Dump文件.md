@@ -9,21 +9,21 @@
 	- 包含了转储时刻的线程调用栈信息和栈帧中的局部变量信息
 -
 - ## 生成方式
-- ## jmap
-	- ```shell
-	  jmap -dump:live,format=b,file=path\heap.hprof <pid>
-	  ```
--
-- ## jcmd
-	- ```shell
-	  jcmd <pid> GC.heap_dump path\heap.hprof
-	  ```
--
-- ## jvm参数
-	- -XX:+HeapDumpOnOutOfMemoryError 当OutOfMemoryError发生时自动生成 Heap Dump 文件
-	- -XX:+HeapDumpBeforeFullGC 当 JVM 执行 FullGC 前执行 dump
-	- -XX:+HeapDumpAfterFullGC 当 JVM 执行 FullGC 后执行 dump
-	- -XX:+HeapDumpOnCtrlBreak 交互式获取dump。在控制台按下快捷键Ctrl + Break时，JVM就会转存一下堆快照。
-	- -XX:HeapDumpPath=d:\test.hprof 指定 dump 文件存储路径。
+	- ### jmap
+		- ```shell
+		  jmap -dump:live,format=b,file=path\heap.hprof <pid>
+		  ```
+	-
+	- ### jcmd
+		- ```shell
+		  jcmd <pid> GC.heap_dump path\heap.hprof
+		  ```
+	-
+	- ### jvm参数
+		- -XX:+HeapDumpOnOutOfMemoryError 当OutOfMemoryError发生时自动生成 Heap Dump 文件
+		- -XX:+HeapDumpBeforeFullGC 当 JVM 执行 FullGC 前执行 dump
+		- -XX:+HeapDumpAfterFullGC 当 JVM 执行 FullGC 后执行 dump
+		- -XX:+HeapDumpOnCtrlBreak 交互式获取dump。在控制台按下快捷键Ctrl + Break时，JVM就会转存一下堆快照。
+		- -XX:HeapDumpPath=d:\test.hprof 指定 dump 文件存储路径。
 -
 -
