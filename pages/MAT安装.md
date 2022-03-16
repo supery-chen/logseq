@@ -7,4 +7,7 @@
 	- 下载后得到的是一个免安装的压缩包，解压后点击**MemoryAnalyzer.exe**即可启动
 	- 如果启动时提示需要jdk11或以上版本，需要先在本机安装jdk或11以上版本，安装完成后，修改**MemoryAnalyzer.ini**，在顶部添加如下两行
 	- ```ini
+	  -vm
+	  path-to-jdk/bin/javaw.exe
 	  ```
+	- 以我的为例，修改后的`Memory`
