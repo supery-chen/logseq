@@ -11,6 +11,7 @@
 - ## 生成方式
 	- 常用的一些方式列举如下，除此之外还有别的方式也可以获取，不再额外列举
 	- ### jmap
+		- 详细关于jmap的使用见[[jmap]]
 		- ```shell
 		  jmap -dump:[live,]format=b,file=path/heap.hprof <pid>
 		  ```
