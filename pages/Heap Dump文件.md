@@ -12,7 +12,7 @@
 	- 常用的一些方式列举如下，除此之外还有别的方式也可以获取，不再额外列举
 	- ### jmap
 		- ```shell
-		  jmap -dump:live,format=b,file=path/heap.hprof <pid>
+		  jmap -dump:[live,]format=b,file=path/heap.hprof <pid>
 		  ```
 	-
 	- ### jcmd
