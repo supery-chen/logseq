@@ -8,6 +8,7 @@
 	- 线程栈及局部变量
 	- 包含了转储时刻的线程调用栈信息和栈帧中的局部变量信息
 -
+- ## 生成方式
 - ## jmap
 	- ```shell
 	  jmap -dump:live,format=b,file=path\heap.hprof <pid>
