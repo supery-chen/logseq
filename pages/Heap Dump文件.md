@@ -1,4 +1,4 @@
-- Heap Dump 包含的信息
+- ## Heap Dump 包含的信息
 	- 所有的对象信息
 	- 对象的类信息、字段信息、原生值(int, long等)及引用值
 	- 所有的类信息
@@ -7,4 +7,14 @@
 	- 根对象是指那些可以直接被虚拟机触及的对象
 	- 线程栈及局部变量
 	- 包含了转储时刻的线程调用栈信息和栈帧中的局部变量信息
+-
+- ## jmap
+	- ```shell
+	  jmap -dump:live,format=b,file=d:\dump\heap.hprof <pid>
+	  ```
+-
+- ## jcmd
+-
+- ## jvm参数
+-
 -
