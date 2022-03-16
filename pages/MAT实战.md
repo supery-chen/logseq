@@ -1,5 +1,4 @@
 - > https://www.eclipse.org/mat/
-- ![MacBook Pro showing programming language](https://images.unsplash.com/photo-1484417894907-623942c8ee29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNDYwNDl8MHwxfHNlYXJjaHw2fHxqYXZhfGVufDB8fHx8MTY0NzQ0NjE0Mw&ixlib=rb-1.2.1&q=80&w=400)
 - [[MAT安装]]
 - [[术语说明]]
 - [[Heap Dump文件]]
