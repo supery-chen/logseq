@@ -42,12 +42,15 @@
 - 由于esxi自带的服务器操作界面十分难用,登录后使用`ip addr`查看服务器ip,然后使用xshell登入再进行操作
 -
 - ## 问题解决
-	- 用户无法切换root,报错如下
+	- ### 用户无法切换root
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087433569_0.png){:height 231, :width 602}
 		- 使用root用户登录,并修改/etc/sudoers
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087571105_0.png)
 		- 修改内容如下,在此处的root下添加一行
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087653152_0.png)
+		- 再次尝试,可以切换
+		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087725990_0.png)
+	-
 -
 -
 -
