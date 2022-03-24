@@ -4,11 +4,15 @@
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085740992_0.png)
 - 填写名称,并选择操作系统
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085763225_0.png)
--
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085784343_0.png)
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085919993_0.png)
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085937782_0.png)
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085954790_0.png)
+- 选择存储位置
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085784343_0.png)
+- 配置CPU
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085919993_0.png)
+- 配置内存
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085937782_0.png)
+- 配置硬盘
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085954790_0.png)
+- 选择**网络适配器**与**CD/DVD驱动器**,这里
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085970104_0.png)
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085995728_0.png)
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086018648_0.png){:height 91, :width 776}
