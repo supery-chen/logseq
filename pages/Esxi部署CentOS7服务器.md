@@ -28,9 +28,9 @@
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086399872_0.png)
 - 时区选择**Asia/Shanghai**
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086464924_0.png)
--
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086484918_0.png)
--
+- 点击**INSTALLATION DESTINATION**,点击**Done**,按默认的即可
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086484918_0.png)
+- 点击**NETWORK&HOST NAME**,填写Host name,打开
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086523179_0.png)
 -
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086542046_0.png)
