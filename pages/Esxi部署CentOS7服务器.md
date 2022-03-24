@@ -30,9 +30,9 @@
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086464924_0.png)
 - 点击**INSTALLATION DESTINATION**,点击**Done**,按默认的即可
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086484918_0.png)
-- 点击**NETWORK&HOST NAME**,填写Host name,打开
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086523179_0.png)
--
+- 点击**NETWORK&HOST NAME**,填写**Host name**,打开**Ethernet**,点击**Apply**,点击**Done**完成
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086523179_0.png)
+- 点击继续安装,等待安装完成,此时点击
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086542046_0.png)
 -
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086609450_0.png)
