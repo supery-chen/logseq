@@ -18,7 +18,9 @@
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085995728_0.png)
 - 找到我们创建好的虚拟机
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086018648_0.png){:height 91, :width 776}
--
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086044109_0.png)
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086073181_0.png){:height 511, :width 640}
--
+- 点击启动按钮开始安装
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086044109_0.png)
+- 选择**Install CentOS 7**并回车
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086073181_0.png){:height 511, :width 640}
+- 语言默认,点击**Continue**
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086351180_0.png)
