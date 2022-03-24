@@ -45,6 +45,9 @@
 	- 用户无法切换root,报错如下
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087433569_0.png){:height 231, :width 602}
 		- 使用root用户登录,并修改/etc/sudoers
+		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087571105_0.png)
+		- 修改内容如下
+		-
 -
 -
 -
