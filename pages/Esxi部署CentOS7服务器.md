@@ -1,8 +1,10 @@
 - 点击**创建/注册虚拟机**
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085726571_0.png)
+- 创建类型选择**创建新虚拟机**,点击**下一页**
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085740992_0.png)
+- 填写名称,并选择操作系统
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085763225_0.png)
 -
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085740992_0.png)
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085763225_0.png)
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085784343_0.png)
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085919993_0.png)
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085937782_0.png)
