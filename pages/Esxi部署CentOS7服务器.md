@@ -23,4 +23,11 @@
 - 选择**Install CentOS 7**并回车
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086073181_0.png){:height 511, :width 640}
 - 语言默认,点击**Continue**
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086351180_0.png)
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086351180_0.png)
+-
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086399872_0.png)
+-
+-
+-
+-
+-
