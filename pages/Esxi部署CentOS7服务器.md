@@ -1,4 +1,6 @@
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085726571_0.png)
+- 点击**创建/注册虚拟机**
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085726571_0.png)
+-
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085740992_0.png)
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085763225_0.png)
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085784343_0.png)
@@ -9,4 +11,5 @@
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085995728_0.png)
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086018648_0.png){:height 91, :width 776}
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086044109_0.png)
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086073181_0.png){:height 511, :width 640}
 -
