@@ -38,7 +38,8 @@
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086609450_0.png)
 - 同样的设置root用户密码
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087016795_0.png)
-- 等待安装完成后,重启进入系统,使用
+- 等待安装完成后,重启进入系统,使用配置的用户名密码登录服务器
+- 由于esxi自带的服务器操作界面使用`ip addr`查看服务器ip,然后使用xshell登入再进行操作
 -
 -
 -
