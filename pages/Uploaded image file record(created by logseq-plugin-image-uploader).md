@@ -109,3 +109,4 @@
 - ../assets/image_1648086464924_0.png
 - ../assets/image_1648086484918_0.png
 - ../assets/image_1648086523179_0.png
+- ../assets/image_1648086542046_0.png
