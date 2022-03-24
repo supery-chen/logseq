@@ -43,6 +43,7 @@
 -
 - ## 问题解决
 	- ### 用户无法切换root
+	  collapsed:: true
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087433569_0.png){:height 231, :width 602}
 		- 使用root用户登录,并修改/etc/sudoers
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087571105_0.png)
@@ -50,7 +51,10 @@
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087653152_0.png)
 		- 再次尝试,可以切换
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087725990_0.png)
-	-
+	- ### 安装一些常用工具
+		- lrzsz
+		- net-tools
+		- zip unzip
 -
 -
 -
