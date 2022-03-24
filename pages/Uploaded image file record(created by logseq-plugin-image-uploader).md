@@ -114,3 +114,4 @@
 - ../assets/image_1648086843944_0.png
 - ../assets/image_1648086990467_0.png
 - ../assets/image_1648087016795_0.png
+- ../assets/image_1648087189605_0.png
