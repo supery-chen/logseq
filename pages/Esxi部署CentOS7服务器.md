@@ -24,17 +24,18 @@
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086073181_0.png){:height 511, :width 640}
 - 语言默认,点击**Continue**
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086351180_0.png)
--
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086399872_0.png)
--
--
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086464924_0.png)
+- 点击**DATE&TIME**
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086399872_0.png)
+- 时区选择**Asia/Shanghai**
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086464924_0.png)
 -
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086484918_0.png)
 -
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086523179_0.png)
 -
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086542046_0.png)
+-
+- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086609450_0.png)
 -
 -
 -
