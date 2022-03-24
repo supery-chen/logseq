@@ -96,3 +96,5 @@
 - ../assets/image_1648085740992_0.png
 - ../assets/image_1648085763225_0.png
 - ../assets/image_1648085784343_0.png
+- ../assets/image_1648085919993_0.png
+- ../assets/image_1648085937782_0.png
