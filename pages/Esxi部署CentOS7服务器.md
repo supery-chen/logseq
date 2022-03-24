@@ -37,7 +37,8 @@
 - 输入要创建的**用户名**与**密码**并点击**Done**
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086609450_0.png)
 - 等待安装结束
-	-
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086843944_0.png)
+-
 -
 -
 -
