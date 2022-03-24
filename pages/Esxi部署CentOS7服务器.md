@@ -41,8 +41,10 @@
 - 等待安装完成后,重启进入系统,使用配置的用户名密码登录服务器
 - 由于esxi自带的服务器操作界面十分难用,登录后使用`ip addr`查看服务器ip,然后使用xshell登入再进行操作
 -
--
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087433569_0.png){:height 231, :width 602}
+- ## 问题解决
+	- 用户无法切换root,报错如下
+		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087433569_0.png){:height 231, :width 602}
+		- 使用root用户登录,并修改/etc/sudoers
 -
 -
 -
