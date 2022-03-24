@@ -59,7 +59,8 @@
 		- ...
 	- ### 安装vmware-tools
 		- 参考[这篇文章](https://segmentfault.com/a/1190000038633985)
-		- 可能遇到报错`/usr/bin/perl`不存在,执行`yum -y install gcc gcc-c++ perl make kernel-headers kernel-devel`
+		- 可能遇到报错`/usr/bin/perl`不存在,执行`yum -y install gcc gcc-c++ perl make kernel-headers kernel-devel`后重试即可
+		-
 -
 -
 -
