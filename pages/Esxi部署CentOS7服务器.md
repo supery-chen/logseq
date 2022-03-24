@@ -12,10 +12,13 @@
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085937782_0.png)
 - 配置硬盘
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085954790_0.png)
-- 选择**网络适配器**与**CD/DVD驱动器**,这里
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085970104_0.png)
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085995728_0.png)
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086018648_0.png){:height 91, :width 776}
+- 选择**网络适配器**与**CD/DVD驱动器**,这里**CD/DVD驱动器**选择的是本地的CentOS7镜像文件
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085970104_0.png)
+- 全部配置完成后,点击**完成**
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085995728_0.png)
+- 找到我们创建好的虚拟机
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086018648_0.png){:height 91, :width 776}
+-
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086044109_0.png)
 - ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086073181_0.png){:height 511, :width 640}
 -
