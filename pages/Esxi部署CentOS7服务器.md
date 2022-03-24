@@ -32,11 +32,12 @@
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086484918_0.png)
 - 点击**NETWORK&HOST NAME**,填写**Host name**,打开**Ethernet**,点击**Apply**,点击**Done**完成
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086523179_0.png)
-- 点击继续安装,等待安装完成,此时点击
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086542046_0.png)
--
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086609450_0.png)
--
+- 点击继续安装,开始安装,此时点击**USER CREATION**
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086542046_0.png)
+- 输入要创建的**用户名**与**密码**并点击**Done**
+	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648086609450_0.png)
+- 等待安装结束
+	-
 -
 -
 -
