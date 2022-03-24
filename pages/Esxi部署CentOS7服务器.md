@@ -52,9 +52,12 @@
 		- 再次尝试,可以切换
 		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648087725990_0.png)
 	- ### 安装一些常用工具
+	  collapsed:: true
 		- lrzsz
 		- net-tools
 		- zip unzip
+		- ...
+	-
 -
 -
 -
