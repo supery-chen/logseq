@@ -70,6 +70,9 @@
  {:block/name "esxi+centos7挂载新硬盘",
   :block/created-at 1647074963001,
   :block/updated-at 1647074963001}
+ {:block/name "esxi部署centos7服务器",
+  :block/created-at 1648085690669,
+  :block/updated-at 1648088227124}
  {:block/name "favorites",
   :block/created-at 1642756477862,
   :block/updated-at 1642756477862}
@@ -244,12 +247,9 @@
  {:block/name "mar 16th, 2022",
   :block/created-at 1647441386436,
   :block/updated-at 1647441386436}
- {:block/name "mar 23rd, 2022",
-  :block/created-at 1648030734940,
-  :block/updated-at 1648030734940}
  {:block/name "mar 24th, 2022",
   :block/created-at 1648085646494,
-  :block/updated-at 1648085646494}
+  :block/updated-at 1648085690670}
  {:block/name "mat安装",
   :block/created-at 1647442989686,
   :block/updated-at 1647443511750}
