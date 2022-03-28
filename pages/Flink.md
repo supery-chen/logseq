@@ -1,2 +1,2 @@
-- [【尚硅谷】2022版Flink1.13实战教程（涵盖所有flink-Java知识点）](https://www.bilibili.com/video/BV133411s7Sa)
-- {{bilibili }}
+- {{bilibili https://www.bilibili.com/video/BV133411s7Sa}}
+-
