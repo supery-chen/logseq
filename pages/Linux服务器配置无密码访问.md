@@ -1,0 +1,3 @@
+- 假设有两台服务器A和B
+- 在A上执行`ssh-keygen -t rsa`,一路回车,生成公钥与密钥
+- 在A上执行`ssh-copy-id `
