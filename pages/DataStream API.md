@@ -19,7 +19,11 @@
 			- ((62455333-4059-4d0a-a266-e4d36f31f389))
 		- ((6245533d-b444-4af3-855e-91035b9a28e8))
 	- ### 执行模式
-		-
+		- `bin/flink run -Dexecution.runtime-mode=BATCH`
+		- `bin/flink run -Dexecution.runtime-mode=STREAMING`
+		- `bin/flink run -Dexecution.runtime-mode=AUTOMATIC`
+	- ### 触发程序执行
+		- `env.execute()`
 -
 -
 - ## 读取数据源(source)
