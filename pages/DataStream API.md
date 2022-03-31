@@ -7,9 +7,17 @@
 - ((624551f0-6d44-4f88-b3d9-9d73db8febc9))
 -
 - ## 执行环境(Execution Environment)
+	- getExecutionEnvironment
 -
 - ## 读取数据源(source)
 -
+-
 - ## 定义基于数据的转换操作(transformation)
 -
-- ##
+-
+- ## 定义计算结果输出位置(sink)
+-
+-
+- ## 触发程序执行(execute)
+-
+-
