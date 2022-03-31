@@ -7,7 +7,10 @@
 - ((624551f0-6d44-4f88-b3d9-9d73db8febc9))
 -
 - ## 执行环境(Execution Environment)
-	- getExecutionEnvironment
+	- ### getExecutionEnvironment
+		- 最简单的方法,会根据当前运行的上下文直接得到正确的结果
+	- ### createLocalEnvironment
+	- ### createRemoteEnvironment
 -
 - ## 读取数据源(source)
 -
