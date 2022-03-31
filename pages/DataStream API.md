@@ -9,10 +9,12 @@
 - ## 执行环境(Execution Environment)
 	- ### getExecutionEnvironment
 		- 最简单的方法,会根据当前运行的上下文直接得到正确的结果,是最常用的一种创建执行环境的方式
+		-
 	- ### createLocalEnvironment
 		- 返回一个本地执行环境.可以在调用时传入一个参数,指定默认的并行度;如果不传入,则默认并行度就是本地CPU核心数
 	- ### createRemoteEnvironment
-		- 返回集群执行换技能
+		- 返回集群执行环境.需要在调用时指定JobManager的主机名和端口号,并指定要在集群中运行的Jar包
+	-
 -
 - ## 读取数据源(source)
 -
