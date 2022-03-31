@@ -1,1 +1,5 @@
 - [Centos 7 环境 hadoop 3.2.1分布式集群搭建](https://www.modb.pro/db/46147)
+-
+- ## 部署模式
+	- 会话模式
+	-
