@@ -48,7 +48,7 @@
 		  //....除了上述这些,flink还为我们提供了很多内置的数据源获取方式
 		  ```
 	- ### 自定义数据源
-		- 实现SourceFunction接口
+		- 实现SourceFunction接口,实现其内部的run方法与cancel方法
 -
 - ## 定义基于数据的转换操作(transformation)
 -
