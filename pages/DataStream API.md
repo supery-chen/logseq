@@ -47,7 +47,8 @@
 		  env.addSource(new FlinkKafkaConsumer<>("clicks", new SimpleStringSchema(), properties));
 		  //....除了上述这些,flink还为我们提供了很多内置的数据源获取方式
 		  ```
-		-
+	- ### 自定义数据源
+		- 实现SourceFunction接口
 -
 - ## 定义基于数据的转换操作(transformation)
 -
