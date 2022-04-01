@@ -102,7 +102,8 @@
 			- max
 			- minBy
 			- maxBy
-		- reduce()归约聚合
+		- reduce(归约聚合)
+		-
 		-
 		-
 	-
