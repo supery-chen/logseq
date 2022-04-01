@@ -7,6 +7,7 @@
 - ((624551f0-6d44-4f88-b3d9-9d73db8febc9))
 -
 - ## 执行环境(Execution Environment)
+  collapsed:: true
 	- ### 创建执行环境
 		- #### getExecutionEnvironment
 			- 最简单的方法,会根据当前运行的上下文直接得到正确的结果,是最常用的一种创建执行环境的方式
@@ -49,6 +50,7 @@
 		  //....除了上述这些,flink还为我们提供了很多内置的数据源获取方式
 		  ```
 	- ### 自定义数据源
+	  collapsed:: true
 		- 实现`SourceFunction`接口,实现其内部的`run`方法与`cancel`方法
 		- > 直接实现`SourceFunction`,不能并行处理,如果想要并行处理,需要实现`ParallelSourceFunction`
 		- ```java
@@ -87,6 +89,7 @@
 	-
 -
 - ## 转换算子(transformation)
+	- ((62466b57-e09a-407f-bdf8-4e7212545c6e))
 	-
 -
 - ## 定义计算结果输出位置(sink)
