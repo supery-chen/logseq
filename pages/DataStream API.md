@@ -48,9 +48,8 @@
 		  //....除了上述这些,flink还为我们提供了很多内置的数据源获取方式
 		  ```
 	- ### 自定义数据源
-		- 实现SourceFunction接口,实现其内部的run方法与cancel方法
-		- ```java
-		  import org.apache.flink.streaming.api.functions.source.SourceFunction;
+		- 实现`SourceFunction`接口,实现其内部的`run`方法与`cancel`方法
+		- import org.apache.flink.streaming.api.functions.source.SourceFunction;
 		  
 		  import java.util.Calendar;
 		  import java.util.Random;
@@ -72,6 +71,7 @@
 		              String url = urls[random.nextInt(urls.length)];
 		              long timestamp = Calendar.getInstance().getTimeInMillis();
 		              ctx.collect(new Event(user, url, timestamp));
+		              Thread.sleep(1000);
 		          }
 		      }
 		  
@@ -80,7 +80,6 @@
 		          running = false;
 		      }
 		  }
-		  ```
 -
 - ## 定义基于数据的转换操作(transformation)
 -
