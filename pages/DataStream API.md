@@ -90,9 +90,12 @@
 -
 - ## 转换算子(transformation)
 	- ((62466b57-e09a-407f-bdf8-4e7212545c6e))
-	- ### map
-	- ### filter
-	- ### flatMap
+	- ### 基本转换
+		- map
+		- filter
+		- flatMap
+	- ### 聚合算子
+		-
 	-
 -
 - ## 定义计算结果输出位置(sink)
