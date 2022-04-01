@@ -28,11 +28,16 @@
 - ## 源算子(source)
 	- ((6245550b-ea82-43bc-ab73-c4b9d079dd19))
 	- ```java
+	  
 	  env.readTextFile("input/clicks.txt");
 	  List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5, 6);
 	  env.fromCollection(nums);
 	  env.fromElements(1,2,3,4,5,6);
 	  env.socketTextStream("node110", 7777);
+	  Properties properties = new Properties();
+	  properties.setProperty("bootstrap.servers", "node110:9092");
+	  properties.setProperty("auto.offset.reset", "latest");
+	  DataStreamSource<String> kafkaStream = env.addSource(new FlinkKafkaConsumer<>("clicks", new SimpleStringSchema(), properties));
 	  ```
 -
 - ## 定义基于数据的转换操作(transformation)
