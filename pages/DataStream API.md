@@ -49,7 +49,6 @@
 		  //....除了上述这些,flink还为我们提供了很多内置的数据源获取方式
 		  ```
 	- ### 自定义数据源
-	  collapsed:: true
 		- 实现`SourceFunction`接口,实现其内部的`run`方法与`cancel`方法
 		- > 直接实现`SourceFunction`,不能并行处理,如果想要并行处理,需要实现`ParallelSourceFunction`
 		- ```java
