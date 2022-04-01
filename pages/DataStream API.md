@@ -27,18 +27,27 @@
 -
 - ## 源算子(source)
 	- ((6245550b-ea82-43bc-ab73-c4b9d079dd19))
-	- ```java
-	  
-	  env.readTextFile("input/clicks.txt");
-	  List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5, 6);
-	  env.fromCollection(nums);
-	  env.fromElements(1,2,3,4,5,6);
-	  env.socketTextStream("node110", 7777);
-	  Properties properties = new Properties();
-	  properties.setProperty("bootstrap.servers", "node110:9092");
-	  properties.setProperty("auto.offset.reset", "latest");
-	  DataStreamSource<String> kafkaStream = env.addSource(new FlinkKafkaConsumer<>("clicks", new SimpleStringSchema(), properties));
-	  ```
+	- ### 内置的数据源获取方式
+		- ```java
+		  //创建执行环境
+		  StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+		  //从文件读取数据
+		  env.readTextFile("input/clicks.txt");
+		  //从集合读取数据
+		  List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5, 6);
+		  env.fromCollection(nums);
+		  //从元素读取数据
+		  env.fromElements(1,2,3,4,5,6);
+		  //从socket读取数据
+		  env.socketTextStream("node110", 7777);
+		  //从kafka读取数据
+		  Properties properties = new Properties();
+		  properties.setProperty("bootstrap.servers", "node110:9092");
+		  properties.setProperty("auto.offset.reset", "latest");
+		  env.addSource(new FlinkKafkaConsumer<>("clicks", new SimpleStringSchema(), properties));
+		  //....除了上述这些,flink还为我们提供了很多内置的数据源获取方式
+		  ```
+		-
 -
 - ## 定义基于数据的转换操作(transformation)
 -
