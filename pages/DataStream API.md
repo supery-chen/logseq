@@ -27,7 +27,13 @@
 -
 - ## 源算子(source)
 	- ((6245550b-ea82-43bc-ab73-c4b9d079dd19))
-	-
+	- ```java
+	  env.readTextFile("input/clicks.txt");
+	  List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5, 6);
+	  env.fromCollection(nums);
+	  env.fromElements(1,2,3,4,5,6);
+	  env.socketTextStream("node110", 7777);
+	  ```
 -
 - ## 定义基于数据的转换操作(transformation)
 -
