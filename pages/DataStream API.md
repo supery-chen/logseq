@@ -50,6 +50,36 @@
 	- ### 自定义数据源
 		- 实现SourceFunction接口,实现其内部的run方法与cancel方法
 		- ```java
+		  import org.apache.flink.streaming.api.functions.source.SourceFunction;
+		  
+		  import java.util.Calendar;
+		  import java.util.Random;
+		  
+		  public class ClickSource implements SourceFunction<Event> {
+		  
+		      //声明一个标志位
+		      private volatile boolean running = true;
+		  
+		      @Override
+		      public void run(SourceContext<Event> ctx) {
+		          //随机生成数据
+		          final Random random = new Random();
+		          //定义字段选取数据集
+		          final String[] users = {"Mary", "Alice", "Bob", "Cary"};
+		          final String[] urls = {"./home", "./cart", "./fav", "./prod?id=100", "./prod?id=10"};
+		          while (running) {
+		              String user = users[random.nextInt(users.length)];
+		              String url = urls[random.nextInt(urls.length)];
+		              long timestamp = Calendar.getInstance().getTimeInMillis();
+		              ctx.collect(new Event(user, url, timestamp));
+		          }
+		      }
+		  
+		      @Override
+		      public void cancel() {
+		          running = false;
+		      }
+		  }
 		  ```
 -
 - ## 定义基于数据的转换操作(transformation)
