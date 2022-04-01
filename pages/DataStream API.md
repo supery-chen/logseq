@@ -49,7 +49,9 @@
 		  ```
 	- ### 自定义数据源
 		- 实现`SourceFunction`接口,实现其内部的`run`方法与`cancel`方法
-		- import org.apache.flink.streaming.api.functions.source.SourceFunction;
+		- > 直接实现SourceFunction,不能并行处理,如果想要并行处理,需要实现
+		- ```java
+		  import org.apache.flink.streaming.api.functions.source.SourceFunction;
 		  
 		  import java.util.Calendar;
 		  import java.util.Random;
@@ -80,6 +82,7 @@
 		          running = false;
 		      }
 		  }
+		  ```
 -
 - ## 定义基于数据的转换操作(transformation)
 -
