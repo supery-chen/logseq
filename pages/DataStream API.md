@@ -27,6 +27,7 @@
 		- `env.execute()`
 -
 - ## 源算子(source)
+  collapsed:: true
 	- ((6245550b-ea82-43bc-ab73-c4b9d079dd19))
 	- ### 内置的数据源获取方式
 	  collapsed:: true
@@ -103,10 +104,8 @@
 			- minBy
 			- maxBy
 		- reduce(归约聚合)
-		-
-		-
-		-
 	-
+-
 -
 - ## 定义计算结果输出位置(sink)
 -
