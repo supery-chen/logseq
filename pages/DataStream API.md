@@ -96,10 +96,13 @@
 		- flatMap
 	- ### 聚合算子
 		- keyBy(按键区分)
-		- sum
-		- min
-		- max
-		- minBy
+		- 简单聚合
+			- sum
+			- min
+			- max
+			- minBy
+			- maxBy
+		- reduce()归约聚合
 		-
 		-
 	-
