@@ -85,7 +85,7 @@
 		  ```
 	-
 -
-- ## 定义基于数据的转换操作(transformation)
+- ## 转换算子(transformation)
 -
 -
 - ## 定义计算结果输出位置(sink)
