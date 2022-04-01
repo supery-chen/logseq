@@ -95,6 +95,12 @@
 		- filter
 		- flatMap
 	- ### 聚合算子
+		- keyBy(按键区分)
+		- sum
+		- min
+		- max
+		- minBy
+		-
 		-
 	-
 -
