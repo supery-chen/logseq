@@ -127,6 +127,9 @@
 	- ### 输出到Elasticsearch
 		- ((624d64b8-ea6f-4870-a0b3-edacc8bbdc83))
 	- ### 输出到MySQL
+		- ((624d64f5-9a95-43e3-80a3-e8dec01baee7))
+	- ### 自定义Sink输出
+		- ((624d6516-35c7-44f1-90f2-f292732b462b))
 		-
 -
 - ## 触发程序执行(execute)
