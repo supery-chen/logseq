@@ -1,4 +1,5 @@
 - 一个Flink程序,其实就是对DataStream的各种转换.具体来说,代码基本都由以下几部分构成
+  collapsed:: true
 	- 获取执行环境(execution environment)
 	- 读取数据源(source)
 	- 定义基于数据的转换操作(transformation)
@@ -90,6 +91,7 @@
 	-
 -
 - ## 转换算子(transformation)
+  collapsed:: true
 	- ((62466b57-e09a-407f-bdf8-4e7212545c6e))
 	- ### 基本转换
 		- map
@@ -112,10 +114,8 @@
 		- 广播-`broadcast`
 		- 全局分区-`global`
 -
--
--
--
 - ## 输出算子(sink)
+	- ((624d0a28-e019-4df0-b32c-11d000f59cf8))
 	-
 -
 - ## 触发程序执行(execute)
