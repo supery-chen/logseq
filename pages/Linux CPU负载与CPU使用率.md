@@ -19,4 +19,9 @@
 -
 - ## CPU负载-多核处理器
 	- 多核CPU与多CPU效果类似,等价于CPU数*每个CPU核心数
-	- `cat /proc/cpuinfo`
+	- `cat /proc/cpuinfo` 可以查看CPU信息
+	- `grep -c 'model name' /proc/cpuinfo` 可以直接查看CPU总核心数
+-
+- ## 系统负载的经验法则
+	- 当系统负荷持续大于0.7,你必须开始调查了,问题出在哪里,防止情况恶化
+	-
