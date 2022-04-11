@@ -14,3 +14,6 @@
 		  // 将得到的结果写入输出表
 		  TableResult tableResult = table1.executeInsert("outputTable");
 		  ```
+	- ### 创建表环境
+		-
+-
