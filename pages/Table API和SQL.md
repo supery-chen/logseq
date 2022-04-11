@@ -15,5 +15,9 @@
 		  TableResult tableResult = table1.executeInsert("outputTable");
 		  ```
 	- ### 创建表环境
-		-
+		- Table API和SQL需要一个特别的运行时环境,就是所谓的"表环境"(TableEnvironment).它主要负责:
+			- 注册Catalog和表
+			- 执行SQL查询
+			- 注册用户自定义函数(UDF)
+			-
 -
