@@ -19,5 +19,6 @@
 			- 注册Catalog和表
 			- 执行SQL查询
 			- 注册用户自定义函数(UDF)
-			-
+			- DataStream和表之间的转换
+		-
 -
