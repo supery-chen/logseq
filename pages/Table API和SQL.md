@@ -169,6 +169,7 @@
 		- ((62554e31-8844-4dfe-940e-38eba7551833))
 -
 - ## 聚合(Aggregation)查询
+  collapsed:: true
 	- ((62554e63-dfc8-4d4a-a3d8-56e6ea3b2542))
 	- ### 分组聚合
 	  collapsed:: true
@@ -199,6 +200,7 @@
 		- ((62555750-c2e3-4e6d-9eb5-1ea7ff1784c8))
 -
 - ## 联结(Join)查询
+  collapsed:: true
 	- ((62556ef9-9495-4bde-bc1c-7f547178abcd))
 	- ((62556f10-2f77-404f-bfbd-1d09ab46a87c))
 	- ### 常规联结查询
@@ -332,3 +334,8 @@
 					- ((62557d6d-8a87-41a1-bf2f-cdb325cc7c04))
 			- > 表聚合函数目前SQL中支持不好,所以使用Table API进行调用(flatAggregate)
 -
+- ## SQL客户端
+	-
+-
+- ## 连接到外部系统
+	-
