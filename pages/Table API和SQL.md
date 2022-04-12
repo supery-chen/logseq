@@ -171,13 +171,16 @@
 - ## 聚合(Aggregation)查询
 	- ((62554e63-dfc8-4d4a-a3d8-56e6ea3b2542))
 	- ### 分组聚合
+	  collapsed:: true
 		- ((62554f49-cd1a-43ec-a931-6511e2b576c4))
 	- ### 窗口聚合
+	  collapsed:: true
 		- ((62554f6e-8840-43af-824b-a4797c6cfad8))
 		- ((62554f7d-42da-4d36-8248-3b0f099c4a59))
 		- ((62554f88-cc1b-48ea-b4d9-eddd612cce24))
 		- ((62554f97-a55e-4cd0-afef-ded15d295882))
 	- ### 开窗聚合
+	  collapsed:: true
 		- ((625555c0-af03-4f47-8529-18bd4109e10b))
 		- ```sql
 		  SELECT
