@@ -255,4 +255,7 @@
 				- ```java
 				  tableEnv.sqlQuery("SELECT MyFunction(myField) FROM MyTable");
 				  ```
-		-
+				- ((62557613-9d1b-4047-9016-244d14ac52c2))
+		- #### 标量函数(Scalar Functions)
+			- ((6255763f-a746-4076-b04e-01c8a70a7fd3))
+			-
