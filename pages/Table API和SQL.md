@@ -31,5 +31,6 @@
 			- ```java
 			  Table newTable = tableEnv.sqlQuery("SELECT ... FROM MyTable... ");
 			  ```
-			- 这里
+			- 这里调用了表环境的sqlQuery,直接传入一条SQL语句作为参数执行查询,得到的一个Table对象.Table是Table API中提供的核心接口类,就代表一个Java中定义的表实例
+			- 得到的newTable是一个中间
 -
