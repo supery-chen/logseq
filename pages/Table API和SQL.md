@@ -244,6 +244,9 @@
 			- ((6255753a-4dff-4f13-a4d9-46660e4f3808))
 		- #### 整体调用流程
 			- 注册函数
+				- ```java
+				  tableEnv.createTemporarySystemFunction("MyFunction", MyFunction.class);
+				  ```
 			- 使用Table API调用函数
 			- 在SQL中调用函数
 		-
