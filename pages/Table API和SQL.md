@@ -142,4 +142,15 @@
 			- ((625539f8-c868-4dc2-8cb5-5f6e8e653ffc))
 			- ((625539ff-590a-42f0-9aef-43dda244f83a))
 			- ```sql
+			  CREATE TABLE events (
+			    user STRING,
+			    url STRING,
+			    ts BIGINT,
+			    ts_ltz AS TO_TIMESTAMP_LTZ(ts, 3),
+			    WATERMARK FOR ts_ltz AS time_ltz -INTERVAL '5' SECOND
+			  ) WITH (
+			    ...
+			  );
 			  ```
+			- ((62553a37-fa2a-467b-965b-d8c263debf8c))
+		-
