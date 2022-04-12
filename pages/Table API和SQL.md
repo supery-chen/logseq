@@ -248,6 +248,11 @@
 				  tableEnv.createTemporarySystemFunction("MyFunction", MyFunction.class);
 				  ```
 			- 使用Table API调用函数
+				- ```java
+				  tableEnv.from("MyTable").select(call("MyFunction", $("myField")));
+				  ```
 			- 在SQL中调用函数
-		-
+				- ```java
+				  tableEnv.sqlQuery("SELECT MyFunction(myField) FROM MyTable");
+				  ```
 		-
