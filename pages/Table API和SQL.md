@@ -279,5 +279,20 @@
 			- ((625578d9-7429-4dfd-9d20-424c9a48f658))
 			- ((625578e7-6d1e-47ce-9c33-c213ff4c83c6))
 			- ```java
+			  // 注意这里的类型标注，输出是Row类型，Row中包含两个字段：word和length。
+			  @FunctionHint(output = @DataTypeHint("ROW<word STRING, length INT>"))
+			  public static class SplitFunction extends TableFunction<Row> {
+			      public void eval(String str) {
+			          for (String s : str.split(" ")) {
+			            	//使用collect()方法发送一行数据
+			            	collect(Row.of(s, s.length()));
+			          }
+			      }
+			  }
+			  
+			  // 注册函数
+			  tableEnv.createTemporarySystemFunction("SplitFunction", SplitFunction.class);
+			  
+			  
 			  ```
 -
