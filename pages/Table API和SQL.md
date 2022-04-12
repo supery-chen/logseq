@@ -260,4 +260,19 @@
 			- ((6255763f-a746-4076-b04e-01c8a70a7fd3))
 			- ((62557647-ff0d-46b1-8713-cf3f3822c659))
 			- ```java
+			  public static class HashFunction extends ScalarFunction {
+			  	// 接受任意类型输入，返回INT 型输出
+			      // 由于TableAPI在对函数进行解析时需要提取求值方法参数的类型引用，所以
+			    	// 我们用DataTypeHint(inputGroup = InputGroup.ANY)对输入参数的类型做了标注，表示eval的参数可以是任意类型
+			  	public int eval(@DataTypeHint(inputGroup = InputGroup.ANY) Object o) {
+			  		return o.hashCode();
+			  	}
+			  }
+			  
+			  // 注册函数
+			  tableEnv.createTemporarySystemFunction("HashFunction", HashFunction.class);
+			  // 在SQL 里调用注册好的函数
+			  tableEnv.sqlQuery("SELECT HashFunction(myField) FROM MyTable");
 			  ```
+			-
+-
