@@ -27,5 +27,9 @@
 			  tableEnv.executeSql("CREATE [TEMPORARY]TABLE MyTable ... WITH ( 'connector' = ... )");
 			  ```
 		- #### 虚拟表
-			-
+			- 在虚拟环境注册之后,我们就可以在SQL中直接使用这张表进行查询转换了
+			- ```java
+			  Table newTable = tableEnv.sqlQuery("SELECT ... FROM MyTable... ");
+			  ```
+			- 这里
 -
