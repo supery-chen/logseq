@@ -274,7 +274,7 @@
 			  // 在SQL 里调用注册好的函数
 			  tableEnv.sqlQuery("SELECT HashFunction(myField) FROM MyTable");
 			  ```
-		- #### 表函数
+		- #### 表函数(Table Functions)
 			- ((625578bf-91f1-4c29-aa8a-4f405c318aeb))
 			- ((625578d9-7429-4dfd-9d20-424c9a48f658))
 			- ((625578e7-6d1e-47ce-9c33-c213ff4c83c6))
@@ -293,6 +293,19 @@
 			  // 注册函数
 			  tableEnv.createTemporarySystemFunction("SplitFunction", SplitFunction.class);
 			  
-			  
+			  // 在SQL 里调用注册好的函数
+			  // 1. 交叉联结
+			  tableEnv.sqlQuery("SELECT myField, word, length " +
+			                    "FROM MyTable, LATERAL TABLE(SplitFunction(myField))");
+			  // 2. 带ON TRUE条件的左联结
+			  tableEnv.sqlQuery("SELECT myField, word, length " +
+			                    "FROM MyTable " +
+			                    "LEFT JOIN LATERAL TABLE(SplitFunction(myField)) ON TRUE");
+			  // 重命名侧向表中的字段
+			  tableEnv.sqlQuery("SELECT myField, newWord, newLength " +
+			                    "FROM MyTable " +
+			                    "LEFT JOIN LATERAL TABLE(SplitFunction(myField)) AS T(newWord, newLength) ON TRUE");
 			  ```
+		- #### 聚合函数(Aggregate Functions)
+			-
 -
