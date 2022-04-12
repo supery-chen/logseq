@@ -37,5 +37,9 @@
 			  tableEnv.createTemporaryView("NewTable", newTable);
 			  ```
 	- ### 表的查询
-		-
+		- ((6255158a-a6ef-4264-b231-3def7889e51d))
+		- #### 执行SQL进行查询
+			- ((625515ad-2cc6-4101-9ee6-c737a55a0cb3))
+		- #### 调用Table API进行查询
+			-
 -
