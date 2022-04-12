@@ -20,5 +20,7 @@
 			- 执行SQL查询
 			- 注册用户自定义函数(UDF)
 			- DataStream和表之间的转换
+	- ### 创建表
+		- #### 连接器表(Connector Tables)
 		-
 -
