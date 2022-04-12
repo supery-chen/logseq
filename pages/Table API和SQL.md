@@ -50,5 +50,9 @@
 			  tableEnv.createTemporaryView("NewTable", newTable);
 			  ```
 			- > 另外要说明的是，在11.1.2小节的简单示例中，我们并没有将Table对象注册为虚拟表就直接在SQL中使用了：
+			  ```java
+			  Table clickTable = tableEnvironment.sqlQuery("select url, user from " + eventTable);
+			  ```
+			  这其实是一种简略的写法，我们将Table对象名eventTable直接以字符串拼接的形式添加到SQL语句中，在解析时会自动注册一个同名的虚拟表到环境中，这样就省略了创建虚拟视图的步骤
 			-
 -
