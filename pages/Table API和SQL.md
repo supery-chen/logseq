@@ -54,5 +54,6 @@
 			  Table clickTable = tableEnvironment.sqlQuery("select url, user from " + eventTable);
 			  ```
 			  这其实是一种简略的写法，我们将Table对象名eventTable直接以字符串拼接的形式添加到SQL语句中，在解析时会自动注册一个同名的虚拟表到环境中，这样就省略了创建虚拟视图的步骤
-			-
+	- ### 输出表
+		-
 -
