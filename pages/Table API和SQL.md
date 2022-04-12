@@ -128,6 +128,15 @@
 	- ((6255392b-7da9-4d65-aa96-237af57c7411))
 	- ### 事件时间
 		- #### 在创建表的DDL中定义
+			- ((625539a0-c1b3-43a4-be23-97bf834c2ac1))
 			- ```sql
-			  CREATE TABLE EventTable(user STRING,url STRING,ts TIMESTAMP(3),WATERMARK FOR ts AS ts -INTERVAL '5' SECOND) WITH (...);
+			  CREATE TABLE EventTable(
+			    user STRING,
+			    url STRING,
+			    ts TIMESTAMP(3),
+			    WATERMARK FOR ts AS ts -INTERVAL '5' SECOND
+			  ) WITH (
+			    ...
+			  );
 			  ```
+			-
