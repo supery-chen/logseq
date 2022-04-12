@@ -23,5 +23,9 @@
 	- ### 创建表
 		- #### 连接器表(Connector Tables)
 			- ((6255138a-7c0d-41d5-97d5-7564d310dd77))
+			- ```java
+			  tableEnv.executeSql("CREATE [TEMPORARY]TABLE MyTable ... WITH ( 'connector' = ... )");
+			  ```
+		- #### 虚拟表
 			-
 -
