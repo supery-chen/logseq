@@ -274,5 +274,7 @@
 			  // 在SQL 里调用注册好的函数
 			  tableEnv.sqlQuery("SELECT HashFunction(myField) FROM MyTable");
 			  ```
-		-
+		- #### 表函数
+			- ((625578bf-91f1-4c29-aa8a-4f405c318aeb))
+			-
 -
