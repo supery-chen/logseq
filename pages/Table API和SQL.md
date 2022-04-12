@@ -99,5 +99,7 @@
 	- ### 用SQL持续查询
 		- ((6255322a-5a8b-4674-bc23-2f1e9ae175d8))
 		- 具体步骤解释如下:
-			- 当查询启动时,原始动态表
+			- 当查询启动时,原始动态表EventTable为空
+			- 当第一行Alice的点击数据插入EventTable表时,查询开始计算结果表,urlCountTable中插入一行数据[Alice, 1]
+			- 当第二行Bob点击数据插入EventTable表时,查询将更新结果表
 	-
