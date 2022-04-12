@@ -307,5 +307,7 @@
 			                    "LEFT JOIN LATERAL TABLE(SplitFunction(myField)) AS T(newWord, newLength) ON TRUE");
 			  ```
 		- #### 聚合函数(Aggregate Functions)
+			- ((62557c89-7cba-4780-9bce-706df8eaca19))
+			- ((62557c93-792b-441c-98fb-64951d252568))
 			-
 -
