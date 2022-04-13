@@ -340,7 +340,9 @@
 -
 - ## 连接到外部系统
 	- ### Kafka
+	  collapsed:: true
 		- #### 引入依赖
+		  collapsed:: true
 			- ```xml
 			  <dependency>
 			  	<groupId>org.apache.flink</groupId>
@@ -358,6 +360,7 @@
 			  </dependency>
 			  ```
 		- #### 创建连接到Kafka的表
+		  collapsed:: true
 			- ```sql
 			  CREATE TABLE KafkaTable {
 			    `user` STRING,
@@ -375,8 +378,10 @@
 			- ((62562d37-0826-48de-acd6-79707b52d8ca))
 			- > connector为kafka类型,只能处理仅追加模式的数据,如果我们要将有更新操作的结果表写入kafka,就会因为kafka无法识别撤回或更新插入消息而导致异常
 		- #### Upsert Kafka
+		  collapsed:: true
 			- > 为了解决上面的问题,Flink单独提供了`upsert-kafka`类型的connector.这个连接器支持以更新插入的方式向kafka的topic中读写数据
 	- ### 文件系统
+	  collapsed:: true
 		- Flink内置`filesystem`类型的connector,支持从本地或者分布式的文件系统中读写数据
 		- ```sql
 		  CREATE TABLE MyTable (
@@ -393,4 +398,6 @@
 		  ```
 	- ### JDBC
 		- ((62563095-e26e-4f0c-b8fb-052eb98f89b8))
-		-
+		- ((625630a6-3fff-46c1-a2a5-6d41f718afa5))
+		- #### 引入依赖
+			-
