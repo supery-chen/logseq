@@ -195,4 +195,6 @@
 				- 终止条件只能与`oneOrMore()`或者`oneOrMore().optional()`结合使用
 				- ((62568a06-c9cc-401d-adc4-7d549d3ea5c2))
 	- ### 组合模式
+		- ((62568a2c-cd55-4a8a-990b-753dcf05aadc))
+		- ((62568a5f-afd3-417d-b496-66fbbdd009e1))
 		-
