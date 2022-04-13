@@ -198,6 +198,7 @@
 		- ((62568a2c-cd55-4a8a-990b-753dcf05aadc))
 		- ((62568a5f-afd3-417d-b496-66fbbdd009e1))
 		- #### 初始模式(Initial Pattern)
+		  collapsed:: true
 			- ((62568a88-c545-4760-b550-e7d5abf2ecc8))
 			- ```java
 			  Pattern<Event, ?> start = Pattern.<Event>begin("start");
@@ -210,4 +211,5 @@
 				- ((625697f3-10e7-4cbc-98b3-6e1729dcb0b9))
 			- ##### 非确定性宽松近邻
 				- ((6256982f-26e6-48a5-989b-fac7457f20dc))
-				-
+				- ((6256983f-e126-4b41-aee5-b68481b2cfca))
+			-
