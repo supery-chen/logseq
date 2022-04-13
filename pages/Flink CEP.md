@@ -190,4 +190,5 @@
 				- ((62568969-e787-4a9a-bd72-cac7dc25e1c2))
 			- ((6256893b-23ef-4605-8718-966c61ef08bd))
 				- 对于循环模式而言,还可以指定一个终止条件(Stop Condition),表示遇到某个特定事件时当前模式就不再继续循环匹配了
-				-
+				- 通过`.until()`方法来定义,同样传入一个`IteractiveCondition`作为参数
+				- 终止条件只能与oneOrMore()或者oneOrMore().optional
