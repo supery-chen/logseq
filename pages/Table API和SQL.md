@@ -439,6 +439,11 @@
 			  ```
 			- 这里创建表的DDL中定义了主键，所以数据会以Upsert模式写入到MySQL表中；而到MySQL的连接，是通过WITH子句中的url定义的。要注意写入MySQL中真正的表名称是users，而MyTable是注册在Flink表环境中的表
 	- ### Elasticsearch
+	  collapsed:: true
 		- ((62563238-5a64-4551-b2d1-3a53cad7106b))
 	- ### HBase
-		-
+	  collapsed:: true
+		- ((62563249-fb10-4116-b05e-47e58ec7c44c))
+	- ### Hive
+		- ((6256326d-dcbd-4aa7-9885-c37eb0deb099))
+	-
