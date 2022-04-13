@@ -112,27 +112,28 @@
 - ## 模式API(Pattern API)
 	- ### 个体模式
 		- ((62565e9a-ab53-47e3-a356-3fa0c388b8e1))
-		- 在上面的简单实例中,每一个登陆失败事件的选取规则,就是一个个体模式.比如
-		- ```java
-		  //第一次登录失败
-		  .<LoginEvent>begin("first").where(new SimpleCondition<LoginEvent>() {
-		  	@Override
-		  	public boolean filter(LoginEvent value) {
-		  		return "fail".equals(value.eventType);
-		  	}
-		  })
-		  ```
-		- 或者后面的
-		- ```java
-		  .next("second").where(new SimpleCondition<LoginEvent>() {
-		  	@Override
-		  	public boolean filter(LoginEvent value) {
-		  		return "fail".equals(value.eventType);
-		  	}
-		  })
-		  ```
-		- 这些都是个体模式.个体模式一般都会匹配接收一个事件
-		- 每个个体模式都以一个**连接词**开始定义,如`begin`、`next`等.这些连接词方法有一个`String`类型的参数,就是当前模式唯一的名字.在之后检测到匹配事件时,就会以这个名字来指代匹配事件
-		- 个体模式需要一个过滤条件,用来指定具体的匹配规则.这个条件一般通过调用`where()`方法来实现.具体的过滤逻辑则通过传入的`SimpleCondition`内的`filter()`方法定义
-		-
-		-
+		- #### 基本形式
+			- 在上面的简单实例中,每一个登陆失败事件的选取规则,就是一个个体模式.比如
+			- ```java
+			  //第一次登录失败
+			  .<LoginEvent>begin("first").where(new SimpleCondition<LoginEvent>() {
+			  	@Override
+			  	public boolean filter(LoginEvent value) {
+			  		return "fail".equals(value.eventType);
+			  	}
+			  })
+			  ```
+			- 或者后面的
+			- ```java
+			  .next("second").where(new SimpleCondition<LoginEvent>() {
+			  	@Override
+			  	public boolean filter(LoginEvent value) {
+			  		return "fail".equals(value.eventType);
+			  	}
+			  })
+			  ```
+			- 这些都是个体模式.个体模式一般都会匹配接收一个事件
+			- 每个个体模式都以一个**连接词**开始定义,如`begin`、`next`等.这些连接词方法有一个`String`类型的参数,就是当前模式唯一的名字.在之后检测到匹配事件时,就会以这个名字来指代匹配事件
+			- 个体模式需要一个过滤条件,用来指定具体的匹配规则.这个条件一般通过调用`where()`方法来实现.具体的过滤逻辑则通过传入的`SimpleCondition`内的`filter()`方法定义
+		- #### 量词(Quantifiers)
+			-
