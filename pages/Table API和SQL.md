@@ -335,7 +335,8 @@
 			- > 表聚合函数目前SQL中支持不好,所以使用Table API进行调用(flatAggregate)
 -
 - ## SQL客户端
-	-
+  collapsed:: true
+	- ((62562b76-84ab-4802-95cb-67afeee40b0f))
 -
 - ## 连接到外部系统
 	-
