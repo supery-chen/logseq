@@ -397,9 +397,11 @@
 		  )
 		  ```
 	- ### JDBC
+	  collapsed:: true
 		- ((62563095-e26e-4f0c-b8fb-052eb98f89b8))
 		- ((625630a6-3fff-46c1-a2a5-6d41f718afa5))
 		- #### 引入依赖
+		  collapsed:: true
 			- ```xml
 			  <dependency>
 			  	<groupId>org.apache.flink</groupId>
@@ -416,6 +418,25 @@
 			  </dependency>
 			  ```
 		- #### 创建JDBC表
+		  collapsed:: true
 			- 与创建Upsert Kafka大同小异
 			- ```sql
+			  --创建一张连接到MySQL的表
+			  CREATE TABLE MyTable (
+			  	id BIGINT,
+			  	name STRING,
+			  	age INT,
+			  	status BOOLEAN,
+			  	PRIMARY KEY (id) NOT ENFORCED
+			  ) WITH (
+			  	'connector' = 'jdbc',
+			  	'url' = 'jdbc:mysql://localhost:3306/mydatabase',
+			  	'table-name' = 'users'
+			  );
+			  --将另一张表T的数据写入到MyTable 表中
+			  INSERT INTO MyTable
+			  	SELECT id, name, age, status FROM T;
 			  ```
+			- 这里创建表的DDL中定义了主键，所以数据会以Upsert模式写入到MySQL表中；而到MySQL的连接，是通过WITH子句中的url定义的。要注意写入MySQL中真正的表名称是users，而MyTable是注册在Flink表环境中的表
+	- ### Elasticsearch
+		-
