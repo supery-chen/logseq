@@ -351,4 +351,11 @@
 			- ((62562c0e-bf5c-4591-97e8-1d85bf9ea387))
 			- ((62562c18-cc13-4443-9466-477199add86f))
 			- ```xml
+			  <dependency>
+			  	<groupId>org.apache.flink</groupId>
+			  	<artifactId>flink-csv</artifactId>
+			  	<version>${flink.version}</version>
+			  </dependency>
 			  ```
+		- #### 创建连接到Kafka的表
+			-
