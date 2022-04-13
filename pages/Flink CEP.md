@@ -1,5 +1,6 @@
 - ((62563a6e-c819-492f-be28-d4cc5903bdcf))
 - ## 基本概念
+  collapsed:: true
 	- ### CEP是什么?
 		- Complex Event Processing: 复杂事件处理
 		- Flink CEP是Flink实现的一个用于复杂事件处理的库
@@ -18,4 +19,9 @@
 	- ### 应用场景
 		- ((62563bd9-5f9a-4465-8c30-21e31ca3d218))
 		- ((62563bdd-0477-449a-8744-2ccba22f41c6))
-		-
+		- ((62563be1-6f7a-40b0-9b2b-655d28fe6aca))
+-
+- ## 快速上手
+	- ### 引入依赖
+		- ```xml
+		  ```
