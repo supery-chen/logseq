@@ -248,6 +248,7 @@
 				- ((62569b75-9241-4603-8078-527228b0dbf6))
 		-
 	- ### 模式组
+	  collapsed:: true
 		- ((62569bab-3738-4fae-b923-ce9407a73ef7))
 		- ((62569bcb-e247-489f-98c7-d73d3162c762))
 		- ```java
@@ -272,4 +273,5 @@
 		    		.followedBy("followedbyany_middle").where(...)
 		  ).optional();
 		  ```
+	- ### 匹配后跳过策略
 		-
