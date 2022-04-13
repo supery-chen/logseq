@@ -114,4 +114,13 @@
 		- ((62565e9a-ab53-47e3-a356-3fa0c388b8e1))
 		- 在上面的简单实例中,每一个登陆失败事件的选取规则,就是一个个体模式.比如
 		- ```java
+		  //第一次登录失败
+		  .<LoginEvent>begin("first").where(new SimpleCondition<LoginEvent>() {
+		  	@Override
+		  	public boolean filter(LoginEvent value) {
+		  		return "fail".equals(value.eventType);
+		  	}
+		  })
 		  ```
+		- 或者后面的
+		-
