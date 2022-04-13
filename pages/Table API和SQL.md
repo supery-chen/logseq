@@ -339,6 +339,7 @@
 	- ((62562b76-84ab-4802-95cb-67afeee40b0f))
 -
 - ## 连接到外部系统
+  collapsed:: true
 	- ### Kafka
 	  collapsed:: true
 		- #### 引入依赖
@@ -445,9 +446,9 @@
 	  collapsed:: true
 		- ((62563249-fb10-4116-b05e-47e58ec7c44c))
 	- ### Hive
+	  collapsed:: true
 		- ((6256326d-dcbd-4aa7-9885-c37eb0deb099))
 		- ((62563291-1654-4195-839a-a6ebbad8be62))
 			- ((6256329b-b26d-4846-b0b8-81c86e1d056f))
 			- ((625632a1-450e-406b-ae5e-cda1f6f1bc9b))
 			- ((625632cd-a70c-4a5e-85c9-96a3711b96d5))
-	-
