@@ -401,4 +401,12 @@
 		- ((625630a6-3fff-46c1-a2a5-6d41f718afa5))
 		- #### 引入依赖
 			- ```xml
+			  <dependency>
+			  	<groupId>org.apache.flink</groupId>
+			  	<artifactId>flink-connector-jdbc_${scala.binary.version}</artifactId>
+			  	<version>${flink.version}</version>
+			  </dependency>
+			  ```
+			- 此外,为了连接特定数据库,我们还要引入相关的驱动器依赖,以MySQL为例
+			- ```xml
 			  ```
