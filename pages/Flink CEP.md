@@ -204,6 +204,7 @@
 			  Pattern<Event, ?> start = Pattern.<Event>begin("start");
 			  ```
 		- #### 近邻条件(Contiguity Conditions)
+		  collapsed:: true
 			- ##### 严格近邻
 				- ((625697d0-a60e-4e18-8520-32b37a7566af))
 			- ##### 宽松近邻
@@ -212,4 +213,4 @@
 			- ##### 非确定性宽松近邻
 				- ((6256982f-26e6-48a5-989b-fac7457f20dc))
 				- ((6256983f-e126-4b41-aee5-b68481b2cfca))
-			-
+		-
