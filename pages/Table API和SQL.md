@@ -358,7 +358,7 @@
 			  </dependency>
 			  ```
 		- #### 创建连接到Kafka的表
-			- ```java
+			- ```sql
 			  CREATE TABLE KafkaTable {
 			    `user` STRING,
 			    `url`	STRING,
