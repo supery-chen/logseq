@@ -251,4 +251,11 @@
 		- ((62569bab-3738-4fae-b923-ce9407a73ef7))
 		- ((62569bcb-e247-489f-98c7-d73d3162c762))
 		- ```java
+		  // 以模式序列作为初始模式
+		  Pattern<Event, ?> start = Pattern.begin(
+		  	Pattern.<Event>begin("start_start").where(...)
+		    		.followedBy("start_middle").where(...)
+		  );
+		  
+		  
 		  ```
