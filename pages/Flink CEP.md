@@ -24,4 +24,10 @@
 - ## 快速上手
 	- ### 引入依赖
 		- ```xml
+		  <dependency>
+		  	<groupId>org.apache.flink</groupId>
+		  	<artifactId>flink-cep_${scala.binary.version}</artifactId>
+		  	<version>${flink.version}</version>
+		  </dependency>
 		  ```
+	-
