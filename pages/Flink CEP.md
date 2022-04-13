@@ -143,4 +143,6 @@
 			- ##### .times(times)
 			- ##### .greedy()
 			- ##### .optional()
-			-
+			- 对于一个个体模式pattern来说,后面所有可以添加的量词如下
+			- ```java
+			  ```
