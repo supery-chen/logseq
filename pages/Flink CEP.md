@@ -154,5 +154,24 @@
 			  // 匹配事件出现2,3或者4次,并且尽可能多地匹配
 			  pattern.times(2,4).greedy();
 			  // 匹配事件出现2,3,4次或者不出现
-			  
+			  pattern.times(2,4).optional();
+			  // 匹配事件出现2,3,4次,或者不出现,并且尽可能多地匹配
+			  pattern.times(2,4).optioanl().greedy();
+			  // 匹配事件出现1次或多次
+			  pattern.oneOrMore();
+			  // 匹配事件出现1次或多次,并且尽可能多地匹配
+			  pattern.oneOrMore().greedy();
+			  // 匹配事件出现1次或多次,或者不出现
+			  pattern.oneOrMore().optional();
+			  // 匹配事件出现1次或多次,或者不出现,并且尽可能多地匹配
+			  pattern.oneOrMore().optional().greedy();
+			  // 匹配事件出现2次或多次
+			  pattern.timesOrMore(2);
+			  // 匹配事件出现2次或多次,并且尽可能多地匹配
+			  pattern.timesOrMore(2).greedy();
+			  // 匹配事件出现2次或多次,或者不出现
+			  pattern.timesOrMore(2).optional();
+			  // 匹配事件出现2次或多次,或者不出现,并且尽可能多地匹配
+			  pattern.timesOrMore(2).optional().greedy();
 			  ```
+			-
