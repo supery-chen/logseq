@@ -123,4 +123,13 @@
 		  })
 		  ```
 		- 或者后面的
+		- ```java
+		  .next("second").where(new SimpleCondition<LoginEvent>() {
+		  	@Override
+		  	public boolean filter(LoginEvent value) {
+		  		return "fail".equals(value.eventType);
+		  	}
+		  })
+		  ```
+		- 这些都是个体模式.个体模式一般都会匹配接收一个事件
 		-
