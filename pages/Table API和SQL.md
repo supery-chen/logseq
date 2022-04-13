@@ -359,4 +359,11 @@
 			  ```
 		- #### 创建连接到Kafka的表
 			- ```java
+			  CREATE TABLE KafkaTable {
+			    `user` STRING,
+			    `url`	STRING,
+			    `ts`	TIMESTAMP(3) METADATA FROM `timestamp`
+			  } WITH {
+			    'connector' = 'kafka'
+			  }
 			  ```
