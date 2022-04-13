@@ -197,4 +197,9 @@
 	- ### 组合模式
 		- ((62568a2c-cd55-4a8a-990b-753dcf05aadc))
 		- ((62568a5f-afd3-417d-b496-66fbbdd009e1))
+		- #### 初始模式(Initial Pattern)
+			- ((62568a88-c545-4760-b550-e7d5abf2ecc8))
+			- ```java
+			  Pattern<Event, ?> start = Pattern.<Event>begin("start");
+			  ```
 		-
