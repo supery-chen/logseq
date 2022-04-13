@@ -256,6 +256,20 @@
 		  	Pattern.<Event>begin("start_start").where(...)
 		    		.followedBy("start_middle").where(...)
 		  );
-		  
-		  
+		  // 在start后定义严格近邻的模式序列,并重复匹配两次
+		  Pattern<Event, ?> strict = start.next(
+		  	Pattern.<Event>begin("next_start").where(...)
+		    		.followedBy("next_middle").where(...)
+		  ).times(2);
+		  // 在start后定义宽松近邻的模式序列,并重复匹配一次或多次
+		  Pattern<Event, ?> relaxed = start.followedBy(
+		  	Pattern.<Event>begin("followedby_start").where(...)
+		    		.followedBy("followedby_middle").where(...)
+		  ).oneOrMore();
+		  // 在start后定义非确定性宽松近邻的模式序列,可以匹配一次,也可以不匹配
+		  Pattern<Event, ?> nonDeterminedRelaxed = start.followedByAny(
+		  	Pattern.<Event>begin("followedbyany_start").where(...)
+		    		.followedBy("followedbyany_middle").where(...)
+		  ).optional();
 		  ```
+		-
