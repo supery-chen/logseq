@@ -339,4 +339,13 @@
 	- ((62562b76-84ab-4802-95cb-67afeee40b0f))
 -
 - ## 连接到外部系统
-	-
+	- ### Kafka
+		- #### 引入依赖
+			- ```xml
+			  <dependency>
+			  	<groupId>org.apache.flink</groupId>
+			  	<artifactId>flink-connector-kafka_${scala.binary.version}</artifactId>
+			  	<version>${flink.version}</version>
+			  </dependency>
+			  ```
+			-
