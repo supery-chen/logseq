@@ -202,4 +202,8 @@
 			- ```java
 			  Pattern<Event, ?> start = Pattern.<Event>begin("start");
 			  ```
-		-
+		- #### 近邻条件(Contiguity Conditions)
+			- ##### 严格近邻
+			- ##### 宽松近邻
+			- ##### 非确定性宽松近邻
+			-
