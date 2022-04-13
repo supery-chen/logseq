@@ -22,7 +22,9 @@
 		- ((62563be1-6f7a-40b0-9b2b-655d28fe6aca))
 -
 - ## 快速上手
+  collapsed:: true
 	- ### 引入依赖
+	  collapsed:: true
 		- ```xml
 		  <dependency>
 		  	<groupId>org.apache.flink</groupId>
@@ -244,4 +246,7 @@
 				- ((62569b55-d137-4714-a32f-07dbe208d124))
 			- ((62569b69-e7e8-454a-9f27-12f52b99d9cc))
 				- ((62569b75-9241-4603-8078-527228b0dbf6))
+		-
+	- ### 模式组
+		- ((62569bab-3738-4fae-b923-ce9407a73ef7))
 		-
