@@ -220,4 +220,17 @@
 			- ((625698ef-7c1b-4ce4-b4a6-bb6e10071439))
 			- ((62569904-e473-45d3-995c-08d3884b407f))
 			- ```java
+			  // 严格近邻条件
+			  Pattern<Event, ?> strict = start.next("middle").where(...);
+			  // 宽松近邻条件
+			  Pattern<Event, ?> relaxed = start.followedBy("middle").where(...);
+			  // 非确定性宽松近邻条件
+			  Pattern<Event, ?> nonDetermin = start.followedByAny("middle").where(...);
+			  // 不能严格近邻条件
+			  Pattern<Event, ?> strictNot = start.notNext("not").where(...);
+			  // 不能宽松近邻条件
+			  Pattern<Event, ?> relaxedNot = start.notFollowedBy("not").where(...);
+			  // 时间限制条件
+			  middle.within(Time.seconds(10));
 			  ```
+		-
