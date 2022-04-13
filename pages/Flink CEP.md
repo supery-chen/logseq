@@ -111,6 +111,7 @@
 -
 - ## 模式API(Pattern API)
 	- ### 个体模式
+	  collapsed:: true
 		- ((62565e9a-ab53-47e3-a356-3fa0c388b8e1))
 		- #### 基本形式
 			- 在上面的简单实例中,每一个登陆失败事件的选取规则,就是一个个体模式.比如
@@ -191,4 +192,7 @@
 			- ((6256893b-23ef-4605-8718-966c61ef08bd))
 				- 对于循环模式而言,还可以指定一个终止条件(Stop Condition),表示遇到某个特定事件时当前模式就不再继续循环匹配了
 				- 通过`.until()`方法来定义,同样传入一个`IteractiveCondition`作为参数
-				- 终止条件只能与oneOrMore()或者oneOrMore().optional
+				- 终止条件只能与`oneOrMore()`或者`oneOrMore().optional()`结合使用
+				- ((62568a06-c9cc-401d-adc4-7d549d3ea5c2))
+	- ### 组合模式
+		-
