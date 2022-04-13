@@ -373,6 +373,7 @@
 			  }
 			  ```
 			- ((62562d37-0826-48de-acd6-79707b52d8ca))
-			- > connector为kafka类型,只能处理仅追加模式的数据,如果我们要将
+			- > connector为kafka类型,只能处理仅追加模式的数据,如果我们要将有更新操作的结果表写入kafka,就会因为kafka无法识别撤回或更新插入消息而导致异常
 		- #### Upsert Kafka
+			- > 为了解决上面的问题,Flink单独提供了upsert-kafka类型的connector
 			-
