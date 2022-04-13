@@ -409,4 +409,13 @@
 			  ```
 			- 此外,为了连接特定数据库,我们还要引入相关的驱动器依赖,以MySQL为例
 			- ```xml
+			  <dependency>
+			  	<groupId>mysql</groupId>
+			  	<artifactId>mysql-connector-java</artifactId>
+			  	<version>${mysql-connector.version}</version>
+			  </dependency>
+			  ```
+		- #### 创建JDBC表
+			- 与创建Upsert Kafka大同小异
+			- ```sql
 			  ```
