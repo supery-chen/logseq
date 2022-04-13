@@ -145,4 +145,14 @@
 			- ##### .optional()
 			- 对于一个个体模式pattern来说,后面所有可以添加的量词如下
 			- ```java
+			  // 匹配事件出现4次
+			  pattern.times(4);
+			  // 匹配事件出现4次,或者不出现
+			  pattern.times(4).optional();
+			  // 匹配事件出现2,3或者4次
+			  pattern.times(2,4);
+			  // 匹配事件出现2,3或者4次,并且尽可能多地匹配
+			  pattern.times(2,4).greedy();
+			  // 匹配事件出现2,3,4次或者不出现
+			  
 			  ```
