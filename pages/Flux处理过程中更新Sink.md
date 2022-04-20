@@ -1,0 +1,2 @@
+- #reactor #flux #sink
+- [](https://stackoverflow.com/questions/67594996/java-spring-reactor-send-update-flux-when-underlying-database-changed)
