@@ -1,2 +1,3 @@
 - #reactor #flux #sink
-- [](https://stackoverflow.com/questions/67594996/java-spring-reactor-send-update-flux-when-underlying-database-changed)
+- [Java Spring / Reactor send / update flux when underlying database changed](https://stackoverflow.com/questions/67594996/java-spring-reactor-send-update-flux-when-underlying-database-changed)
+- 在Flux中如何将数据库查询结果作为Flux的下一个元素,实现遍历
