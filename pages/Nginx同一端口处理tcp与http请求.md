@@ -8,6 +8,7 @@
 		- 本次使用的服务器为`CentOS 7`, `nginx`版本为`1.20.2`
 		- 根据`nginx`安装方式不同,`njs`需要使用相同的安装方式
 		- #### [包管理工具安装](https://nginx.org/en/docs/njs/install.html#install_package)
+		  collapsed:: true
 			- 1. 安装前先执行以下命令:
 				- ```shell
 				  sudo yum install yum-utils
@@ -85,7 +86,7 @@
 			  //暴露出这两个方法,供nginx使用
 			  export default {detect_http, upstream_type}
 			  ```
-			  -
+				-
 	- ### 配置
 		- 脚本编写完成后,下一步我们需要在`nginx.conf`中进行配置以使用.在`nginx.conf`中追加如下配置
 			- ```conf
