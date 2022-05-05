@@ -32,16 +32,15 @@ TCP负载均衡支持Nginx原有的调度算法，包括Round Robin（默认，�
 Nginx监控客户端连接和上游连接，一旦接收到数据，则Nginx会立刻读取并且推送到上游连接，不会做TCP连接内的数据检测。Nginx维护一份内存缓冲区，用于客户端和上游数据的写入。如果客户端或者服务端传输了量很大的数据，缓冲区会适当增加内存的大小。
 
 当Nginx收到任意一方的关闭连接通知，或者TCP连接被闲置超过了**proxy_timeout**配置的时间，连接将会被关闭。对于TCP长连接，我们更应该选择适当的proxy_timeout的时间，同时，关注监听socke的so_keepalive参数，防止过早地断开连接。
-### 轮询
-
-轮询方式是Nginx负载默认的方式，顾名思义，所有请求都按照时间顺序分配到不同的服务上，如果服务Down掉，可以自动剔除，如下配置后轮训10001服务和10002服务。
-
-```text
-upstream  dalaoyang-server {
-     server    localhost:10001;
-     server    localhost:10002;
-}
-```
+- ### 轮询
+-
+- 轮询方式是Nginx负载默认的方式，顾名思义，所有请求都按照时间顺序分配到不同的服务上，如果服务Down掉，可以自动剔除，如下配置后轮训10001服务和10002服务。
+  ```text
+  upstream  dalaoyang-server {
+       server    localhost:10001;
+       server    localhost:10002;
+  }
+  ```
 ### 权重
 
 指定每个服务的权重比例，weight和访问比率成正比，通常用于后端服务机器性能不统一，将性能好的分配权重高来发挥服务器最大性能，如下配置后10002服务的访问比率会是10001服务的二倍。
@@ -52,39 +51,36 @@ upstream  dalaoyang-server {
      server    localhost:10002 weight=2;
 }
 ```
-### iphash
-
-每个请求都根据访问ip的hash结果分配，经过这样的处理，每个访客固定访问一个后端服务，如下配置（ip_hash可以和weight配合使用）。
-
-```text
-upstream  dalaoyang-server {
-     ip_hash; 
-     server    localhost:10001 weight=1;
-     server    localhost:10002 weight=2;
-}
-```
-### 最少连接
-
-将请求分配到连接数最少的服务上。
-
-```text
-upstream  dalaoyang-server {
-     least_conn;
-     server    localhost:10001 weight=1;
-     server    localhost:10002 weight=2;
-}
-```
-### fair
-
-按后端服务器的响应时间来分配请求，响应时间短的优先分配。
-
-```text
-upstream  dalaoyang-server {
-     server    localhost:10001 weight=1;
-     server    localhost:10002 weight=2;
-     fair;  
-}
-```
+- ### iphash
+  
+  每个请求都根据访问ip的hash结果分配，经过这样的处理，每个访客固定访问一个后端服务，如下配置（ip_hash可以和weight配合使用）。
+  ```text
+  upstream  dalaoyang-server {
+       ip_hash; 
+       server    localhost:10001 weight=1;
+       server    localhost:10002 weight=2;
+  }
+  ```
+- ### 最少连接
+  
+  将请求分配到连接数最少的服务上。
+  ```text
+  upstream  dalaoyang-server {
+       least_conn;
+       server    localhost:10001 weight=1;
+       server    localhost:10002 weight=2;
+  }
+  ```
+- ### fair
+  
+  按后端服务器的响应时间来分配请求，响应时间短的优先分配。
+  ```text
+  upstream  dalaoyang-server {
+       server    localhost:10001 weight=1;
+       server    localhost:10002 weight=2;
+       fair;  
+  }
+  ```
 ## 服务健壮性监控
 
 TCP负载均衡模块支持内置健壮性检测，一台上游服务器如果拒绝TCP连接超过**proxy_connect_timeout**配置的时间，将会被认为已经失效。在这种情况下，Nginx立刻尝试连接upstream组内的另一台正常的服务器。连接失败信息将会记录到Nginx的错误日志中。
