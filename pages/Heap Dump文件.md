@@ -1,3 +1,5 @@
+public:: true
+
 - ## Heap Dump 包含的信息
 	- 所有的对象信息
 	- 对象的类信息、字段信息、原生值(int, long等)及引用值

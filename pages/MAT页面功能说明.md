@@ -1,2 +1,4 @@
+public:: true
+
 - ## 首页
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1647445694515_0.png){:height 494, :width 776}

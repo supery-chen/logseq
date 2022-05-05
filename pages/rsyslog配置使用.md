@@ -1,3 +1,5 @@
+public:: true
+
 - 修改`/etc/rsyslog.conf`增加如下内容
 - ```shell
   $template Remote,"/data/logs/kk_ccu_log/remotehost.log" # 设置远程日志存放路径和文件格式

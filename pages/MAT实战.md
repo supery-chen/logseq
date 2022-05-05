@@ -1,3 +1,5 @@
+public:: true
+
 - > https://www.eclipse.org/mat/
 - [[MAT安装]]
 - [[术语说明]]
