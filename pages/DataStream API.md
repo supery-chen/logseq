@@ -1,3 +1,5 @@
+public:: true
+
 - 一个Flink程序,其实就是对DataStream的各种转换.具体来说,代码基本都由以下几部分构成
   collapsed:: true
 	- 获取执行环境(execution environment)

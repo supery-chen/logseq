@@ -1,3 +1,5 @@
+public:: true
+
 - ## 基本API
   collapsed:: true
 	- ### 程序架构

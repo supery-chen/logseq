@@ -1,3 +1,5 @@
+public:: true
+
 - 点击**创建/注册虚拟机**
 	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1648085726571_0.png)
 - 创建类型选择**创建新虚拟机**,点击**下一页**

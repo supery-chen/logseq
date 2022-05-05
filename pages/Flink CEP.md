@@ -1,3 +1,5 @@
+public:: true
+
 - ((62563a6e-c819-492f-be28-d4cc5903bdcf))
 - ## 基本概念
   collapsed:: true
