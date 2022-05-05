@@ -1,3 +1,5 @@
+public:: true
+
 - [详解Linux CPU负载和CPU使用率](https://cloud.tencent.com/developer/article/1722207)
 - **CPU负载**
 - > 指某段时间内占用cpu时间的进程和等待cpu时间的进程数,这里等待cpu时间的进程指等待被唤醒的进程,不包括处于wait状态的进程

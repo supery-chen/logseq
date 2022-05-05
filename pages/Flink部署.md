@@ -1,3 +1,5 @@
+public:: true
+
 - [Centos 7 环境 hadoop 3.2.1分布式集群搭建](https://www.modb.pro/db/46147)
 - [Centos7环境下Kafka的安装(单机版)](https://ivanzz1001.github.io/records/post/mq/2018/05/16/mq-kafka-install)
 -
