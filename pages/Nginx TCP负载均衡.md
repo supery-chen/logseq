@@ -1,3 +1,5 @@
+public:: true
+
 - #nginx #tcp #proxy
   
   Nginx除了以前常用的HTTP负载均衡外，Nginx增加基于TCP协议实现的负载均衡方法。
