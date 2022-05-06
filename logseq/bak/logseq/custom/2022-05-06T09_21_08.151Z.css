@@ -806,14 +806,9 @@
 	div[class^="CodeMirror"] {
 		overflow:hidden !important;
 	}
-	div[class^="cm-"] {
-		overflow:hidden !important;
-	}	
-	pre[class="CodeMirror"] {
-		overflow:hidden !important;
-	}
-	.cp__fenced-code-block{
-		overflow:hidden !important;
+	
+	.cm-s-light > div > textarea {
+		display: none;
 	}
 	
 	.page {
