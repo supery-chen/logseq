@@ -851,4 +851,5 @@
 .CodeMirror-sizer {
 	margin-left: 1px !important;
 	margin-bottom: 1px !important;
+	min-height: 10px !important;
 }
