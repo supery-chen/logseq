@@ -6,7 +6,7 @@
   .page { page-break-after:always; }
 }
 <style type="text/css" media="print">
-#head {
+.cp__header {
   display:none;
 }
 #left-sidebar {
@@ -15,5 +15,7 @@
 #right-sidebar {
   display:none;
 }
-	
+.references {
+  display:none;
+}
 </style>

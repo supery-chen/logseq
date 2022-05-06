@@ -4,7 +4,7 @@
 @media print {
   * { overflow: visible !important; } 
   .page { page-break-after:always; }
-  #head {
+  .cp__header {
 	display:none;
   }
   #left-sidebar {
