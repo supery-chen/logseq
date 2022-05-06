@@ -562,7 +562,7 @@
 	  padding: 25px 10px 24px 20px;
 	}
 	.extensions__code .CodeMirror .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines .CodeMirror-cursors .CodeMirror-cursor {
-	  
+	  border-left: solid thin #82aaff;
 	}
 	.extensions__code .CodeMirror .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines .CodeMirror-code {
 	  outline: 0;
@@ -572,7 +572,7 @@
 	.extensions__code-calc {
 	  padding-top: 25px;
 	  margin-top: 10px;
-	  right: 20px;
+	  
 	}
 
 	.cp__right-sidebar .CodeMirror,

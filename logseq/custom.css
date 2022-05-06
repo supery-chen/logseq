@@ -565,7 +565,8 @@
 	  border-left: solid thin #82aaff;
 	}
 	.extensions__code .CodeMirror .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines .CodeMirror-code {
-
+	  outline: 0;
+	  font-size: 0.85em;
 	}
 
 	.extensions__code-calc {
@@ -585,7 +586,7 @@
 	  background: rgba(255, 255, 255, 0.1);
 	}
 	.cm-s-solarized.cm-s-dark div.CodeMirror-selected {
-	  background-color: rgba(255, 255, 255, 0.1);
+	  
 	}
 	.cm-s-solarized .CodeMirror-matchingbracket {
 	  text-decoration: underline;
