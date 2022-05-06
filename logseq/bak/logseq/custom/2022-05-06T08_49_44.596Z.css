@@ -572,7 +572,7 @@
 	.extensions__code-calc {
 	  padding-top: 25px;
 	  margin-top: 10px;
-	  
+	  right: 20px;
 	}
 
 	.cp__right-sidebar .CodeMirror,
@@ -644,7 +644,7 @@
 	}
 
 	.cm-s-solarized .CodeMirror-selected {
-	  background-color: rgba(168, 175, 255, 0.2);
+	  
 	}
 	.cm-s-solarized span.cm-string,
 	.cm-s-solarized span.cm-string-2 {

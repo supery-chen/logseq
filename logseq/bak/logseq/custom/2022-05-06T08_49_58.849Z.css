@@ -578,7 +578,7 @@
 	.cp__right-sidebar .CodeMirror,
 	.cp__right-sidebar .CodeMirror-gutters,
 	.cp__right-sidebar .extensions__code-lang {
-	  
+	  background-color: rgba(242, 241, 238, 0.95);
 	}
 
 	/* Rewrite .cm-s-solarized */
@@ -675,13 +675,7 @@
 	  border-left: solid thin black;
 	}
 
-	.cm-s-default .CodeMirror-selected {
-	  background: rgba(255, 255, 255, 0.1);
-	}
-
-	.cm-s-default .CodeMirror-selected {
-	  background: rgba(0, 0, 0, 0.1);
-	}
+	
 
 	.cm-s-default .CodeMirror-line {
 	  box-shadow: none;
