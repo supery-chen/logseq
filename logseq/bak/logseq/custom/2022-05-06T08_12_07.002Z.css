@@ -36,6 +36,9 @@
 	  --ls-page-title-size: 36px;
 	}
 
+	/* *****************************
+	********* White Theme ***********
+	*******************************/
 	html[data-theme=light] {
 	  --ls-primary-background-color: #fff;
 	  --ls-search-background-color: #fff;
