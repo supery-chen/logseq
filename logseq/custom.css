@@ -6,5 +6,7 @@
   .page { page-break-after:always; }
 }
 <style type="text/css" media="print">
-.noprint { display:none;}
+.w-full {
+  display:none;
+}
 </style>
