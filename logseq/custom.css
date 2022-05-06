@@ -837,3 +837,7 @@
 		display:none;
 	}
 }
+
+	.CodeMirror-gutters{
+		display:none;
+	}
