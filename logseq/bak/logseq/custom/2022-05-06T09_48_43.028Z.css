@@ -838,6 +838,10 @@
 	}
 }
 
+.CodeMirror {
+	font-size: 10px;
+	line-height: 1.25em;
+}
 .CodeMirror-gutters {
 	display:none;
 }
@@ -845,5 +849,7 @@
 	display:none;
 }
 .CodeMirror-sizer {
-	margin-left: 0px !important;
+	margin-left: 1px !important;
+	margin-bottom: 1px !important;
+	min-height: 10px !important;
 }

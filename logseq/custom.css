@@ -813,9 +813,18 @@
 	
 	.CodeMirror {
 		font-size: 10px;
+		line-height: 1.25em;
 	}
-	.CodeMirror-gutters{
+	.CodeMirror-gutters {
 		display:none;
+	}
+	.CodeMirror-linenumber {
+		display:none;
+	}
+	.CodeMirror-sizer {
+		margin-left: 1px !important;
+		margin-bottom: 1px !important;
+		min-height: 10px !important;
 	}
 	
 	.page {
@@ -836,20 +845,4 @@
 	.cp__sidebar-help-btn {
 		display:none;
 	}
-}
-
-.CodeMirror {
-	font-size: 10px;
-	line-height: 1.25em;
-}
-.CodeMirror-gutters {
-	display:none;
-}
-.CodeMirror-linenumber {
-	display:none;
-}
-.CodeMirror-sizer {
-	margin-left: 1px !important;
-	margin-bottom: 1px !important;
-	min-height: 10px !important;
 }
