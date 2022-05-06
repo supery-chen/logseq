@@ -475,40 +475,40 @@
 	/*****************************************
 	  White Theme
 	*****************************************/
-	.white-theme .cp__header {
+	.cp__header {
 	  color: var(--ls-primary-text-color);
 	}
-	.white-theme .cp__header a:hover {
+	.cp__header a:hover {
 	  background-color: #f1f1f1;
 	}
-	.white-theme #left-bar nav > a,
-	.white-theme #left-bar svg {
+	#left-bar nav > a,
+	#left-bar svg {
 	  color: var(--ls-priamary-text-color);
 	}
-	.white-theme #left-bar #repo-name {
+	#left-bar #repo-name {
 	  opacity: 1;
 	  height: 22px;
 	  transform: translateY(-1px);
 	}
-	.white-theme .content .external-link {
+	.content .external-link {
 	  border-bottom: 0.05em solid rgba(55, 53, 47, 0.25);
 	}
-	.white-theme .content .block-ref {
+	.content .block-ref {
 	  background: rgba(40, 142, 111, 0.1);
 	  border-bottom-color: rgba(40, 142, 111, 0.3);
 	}
-	.white-theme .content .marker-switch {
+	.content .marker-switch {
 	  color: #504d47;
 	  background: #f3f2ed;
 	  opacity: 1;
 	}
-	.white-theme .content .marker-switch:hover {
+	.content .marker-switch:hover {
 	  opacity: 0.7;
 	}
-	.white-theme .cp__right-sidebar .sidebar-item-list {
+	.cp__right-sidebar .sidebar-item-list {
 	  background-color: var(--ls-secondary-background-color, #d8e1e8);
 	}
-	.white-theme .cp__right-sidebar .sidebar-item-list .sidebar-item {
+	.cp__right-sidebar .sidebar-item-list .sidebar-item {
 	  background-color: var(--ls-secondary-background-color, #d8e1e8);
 	  border-bottom: 2px solid #e6e6e6;
 	}
@@ -640,9 +640,9 @@
 	  right: 20px;
 	}
 
-	.white-theme .cp__right-sidebar .CodeMirror,
-	.white-theme .cp__right-sidebar .CodeMirror-gutters,
-	.white-theme .cp__right-sidebar .extensions__code-lang {
+	.cp__right-sidebar .CodeMirror,
+	.cp__right-sidebar .CodeMirror-gutters,
+	.cp__right-sidebar .extensions__code-lang {
 	  background-color: rgba(242, 241, 238, 0.95);
 	}
 
@@ -708,26 +708,26 @@
 	  color: orange;
 	}
 
-	.white-theme .cm-s-solarized .CodeMirror-selected {
+	.cm-s-solarized .CodeMirror-selected {
 	  background-color: rgba(168, 175, 255, 0.2);
 	}
-	.white-theme .cm-s-solarized span.cm-string,
-	.white-theme .cm-s-solarized span.cm-string-2 {
+	.cm-s-solarized span.cm-string,
+	.cm-s-solarized span.cm-string-2 {
 	  color: orange;
 	}
-	.white-theme .cm-s-solarized span.cm-variable-2 {
+	.cm-s-solarized span.cm-variable-2 {
 	  color: rgba(0, 0, 0, 0.7);
 	}
-	.white-theme .cm-s-solarized span.cm-def {
+	.cm-s-solarized span.cm-def {
 	  color: var(--ls-secondary-text-color);
 	}
-	.white-theme .cm-s-solarized span.cm-meta {
+	.cm-s-solarized span.cm-meta {
 	  color: var(--ls-secondary-text-color);
 	}
 
 	/* Old Version */
-	.white-theme .cm-s-default.CodeMirror,
-	.white-theme .cm-s-default .CodeMirror-gutters {
+	.cm-s-default.CodeMirror,
+	.cm-s-default .CodeMirror-gutters {
 	  color: black !important;
 	  border: none;
 	}
@@ -736,7 +736,7 @@
 	  border-left: solid thin white;
 	}
 
-	.white-theme .cm-s-default .CodeMirror-cursor {
+	.cm-s-default .CodeMirror-cursor {
 	  border-left: solid thin black;
 	}
 
@@ -744,7 +744,7 @@
 	  background: rgba(255, 255, 255, 0.1);
 	}
 
-	.white-theme .cm-s-default .CodeMirror-selected {
+	.cm-s-default .CodeMirror-selected {
 	  background: rgba(0, 0, 0, 0.1);
 	}
 
@@ -773,8 +773,8 @@
 	  color: #e6c963;
 	}
 
-	.white-theme .cm-s-default span.cm-string,
-	.white-theme .cm-s-default span.cm-string-2 {
+	.cm-s-default span.cm-string,
+	.cm-s-default span.cm-string-2 {
 	  color: orange;
 	}
 
@@ -790,7 +790,7 @@
 	  color: rgba(255, 255, 255, 0.7);
 	}
 
-	.white-theme .cm-s-default span.cm-variable-2 {
+	.cm-s-default span.cm-variable-2 {
 	  color: rgba(0, 0, 0, 0.7);
 	}
 
@@ -798,7 +798,7 @@
 	  color: #fff;
 	}
 
-	.white-theme .cm-s-default span.cm-def {
+	.cm-s-default span.cm-def {
 	  color: black;
 	}
 
@@ -818,7 +818,7 @@
 	  color: white;
 	}
 
-	.white-theme .cm-s-default span.cm-meta {
+	.cm-s-default span.cm-meta {
 	  color: black;
 	}
 
@@ -864,7 +864,7 @@
 	  --ls-font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	}
 
-	*:not(.CodeMirror-activeline){
+	*{
 		overflow:visible !important;
 	}
 	.page {
@@ -884,5 +884,8 @@
 	}
 	.cp__sidebar-help-btn {
 		display:none;
+	}
+	.CodeMirror-activeline {
+		
 	}
 /*}*/
