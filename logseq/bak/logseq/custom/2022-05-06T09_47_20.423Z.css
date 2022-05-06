@@ -812,7 +812,10 @@
 	}
 	
 	.CodeMirror {
-		font-size: 6px;
+		font-size: 10px;
+	}
+	.CodeMirror-gutters{
+		display:none;
 	}
 	
 	.page {
@@ -833,4 +836,19 @@
 	.cp__sidebar-help-btn {
 		display:none;
 	}
+}
+
+.CodeMirror {
+	font-size: 10px;
+	line-height: 1.25em;
+}
+.CodeMirror-gutters {
+	display:none;
+}
+.CodeMirror-linenumber {
+	display:none;
+}
+.CodeMirror-sizer {
+	margin-left: 1px;
+	margin-right: 1px;
 }
