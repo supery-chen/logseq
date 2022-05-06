@@ -886,6 +886,6 @@
 		display:none;
 	}
 	.CodeMirror-activeline {
-		
+		unset !important;
 	}
 /*}*/

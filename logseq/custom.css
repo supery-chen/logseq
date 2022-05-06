@@ -848,7 +848,7 @@
 	}
 
 	.cm-s-default .CodeMirror-activeline-background {
-	  background: rgba(255, 255, 255, 0.1);
+	  
 	}
 
 	.cm-s-default .CodeMirror-matchingbracket {
@@ -884,8 +884,5 @@
 	}
 	.cp__sidebar-help-btn {
 		display:none;
-	}
-	.CodeMirror-activeline {
-		unset;
 	}
 /*}*/

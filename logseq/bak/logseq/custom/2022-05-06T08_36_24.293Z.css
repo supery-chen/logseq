@@ -885,7 +885,7 @@
 	.cp__sidebar-help-btn {
 		display:none;
 	}
-	.CodeMirror-activeline {
-		
+	.CodeMirror {
+		unset !important;
 	}
 /*}*/
