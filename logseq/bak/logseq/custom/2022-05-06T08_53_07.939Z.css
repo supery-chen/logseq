@@ -644,7 +644,7 @@
 	}
 
 	.cm-s-solarized .CodeMirror-selected {
-	  
+	  background-color: rgba(168, 175, 255, 0.2);
 	}
 	.cm-s-solarized span.cm-string,
 	.cm-s-solarized span.cm-string-2 {
@@ -799,7 +799,7 @@
 	  --ls-font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	}
 
-	*{
+	* :not(.block-body .CodeMirror-selected){
 		overflow:visible !important;
 	}
 	.page {

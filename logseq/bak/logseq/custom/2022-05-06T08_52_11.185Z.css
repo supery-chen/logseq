@@ -799,7 +799,7 @@
 	  --ls-font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	}
 
-	*{
+	* :not(.cp__fenced-code-block){
 		overflow:visible !important;
 	}
 	.page {

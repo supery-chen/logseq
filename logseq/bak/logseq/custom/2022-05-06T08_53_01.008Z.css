@@ -675,7 +675,13 @@
 	  border-left: solid thin black;
 	}
 
-	
+	.cm-s-default .CodeMirror-selected {
+	  background: rgba(255, 255, 255, 0.1);
+	}
+
+	.cm-s-default .CodeMirror-selected {
+	  background: rgba(0, 0, 0, 0.1);
+	}
 
 	.cm-s-default .CodeMirror-line {
 	  box-shadow: none;
@@ -793,7 +799,7 @@
 	  --ls-font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	}
 
-	*{
+	* :not(.block-body .CodeMirror .CodeMirror-code){
 		overflow:visible !important;
 	}
 	.page {
