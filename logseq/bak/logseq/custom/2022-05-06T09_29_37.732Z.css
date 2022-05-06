@@ -1,7 +1,7 @@
 .table-wrapper {
 	max-width:100% !important;
 }
-/*@media print {*/
+@media print {
 	@charset "UTF-8";
 	@import url("https://cdn.jsdelivr.net/npm/@ibm/plex@4.0.2/css/ibm-plex.min.css?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 	/* ****************************
@@ -520,7 +520,7 @@
 	.cm-s-solarized,
 	.cm-s-solarized.cm-s-light,
 	.cm-s-solarized.cm-s-dark {
-	  background-color: var(--ls-codeblock-background-color);
+	  background-color: #f7f6f3;
 	  text-shadow: unset;
 	}
 	.cm-s-solarized.CodeMirror,
@@ -533,7 +533,7 @@
 	.cm-s-solarized .CodeMirror-gutters,
 	.cm-s-solarized.cm-s-light .CodeMirror-gutters,
 	.cm-s-solarized.cm-s-dark .CodeMirror-gutters {
-	  background-color: var(--ls-codeblock-background-color);
+	  background-color: #f7f6f3;
 	}
 	.cm-s-solarized .CodeMirror-linenumber,
 	.cm-s-solarized.cm-s-light .CodeMirror-linenumber,
@@ -544,7 +544,7 @@
 	/* theme general */
 	.extensions__code {
 	  display: block;
-	  background-color: var(--ls-codeblock-background-color);
+	  background-color: #f7f6f3;
 	}
 	.extensions__code > div {
 	  margin-top: 0.3rem;
@@ -806,8 +806,9 @@
 	div[class^="CodeMirror"] {
 		overflow:hidden !important;
 	}
-	div[class^="cm-"] {
-		overflow:hidden !important;
+	
+	.cm-s-light > div > textarea {
+		display: none;
 	}
 	
 	.page {
@@ -828,4 +829,4 @@
 	.cp__sidebar-help-btn {
 		display:none;
 	}
-/*}*/
+}
