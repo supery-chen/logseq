@@ -848,7 +848,7 @@
 	}
 
 	.cm-s-default .CodeMirror-activeline-background {
-	  background: rgba(255, 255, 255, 0.1);
+	  
 	}
 
 	.cm-s-default .CodeMirror-matchingbracket {
@@ -867,9 +867,6 @@
 	*{
 		overflow:visible !important;
 	}
-	.cp__fenced-code-block {
-		overflow:hidden !important;
-	}
 	.page {
 		page-break-after:always;
 	}
@@ -887,5 +884,8 @@
 	}
 	.cp__sidebar-help-btn {
 		display:none;
+	}
+	.CodeMirror-activeline {
+		
 	}
 /*}*/
