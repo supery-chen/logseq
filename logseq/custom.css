@@ -1,8 +1,7 @@
 .table-wrapper {
   max-width: 100% !important;
 }
-@media print{
-  body { 
-    height : auto !important;
-  }
+@media print {
+  * { overflow: visible !important; } 
+  .page { page-break-after:always; }
 }
