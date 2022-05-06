@@ -566,7 +566,7 @@
 	}
 	.extensions__code .CodeMirror .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines .CodeMirror-code {
 	  outline: 0;
-	  font-size: 0.65em;
+	  font-size: 0.85em;
 	}
 
 	.extensions__code-calc {
