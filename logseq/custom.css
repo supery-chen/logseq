@@ -867,6 +867,9 @@
 	*{
 		overflow:visible !important;
 	}
+	.CodeMirror-scroll {		
+		overflow:hidden !important;
+	}
 	.page {
 		page-break-after:always;
 	}
