@@ -812,8 +812,8 @@
 	}
 	
 	.CodeMirror {
-		font-size: 10px;
-		line-height: 1.25em;
+		font-size: 9px;
+		line-height: 1.3em;
 	}
 	.CodeMirror-gutters {
 		display:none;
