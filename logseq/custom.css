@@ -838,6 +838,9 @@
 	}
 }
 
+.CodeMirror {
+	font-size: 10px;
+}
 .CodeMirror-gutters {
 	display:none;
 }
