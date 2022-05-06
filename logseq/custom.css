@@ -803,7 +803,7 @@
 		overflow:visible !important;
 	}
 	
-	div[class^="CodeMirror"] {
+	*[class^="CodeMirror"] {
 		overflow:hidden !important;
 	}
 	
