@@ -5,3 +5,6 @@
   * { overflow: visible !important; } 
   .page { page-break-after:always; }
 }
+<style type="text/css" media="print">
+.noprint { display:none;}
+</style>
