@@ -867,7 +867,7 @@
 	*{
 		overflow:visible !important;
 	}
-	.CodeMirror-lines {		
+	.CodeMirror-scroll > * {
 		overflow:hidden !important;
 	}
 	.page {
