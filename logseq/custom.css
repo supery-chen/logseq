@@ -1,3 +1,4 @@
 .table-wrapper {
   max-width: 100% !important;
 }
+@media print{ body { height : auto}}
