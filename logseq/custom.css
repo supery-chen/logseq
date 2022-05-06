@@ -811,6 +811,10 @@
 		display: none;
 	}
 	
+	.CodeMirror {
+		font-size: 6px;
+	}
+	
 	.page {
 		page-break-after:always;
 	}
