@@ -806,12 +806,6 @@
 	div[class^="CodeMirror"] {
 		overflow:hidden !important;
 	}
-	div[class^="cm-"] {
-		overflow:hidden !important;
-	}	
-	pre[class="CodeMirror"] {
-		overflow:hidden !important;
-	}
 	
 	.page {
 		page-break-after:always;
