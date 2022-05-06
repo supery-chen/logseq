@@ -806,10 +806,10 @@
 	div[class^="CodeMirror"] {
 		overflow:hidden !important;
 	}
-	span[class^="cm-"] {
+	div[class^="cm-"] {
 		overflow:hidden !important;
-	}
-	pre[class^="CodeMirror"] {
+	}	
+	pre[class="CodeMirror"] {
 		overflow:hidden !important;
 	}
 	

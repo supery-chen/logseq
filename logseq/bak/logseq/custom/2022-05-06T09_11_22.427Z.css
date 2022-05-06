@@ -806,7 +806,7 @@
 	div[class^="CodeMirror"] {
 		overflow:hidden !important;
 	}
-	span[class^="CodeMirror"] {
+	span[class^="cm-"] {
 		overflow:hidden !important;
 	}
 	pre[class^="CodeMirror"] {

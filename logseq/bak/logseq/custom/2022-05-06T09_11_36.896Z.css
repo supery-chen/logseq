@@ -806,12 +806,10 @@
 	div[class^="CodeMirror"] {
 		overflow:hidden !important;
 	}
-	
-	span[class^="CodeMirror"] {
+	span[class^="cm-"] {
 		overflow:hidden !important;
 	}
-	
-	textarea[class^="CodeMirror"] {
+	pre[role="presentation"] {
 		overflow:hidden !important;
 	}
 	

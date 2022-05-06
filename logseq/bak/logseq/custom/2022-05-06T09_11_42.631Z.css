@@ -803,7 +803,10 @@
 		overflow:visible !important;
 	}
 	
-	*[class^="CodeMirror"] {
+	div[class^="CodeMirror"] {
+		overflow:hidden !important;
+	}
+	pre[role="presentation"] {
 		overflow:hidden !important;
 	}
 	
