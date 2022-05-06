@@ -6,10 +6,7 @@
   .page { page-break-after:always; }
 }
 <style type="text/css" media="print">
-#head {
-  display:none;
-}
-#left-sidebar {
+.w-full {
   display:none;
 }
 </style>
