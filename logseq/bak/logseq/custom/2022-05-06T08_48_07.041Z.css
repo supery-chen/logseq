@@ -516,7 +516,7 @@
 	/*****************************************
 	  Code Mirror
 	*****************************************/
-	/*
+	
 	.cm-s-solarized,
 	.cm-s-solarized.cm-s-light,
 	.cm-s-solarized.cm-s-dark {
@@ -539,7 +539,7 @@
 	.cm-s-solarized.cm-s-light .CodeMirror-linenumber,
 	.cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
 	  text-shadow: unset;
-	}*/
+	}
 
 	/* theme general */
 	.extensions__code {
@@ -562,7 +562,7 @@
 	  padding: 25px 10px 24px 20px;
 	}
 	.extensions__code .CodeMirror .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines .CodeMirror-cursors .CodeMirror-cursor {
-	  border-left: solid thin #82aaff;
+	  
 	}
 	.extensions__code .CodeMirror .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines .CodeMirror-code {
 	  outline: 0;
