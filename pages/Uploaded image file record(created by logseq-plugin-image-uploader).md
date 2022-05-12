@@ -123,3 +123,5 @@
 - ../assets/image_1648697103570_0.png
 - ../assets/image_1648709533565_0.png
 - ../assets/image_1651887697882_0.png
+- ../assets/未命名文件_1652346038101_0.svg
+- ../assets/未命名文件_1652346068291_0.png
