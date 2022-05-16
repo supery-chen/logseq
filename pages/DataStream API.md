@@ -10,7 +10,6 @@ public:: true
 - ((624551f0-6d44-4f88-b3d9-9d73db8febc9))
 -
 - ## 执行环境(Execution Environment)
-  collapsed:: true
 	- ### 创建执行环境
 		- #### getExecutionEnvironment
 			- 最简单的方法,会根据当前运行的上下文直接得到正确的结果,是最常用的一种创建执行环境的方式
@@ -30,7 +29,6 @@ public:: true
 		- `env.execute()`
 -
 - ## 源算子(source)
-  collapsed:: true
 	- ((6245550b-ea82-43bc-ab73-c4b9d079dd19))
 	- ### 内置的数据源获取方式
 	  collapsed:: true
