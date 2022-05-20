@@ -4,7 +4,7 @@ public:: true
 - [[由表及里学ProjectReactor-Mono]]
 # 响应式编程
 - 本质上是一个`观察者模式`
-- ![Replaced by Image Uploder](../assets/image_1642490318088_0.png)
+- ![img](../assets/image_1642490318088_0.png)
 - # 官方示例
 - ```java
   userService.getFavorites(userId) ➊
@@ -60,7 +60,7 @@ public:: true
 - ➊ 获取N个元素往下传递
 - ➋ 取消执行
 - 笔者认为这个元素的作用一是为了解耦，二是在`Reference`中有提到`Backpressure`也就是下游可以保护自己不受上游大流量冲击，这个在`Stream`中式无法做到的，想要做到这点，就需要控制流速，那秘密看起来也就是在`request(long n)`中
-- ![Replaced by Image Uploder](../assets/image_1642756857560_0.png)
+- ![img](../assets/image_1642756857560_0.png)
 -
 - # 他们是如何工作的
 - 我们使用一个最简单的例子进行探索
@@ -265,19 +265,19 @@ public:: true
 -
 - ## 小结一下
 - 1. 声明阶段：当我们每进行一次`Operator`操作(`map`、`filter`、`flatmap`)，就会将原有的`FluxPublisher`包裹成一个新的`FluxPublisher`
-  ![Replaced by Image Uploder](../assets/image_1642578394869_0.png)
+  ![img](../assets/image_1642578394869_0.png)
 - 最后生成的对象是这样的
-- ![Replaced by Image Uploder](../assets/image_1642578662404_0.png)
+- ![img](../assets/image_1642578662404_0.png)
 - 2. `subscribe`阶段：当我们最终进行`subscribe`操作的时候，就会从最外层的`Publisher`一层一层的处理，从这层将`Subscriber`变化成需要的`Subscriber`直到最外层的`Publisher`
-- ![Replaced by Image Uploder](../assets/image_1642579019847_0.png)
+- ![img](../assets/image_1642579019847_0.png)
 - 最后生成的对象是这样的
-- ![Replaced by Image Uploder](../assets/image_1642579057268_0.png)
+- ![img](../assets/image_1642579057268_0.png)
 -
 - 3. `onSubscribe`阶段：在最外层的`Publisher`的时候调用上一层`Subscriber`的`onSubscribe`函数，在此处将`Publisher`和`Subscriber`包裹成一个`Subscription`对象作为`onSubscribe`的入参
-- ![Replaced by Image Uploder](../assets/image_1642579460111_0.png)
+- ![img](../assets/image_1642579460111_0.png)
 - 4. 最终在原始`Subscriber`对象调用`request`，触发`Subscription`的`Source`获得数据作为`onNext`的参数，但是注意`Subscription`包裹的是我们封装的`Subscriber`，所有的数据是从`MapSubscriber`进行一次转换再给我们的原始`Subscriber`的
-- ![Replaced by Image Uploder](../assets/image_1642579591670_0.png)
+- ![img](../assets/image_1642579591670_0.png)
 - 经过一顿分析，整个流程是如何将操作整合起来的，我们已经有一个大致的了解，通过不断的包裹出新的 `Subscriber`对象，在最终的`request()`行为中触发整个消息的处理，这个过程非常像俄罗斯套娃，一层一层的将变化组合形变操作变成一个新的`Subscriber`，然后就和一个管道一样，一层一层的往下传递。
 - 5. 最终在`Subscription`开始了我们整个系统的数据处理
-- ![Replaced by Image Uploder](../assets/image_1642579693892_0.png)
+- ![img](../assets/image_1642579693892_0.png)
 -

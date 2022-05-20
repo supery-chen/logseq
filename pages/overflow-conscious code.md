@@ -34,7 +34,7 @@
           elementData = Arrays.copyOf(elementData, newCapacity);
       }
   ```
-- ![Replaced by Image Uploder](../assets/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6_1643104728464_0.png)
+- ![img](../assets/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6_1643104728464_0.png)
 - 假设oldCapacity接近Integer.MAX_VALUE，那么`int newCapacity = oldCapacity + (oldCapacity >> 1)`，此时newCapacity必然发生溢出，从而变成负数
 - 在newCapacity发生溢出时，如果使用`newCapacity<minCapacity`来进行判断，结果很明显为true，此时如果走if表达式中的内容，将newCapacity设置为minCapacity，这种情况从逻辑上来说很明显不正确
 - 因此这里使用的是`if (newCapacity - minCapacity < 0)`和`if (newCapacity - MAX_ARRAY_SIZE > 0)`来判断。当newCapacity为负数时，`newCapacity - minCapacity`必然也会发生溢出，也就意味着`newCapacity - minCapacity`的结果是大于0的，这种情况下就会跳过执行`newCapacity = minCapacity`逻辑
