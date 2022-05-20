@@ -2,7 +2,7 @@
 - ArrayList是一种以数组实现的List，与数组相比，它具有动态扩展的能力，因此也可以称为动态数组
 -
 - ## 继承体系
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1643073454713_0.png)
+- ![Replaced by Image Uploder](../assets/image_1643073454713_0.png)
 - ArrayList实现了List、Serializable、Cloneable、RandomAccess等接口
 	- List：提供了基础的添加、删除、遍历等操作
 	- RandomAccess：提供了随机访问的能力

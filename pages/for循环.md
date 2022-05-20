@@ -25,7 +25,7 @@
 		  }
 		  ```
 	- for语句语法流程如下图所示
-		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644907880328_0.png)
+		- ![Replaced by Image Uploder](../assets/image_1644907880328_0.png)
 - ## 实例
 	- ```go
 	  package main

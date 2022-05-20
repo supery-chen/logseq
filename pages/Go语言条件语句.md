@@ -1,7 +1,7 @@
 public:: true
 
 - 条件语句需要开发者通过指定一个或多个条件，并通过测试条件是否位true来决定是否执行指定语句，并在条件位false的情况再执行另外的语句
-- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644845681167_0.png)
+- ![Replaced by Image Uploder](../assets/image_1644845681167_0.png)
 - Go语言提供了以下几种条件判断语句
 - ## if语句
 	- ### 语法
@@ -24,7 +24,7 @@ public:: true
 		  ```
 -
 - ## if...else...语句
-	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644845953936_0.png)
+	- ![Replaced by Image Uploder](../assets/image_1644845953936_0.png)
 	- ### 语法
 		- ```go
 		  if 布尔表达式 {
@@ -66,7 +66,7 @@ public:: true
 		  ```
 		- 变量 var1 可以是任何类型，而 val1 和 val2 则可以是同类型的任意值。类型不被局限于常量或整数，但必须是相同的类型；或者最终结果为相同类型的表达式
 		- 您可以同时测试多个可能符合条件的值，使用逗号分割它们，例如：case val1, val2, val3
-		- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1644846129377_0.png)
+		- ![Replaced by Image Uploder](../assets/image_1644846129377_0.png)
 	- ### 实例
 		- ```go
 		  package main

@@ -9,6 +9,6 @@ public:: true
 	- 创建[[main.yaml]]
 - ## 配置Github Pages
 	- > 首次可能还未创建`gh-pages`，可以手动触发一次`main.yaml`，然后再进行此配置
-	- ![Replaced by Image Uploder](https://gitee.com/superficial/blogimage/raw/master/img/image_1645499594972_0.png)
+	- ![Replaced by Image Uploder](../assets/image_1645499594972_0.png)
 -
 - 上述配置完成后，即可访问[Github Pages](https://supery-chen.github.io/logseq/#/)
